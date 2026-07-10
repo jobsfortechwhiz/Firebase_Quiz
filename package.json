@@ -1,0 +1,16 @@
+{
+ "name":"quiz_backup",
+"version":"1.0.0",
+"type":"module",
+  "main": "export.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "firebase": "^12.16.0"
+  }
+}

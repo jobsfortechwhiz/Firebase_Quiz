@@ -1,0 +1,225 @@
+{
+  "questions": [
+    {
+      "answer": "pom.xml",
+      "type": "mcq",
+      "question": "Which file is primarily responsible for maintaining all project dependencies in a Maven project, allowing Maven to download them to local repositories?",
+      "options": [
+        "settings.xml",
+        "build.gradle",
+        "pom.xml",
+        "application.properties"
+      ]
+    },
+    {
+      "type": "mcq",
+      "question": "How many default stages are defined in the Maven build lifecycle?",
+      "options": [
+        "5",
+        "7",
+        "8",
+        "10"
+      ],
+      "answer": "8"
+    },
+    {
+      "answer": "To remove previously generated build files and directories",
+      "question": "What is the main purpose of the `mvn clean` command in Maven?",
+      "type": "mcq",
+      "options": [
+        "To compile the project's source code",
+        "To run unit tests",
+        "To remove previously generated build files and directories",
+        "To deploy the package to a remote repository"
+      ]
+    },
+    {
+      "options": [
+        "Maven uses a build cache for faster performance",
+        "Gradle's build time is slower because it re-runs all tasks",
+        "Maven is faster due to its primary use for smaller projects",
+        "Gradle avoids work by tracking input/output tasks and only runs changed tasks, leading to faster performance"
+      ],
+      "type": "mcq",
+      "question": "Which of the following statements accurately describes a key difference in build performance between Maven and Gradle according to the article?",
+      "answer": "Gradle avoids work by tracking input/output tasks and only runs changed tasks, leading to faster performance"
+    },
+    {
+      "answer": "In the %M2_HOME%/conf/settings.xml file",
+      "options": [
+        "In the project's `pom.xml` file",
+        "In the `%USER_HOME%/.m2/settings.xml` file",
+        "In the `%M2_HOME%/conf/settings.xml` file",
+        "Directly in the command console input"
+      ],
+      "type": "mcq",
+      "question": "Where is a Global Maven Build Profile typically defined?"
+    },
+    {
+      "options": [
+        "To define the order of build goals",
+        "To manage project dependencies",
+        "To specify the type of project being built",
+        "To clean generated build files"
+      ],
+      "question": "In Maven, what is the primary role of an 'Archetype'?",
+      "type": "mcq",
+      "answer": "To specify the type of project being built"
+    },
+    {
+      "answer": "Groovy or Kotlin",
+      "type": "mcq",
+      "question": "Gradle build scripts are primarily written using a Domain Specific Language (DSL) based on which programming language?",
+      "options": [
+        "XML",
+        "Java",
+        "Groovy or Kotlin",
+        "Python"
+      ]
+    },
+    {
+      "options": [
+        "By modifying the `pom.xml` to include different dependency scopes",
+        "By using the `mvn clean install` command with specific flags",
+        "By activating profiles through VM Arguments like `-Dspring.profile.active=dev`",
+        "By manually editing the `settings.xml` file for each environment switch"
+      ],
+      "type": "mcq",
+      "question": "A development team is working on a Spring Boot application and needs to switch between 'development' and 'testing' environment configurations dynamically without altering the `application.properties` file directly. Based on the article, which method would allow them to achieve this?",
+      "answer": "By activating profiles through VM Arguments like -Dspring.profile.active=dev"
+    },
+    {
+      "question": "A developer has just packaged their Maven project into a JAR file and now wants to ensure that all integration tests are run and quality criteria are met before the artifact is potentially installed or deployed. Which single Maven command, when executed, will perform these checks while also including preceding lifecycle phases like compilation, testing, and packaging?",
+      "type": "mcq",
+      "options": [
+        "`mvn test`",
+        "`mvn compile`",
+        "`mvn package`",
+        "`mvn verify`"
+      ],
+      "answer": "`mvn verify`"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "A is true, R is true and R is the correct explanation of A.",
+        "A is true, R is true but R is not the correct explanation of A.",
+        "A is true, R is false.",
+        "A is false, R is true."
+      ],
+      "question": "Assertion (A): Maven's build time is generally slower than Gradle's.\nReason (R): Maven avoids build cache mechanisms, unlike Gradle which tracks input and output tasks and only runs changed tasks.",
+      "answer": "A is true, R is true and R is the correct explanation of A."
+    },
+    {
+      "options": [
+        "target/",
+        "src/main/resources/",
+        "~/.m2/repository/",
+        "local-cache/"
+      ],
+      "question": "What is the default directory where Maven stores downloaded Java libraries and plugins for a project?",
+      "type": "mcq",
+      "answer": "~/.m2/repository/"
+    },
+    {
+      "answer": "Gradle is used for large projects, while Maven is specifically designed for smaller projects.",
+      "type": "mcq",
+      "question": "According to the article, what is one of the primary distinctions in project size suitability between Maven and Gradle?",
+      "options": [
+        "Maven is designed for microservices, while Gradle is for monolithic applications.",
+        "Gradle is used for large projects, while Maven is specifically designed for smaller projects.",
+        "Maven is suitable for enterprise-level projects, whereas Gradle is better for open-source projects.",
+        "Gradle is limited to single-module projects, while Maven supports multi-module builds."
+      ]
+    },
+    {
+      "question": "Which Maven command is primarily used to copy the final packaged artifact to a remote repository for sharing with other developers?",
+      "options": [
+        "mvn install",
+        "mvn package",
+        "mvn deploy",
+        "mvn clean"
+      ],
+      "type": "mcq",
+      "answer": "mvn deploy"
+    },
+    {
+      "question": "What is the main purpose of a Maven 'Profile'?",
+      "type": "mcq",
+      "options": [
+        "To define the project's artifact ID and group ID.",
+        "To manage the project's source code version control.",
+        "To provide an alternative set of configuration values for customizing a build for different environments.",
+        "To specify the default Java compiler version for the project."
+      ],
+      "answer": "To provide an alternative set of configuration values for customizing a build for different environments."
+    },
+    {
+      "options": [
+        "It defines the project's dependencies and plugins.",
+        "It specifies which local and remote repository locations Maven will use.",
+        "It declares the build lifecycle phases for a project.",
+        "It manages the project's unit and integration tests."
+      ],
+      "type": "mcq",
+      "question": "Besides configuring server administration parameters, what other important function does the `settings.xml` file serve in Maven?",
+      "answer": "It specifies which local and remote repository locations Maven will use."
+    },
+    {
+      "answer": "mvn spring-boot:run",
+      "type": "mcq",
+      "options": [
+        "java -jar target/app.jar",
+        "mvn spring-boot:run",
+        "mvn exec:java",
+        "mvn compile"
+      ],
+      "question": "Which command would a developer typically use to run a Spring Boot application directly using its Maven plugin without explicitly creating a JAR file?"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "settings.gradle",
+        "gradle.properties",
+        "Build.gradle",
+        "application.yml"
+      ],
+      "question": "What is the primary build script file in a Gradle project responsible for specifying the project and its tasks?",
+      "answer": "Build.gradle"
+    },
+    {
+      "answer": "The user's Maven `settings.xml` file located in `%USER_HOME%/.m2/settings.xml`.",
+      "question": "A developer is setting up a new Maven project and wants to ensure that all necessary build configurations, including repository locations and authentication details, are consistent across their local development environment without being committed to the project's `pom.xml`. In which file should these user-specific configurations be defined?",
+      "type": "scenario_mcq",
+      "options": [
+        "The project's `pom.xml` file.",
+        "The Maven global `settings.xml` file located in `%M2_HOME%/conf/settings.xml`.",
+        "The user's Maven `settings.xml` file located in `%USER_HOME%/.m2/settings.xml`.",
+        "A custom `build.properties` file in the project root."
+      ]
+    },
+    {
+      "question": "A company is evaluating build tools for a new large-scale enterprise application. Based on the article's comparison, which build tool would be generally recommended for such a project due to its described performance advantages and suitability for larger applications?",
+      "options": [
+        "Apache Ant",
+        "Maven",
+        "Gradle",
+        "Jenkins"
+      ],
+      "type": "scenario_mcq",
+      "answer": "Gradle"
+    },
+    {
+      "options": [
+        "Both A and R are true, and R is the correct explanation of A.",
+        "Both A and R are true, but R is not the correct explanation of A.",
+        "A is true, but R is false.",
+        "A is false, but R is true."
+      ],
+      "type": "assertion_reason_mcq",
+      "question": "Assertion (A): Gradle scripts are generally more readable and result in smaller build script files compared to Maven's XML-based configurations. Reason (R): Gradle utilizes a Domain Specific Language (DSL) based on Groovy or Kotlin, allowing for more concise and programmatic build definitions.",
+      "answer": "Both A and R are true, and R is the correct explanation of A."
+    }
+  ],
+  "createdAt": 1781446088050
+}

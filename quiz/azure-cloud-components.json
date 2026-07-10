@@ -1,0 +1,227 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following is a key capability provided by Azure Resource Manager (ARM)?",
+      "type": "mcq",
+      "options": [
+        "Providing an interface for real-time natural language processing for chatbots.",
+        "Enabling consistent deployment and management of application resources in Azure.",
+        "Offering a serverless execution environment for small code snippets without managing servers.",
+        "Distributing incoming network traffic evenly across multiple virtual machines."
+      ],
+      "answer": "Enabling consistent deployment and management of application resources in Azure."
+    },
+    {
+      "answer": "Azure Container Instances (ACI)",
+      "type": "mcq",
+      "question": "For a developer needing to run a small number of isolated containers without the overhead of managing a full orchestration platform, which Azure service is most suitable?",
+      "options": [
+        "Azure Kubernetes Service (AKS)",
+        "Azure App Service",
+        "Azure Container Instances (ACI)",
+        "Azure Virtual Machines (VMs)"
+      ]
+    },
+    {
+      "type": "mcq",
+      "question": "Microsoft Office 365, as mentioned in the article, is an example of which cloud service model offered or integrated with Azure?",
+      "options": [
+        "Infrastructure as a Service (IaaS)",
+        "Platform as a Service (PaaS)",
+        "Software as a Service (SaaS)",
+        "Function as a Service (FaaS)"
+      ],
+      "answer": "Software as a Service (SaaS)"
+    },
+    {
+      "question": "What is a primary characteristic of Azure Functions as described in the article?",
+      "type": "mcq",
+      "options": [
+        "They require dedicated servers to be provisioned and managed by the user.",
+        "They are primarily used for hosting full-fledged web services and applications.",
+        "They are event-driven, serverless components that charge only for the memory consumed when running.",
+        "They act as a communication channel for various services in a microservice architecture."
+      ],
+      "answer": "They are event-driven, serverless components that charge only for the memory consumed when running."
+    },
+    {
+      "answer": "To serve as the cloud-native continuous integration (CI) server for building, testing, and deploying.",
+      "options": [
+        "To manage project boards and work items.",
+        "To provide version control for source code repositories.",
+        "To serve as the cloud-native continuous integration (CI) server for building, testing, and deploying.",
+        "To offer package management for binaries and artifacts."
+      ],
+      "question": "In Azure DevOps, what is the specific role of 'Azure Pipeline'?",
+      "type": "mcq"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "To enforce a strict schema on JSON documents.",
+        "To enhance security by encrypting data at rest.",
+        "To maintain scalability and avoid bottlenecks on storage or throughput.",
+        "To enable automatic indexing of all document properties."
+      ],
+      "question": "According to the article, what is the main reason for implementing partitioning in Azure Cosmos DB?",
+      "answer": "To maintain scalability and avoid bottlenecks on storage or throughput."
+    },
+    {
+      "options": [
+        "Web Apps",
+        "API Apps",
+        "Logic Apps",
+        "Mobile Apps"
+      ],
+      "question": "Which type of Azure App Service is specifically designed to create functional workflows by orchestrating software as a service components, often acting as a communication channel in microservice architectures?",
+      "type": "mcq",
+      "answer": "Logic Apps"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Azure Virtual Network and Azure ExpressRoute",
+        "Azure Application Gateway and Azure Traffic Manager",
+        "Azure Content Delivery Network (CDN) and Azure Load Balancer",
+        "Azure VPN Gateway and Azure Firewall"
+      ],
+      "question": "A global e-commerce company hosts its primary web application in an Azure region in the US. They observe high latency for users accessing static content (images, videos) from Europe and Asia. Additionally, they want to ensure that the incoming traffic to their backend web servers in the US region is evenly distributed and fault-tolerant.\nWhich two Azure services, when implemented together, would best address these concerns?",
+      "answer": "Azure Content Delivery Network (CDN) and Azure Load Balancer"
+    },
+    {
+      "question": "A company is planning to migrate some of its applications to Azure Cloud. They currently manage user identities using an on-premises Active Directory and want to enable their employees to use the same credentials for both on-premises applications and cloud-based Azure services. They also prioritize secure communication and protection against brute-force attacks.\nWhich Azure service is specifically designed to achieve this hybrid identity goal, including password synchronization and enhanced security features?",
+      "options": [
+        "Azure Active Directory (AAD) Join",
+        "Azure Bot Services",
+        "Azure AD Connect",
+        "Microsoft Intune"
+      ],
+      "type": "mcq",
+      "answer": "Azure AD Connect"
+    },
+    {
+      "answer": "A is true, but R is false.",
+      "question": "Assertion (A): Once a virtual machine is created in Azure, it needs to be placed in a Virtual Network (Vnet) to receive IP address configuration and connect to other resources.\nReason (R): Network Security Groups (NSGs) are automatically assigned to every Virtual Machine within a Vnet to provide complete inbound and outbound traffic filtering.",
+      "type": "assertion_reason",
+      "options": [
+        "Both A and R are true, and R is the correct explanation of A.",
+        "Both A and R are true, but R is NOT the correct explanation of A.",
+        "A is true, but R is false.",
+        "A is false, but R is true.",
+        "Both A and R are false."
+      ]
+    },
+    {
+      "options": [
+        "Azure Repos",
+        "Azure Boards",
+        "Azure Test Plans",
+        "Azure Artifacts"
+      ],
+      "question": "Besides Azure Pipeline, which component of Azure DevOps is primarily responsible for managing project boards and work items?",
+      "type": "mcq",
+      "answer": "Azure Boards"
+    },
+    {
+      "answer": "Response times and failure rates of the application",
+      "options": [
+        "CPU temperature and fan speed of hosting servers",
+        "Database schema changes and migration history",
+        "Response times and failure rates of the application",
+        "User login credentials and session IDs"
+      ],
+      "question": "Which type of information is specifically mentioned as being tracked and collected by Azure Application Insights for web app performance monitoring?",
+      "type": "mcq"
+    },
+    {
+      "options": [
+        "Providing a serverless environment for small code snippets",
+        "Managing container orchestration for large-scale deployments",
+        "Enabling natural language processing and FAQ queries using machine learning algorithms",
+        "Distributing network traffic evenly across multiple virtual machines"
+      ],
+      "type": "mcq",
+      "question": "What is a primary function of Azure Bot Services as described in the article?",
+      "answer": "Enabling natural language processing and FAQ queries using machine learning algorithms"
+    },
+    {
+      "answer": "It eliminates the need to worry about software downloads, configuration, and upgrades.",
+      "options": [
+        "It offers complete control over the underlying operating system.",
+        "It allows for custom hardware configurations.",
+        "It eliminates the need to worry about software downloads, configuration, and upgrades.",
+        "It provides real-time natural language processing for database queries."
+      ],
+      "type": "mcq",
+      "question": "What is the main advantage of using Azure Database for MySQL (or PostgreSQL) compared to self-managing an on-premises MySQL database?"
+    },
+    {
+      "options": [
+        "To host full-fledged web applications.",
+        "To provide a backend for mobile client applications.",
+        "To create automated workflows by orchestrating SaaS components.",
+        "To run event-driven, serverless code snippets."
+      ],
+      "question": "Within Azure App Service, what is the specific purpose of 'Mobile Apps'?",
+      "type": "mcq",
+      "answer": "To provide a backend for mobile client applications."
+    },
+    {
+      "options": [
+        "It is available only to a limited number of customers for evaluation with no set timeline for general availability.",
+        "It signifies that the service is fully released and available to all Azure customers.",
+        "It is the beta version, available to all users and typically uses in-production environments for evaluation.",
+        "It is an internal testing phase before any external release."
+      ],
+      "type": "mcq",
+      "question": "According to the article, what is a key characteristic of the 'Public Preview' mode for Azure services?",
+      "answer": "It is the beta version, available to all users and typically uses in-production environments for evaluation."
+    },
+    {
+      "options": [
+        "Automating real-time data backups across regions.",
+        "Defining roles and adding users/groups to control who can perform actions on resources.",
+        "Providing serverless execution environments for small functions.",
+        "Distributing incoming network traffic across multiple VMs."
+      ],
+      "type": "mcq",
+      "question": "Beyond deployment and organization, which capability does Azure Resource Manager (ARM) provide regarding resource access and security?",
+      "answer": "Defining roles and adding users/groups to control who can perform actions on resources."
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Azure Data Factory",
+        "Azure Synapse Link",
+        "Azure Stream Analytics",
+        "Azure Databricks"
+      ],
+      "question": "A data engineer needs to provide near real-time analytics over operational data stored in Azure Cosmos DB to data consumers, without undergoing complex manual ETL processes. Which Azure service is designed to achieve this seamless integration and low-latency analytics?",
+      "answer": "Azure Synapse Link"
+    },
+    {
+      "answer": "Configuring multiple Network Interface Cards (NICs) on the VM.",
+      "type": "mcq",
+      "question": "A company plans to deploy a network virtual appliance on an Azure Virtual Machine and requires strong isolation of traffic between its frontend and backend network interfaces. Which networking configuration feature of Azure VMs would best support this requirement?",
+      "options": [
+        "Assigning a single Network Security Group (NSG) to the VM.",
+        "Implementing Azure ExpressRoute for hybrid connectivity.",
+        "Configuring multiple Network Interface Cards (NICs) on the VM.",
+        "Utilizing Azure Private Link for secure private connectivity."
+      ]
+    },
+    {
+      "answer": "A is true, but R is false.",
+      "options": [
+        "Both A and R are true, and R is the correct explanation of A.",
+        "Both A and R are true, but R is NOT the correct explanation of A.",
+        "A is true, but R is false.",
+        "A is false, but R is true.",
+        "Both A and R are false."
+      ],
+      "type": "assertion_reason",
+      "question": "Assertion (A): Azure Cosmos DB is a schema-free database that automatically indexes all properties of JSON documents without requiring explicit schema definitions.\nReason (R): The indexing policy in Azure Cosmos DB primarily supports only Range Indexes by default, requiring manual configuration for Spatial or Composite indexes."
+    }
+  ],
+  "createdAt": 1781259505781
+}

@@ -1,0 +1,335 @@
+{
+  "createdAt": 1783264899581,
+  "questions": [
+    {
+      "options": [
+        "Continuous Integration and Continuous Deployment (CI/CD)",
+        "Application Development Framework",
+        "Infrastructure as Code (IaC) tool for provisioning",
+        "Database Management System"
+      ],
+      "question": "What is the primary function of Terraform as described in the article?",
+      "type": "mcq",
+      "answer": "Infrastructure as Code (IaC) tool for provisioning"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        ".json",
+        ".yaml",
+        ".tf",
+        ".hcl"
+      ],
+      "question": "Which of the following file extensions is typically used for Terraform configuration files?",
+      "answer": ".tf"
+    },
+    {
+      "options": [
+        "To define the desired configuration of the infrastructure.",
+        "To store the current setup of the infrastructure.",
+        "To provide plugins for interacting with cloud providers.",
+        "To execute provisioning commands."
+      ],
+      "question": "What is the purpose of the 'State' component in Terraform?",
+      "type": "mcq",
+      "answer": "To store the current setup of the infrastructure."
+    },
+    {
+      "question": "According to the article, what is a key advantage of using Terraform Cloud for website hosting?",
+      "type": "mcq",
+      "options": [
+        "It offers advanced analytics integration.",
+        "It completely replaces the need for cloud providers.",
+        "It provides live server support without apparent pricing plans for basic usage.",
+        "It specializes in complex enterprise-level deployments only."
+      ],
+      "answer": "It provides live server support without apparent pricing plans for basic usage."
+    },
+    {
+      "type": "mcq",
+      "question": "Which command is used in Terraform to show the changes that would appear before applying them?",
+      "options": [
+        "terraform init",
+        "terraform apply",
+        "terraform destroy",
+        "terraform plan"
+      ],
+      "answer": "terraform plan"
+    },
+    {
+      "type": "mcq",
+      "question": "How does Terraform Core utilize the 'Config file' and 'State' components?",
+      "options": [
+        "It writes the 'Config file' based on the 'State'.",
+        "It compares the 'Config file' (desired state) to the 'State' (current state) to make infrastructure changes.",
+        "It stores all provider plugins within the 'State' component.",
+        "It is solely responsible for parsing the Hashicorp Config Language."
+      ],
+      "answer": "It compares the 'Config file' (desired state) to the 'State' (current state) to make infrastructure changes."
+    },
+    {
+      "type": "mcq",
+      "question": "What is the main distinction between Terraform and Ansible regarding their IaC capabilities, as per the article?",
+      "options": [
+        "Terraform is a configuration management tool, while Ansible is a provisioning tool.",
+        "Terraform provides the infrastructure (e.g., servers, VPC), while Ansible manages and configures that platform.",
+        "Ansible uses HCL, while Terraform uses JSON exclusively.",
+        "Terraform supports only cloud providers, whereas Ansible supports on-premise only."
+      ],
+      "answer": "Terraform provides the infrastructure (e.g., servers, VPC), while Ansible manages and configures that platform."
+    },
+    {
+      "answer": "Terraform",
+      "question": "A development team wants to set up a new cloud environment for their application. They need to create virtual machines, configure networks, and deploy databases consistently across different regions. Which of the following tools would be most suitable for the initial provisioning of this infrastructure, according to the article?",
+      "options": [
+        "Jenkins",
+        "Ansible",
+        "Terraform",
+        "A proprietary shell script"
+      ],
+      "type": "mcq"
+    },
+    {
+      "answer": "The 'State' file contains an outdated or incorrect representation of the current infrastructure, differing from the 'Config file's desired state.",
+      "question": "An organization uses Terraform to manage its cloud infrastructure. They have defined a desired state in their configuration files. After running `terraform plan`, they notice that several existing resources are marked for deletion, which was not intended. What is the most likely reason for this discrepancy?",
+      "options": [
+        "The `terraform init` command was not run recently.",
+        "The 'State' file contains an outdated or incorrect representation of the current infrastructure, differing from the 'Config file's desired state.",
+        "A provider plugin is missing or corrupted, preventing proper interaction with the cloud.",
+        "The Hashicorp Config Language (HCL) syntax in the 'Config file' is invalid."
+      ],
+      "type": "mcq"
+    },
+    {
+      "answer": "Both A and R are true, and R is the correct explanation of A.",
+      "question": "Assertion (A): HCL (Hashicorp Config Language) is generally preferred over JSON for writing Terraform configuration setups.\nReason (R): The article states that HCL format is more readable than JSON for Terraform configurations.",
+      "options": [
+        "Both A and R are true, and R is the correct explanation of A.",
+        "Both A and R are true, but R is NOT the correct explanation of A.",
+        "A is true, but R is false.",
+        "A is false, but R is true."
+      ],
+      "type": "assertion_reason"
+    },
+    {
+      "answer": "Interacts with cloud providers, third-party tools, and APIs.",
+      "type": "mcq",
+      "question": "What does a 'provider' in Terraform primarily do?",
+      "options": [
+        "Manages the current state of infrastructure.",
+        "Defines the desired state of the system.",
+        "Interacts with cloud providers, third-party tools, and APIs.",
+        "Executes Terraform commands."
+      ]
+    },
+    {
+      "options": [
+        "Around 1,000",
+        "Exactly 2,500",
+        "Over 3,000",
+        "Less than 500"
+      ],
+      "question": "According to the article, approximately how many providers are hosted in the Terraform Registry?",
+      "type": "mcq",
+      "answer": "Over 3,000"
+    },
+    {
+      "question": "Which Terraform command is explicitly mentioned as the first step to initialize a working directory containing Terraform configuration files before planning or applying changes?",
+      "type": "mcq",
+      "options": [
+        "`terraform plan`",
+        "`terraform apply`",
+        "`terraform init`",
+        "`terraform destroy`"
+      ],
+      "answer": "`terraform init`"
+    },
+    {
+      "answer": "Low cost and simplification of connecting with analytics and web tools.",
+      "type": "mcq",
+      "options": [
+        "High cost and complex integration with analytics tools.",
+        "No support for web tools, but excellent cost management.",
+        "Low cost and simplification of connecting with analytics and web tools.",
+        "Exclusively for server provisioning without external tool integration."
+      ],
+      "question": "Besides infrastructure provisioning, what general benefits of using Terraform are highlighted in the article regarding integration and cost?"
+    },
+    {
+      "options": [
+        "Terraform",
+        "Jenkins",
+        "Ansible",
+        "Kubernetes"
+      ],
+      "type": "scenario_mcq",
+      "question": "A DevOps team is evaluating tools for their existing infrastructure. Their primary need is to manage configurations on servers that have already been provisioned and to automate continuous deployments into production. Based on the distinctions made in the article, which tool would best fit this specific role?",
+      "answer": "Ansible"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "It acts solely as a server provisioning tool.",
+        "It manages configurations but does not deploy applications.",
+        "It automates infrastructure provisioning, configuration, and application deployment during code pipelining.",
+        "It replaces both Terraform and Ansible for all IaC tasks."
+      ],
+      "question": "In the context of infrastructure automation, what role does Jenkins play when used alongside Terraform and Ansible, according to the article?",
+      "answer": "It automates infrastructure provisioning, configuration, and application deployment during code pipelining."
+    },
+    {
+      "answer": "Servers, network, and storage components.",
+      "options": [
+        "Only databases and load balancers.",
+        "Servers, network, and storage components.",
+        "Application code and user interfaces.",
+        "Operating systems and software licenses."
+      ],
+      "question": "The article defines Infrastructure as Code (IaC) as using simple code to create and manage computer infrastructure. Which specific categories of components are explicitly mentioned as examples of this infrastructure?",
+      "type": "mcq"
+    },
+    {
+      "type": "scenario_mcq",
+      "question": "A cloud engineer has finished writing their Terraform configuration files for a new service. Before deploying anything to the cloud, they want to ensure their setup is valid and then review exactly what changes Terraform proposes to make. What is the typical sequence of Terraform commands they would execute to achieve this, followed by the actual deployment?",
+      "options": [
+        "`terraform plan`, then `terraform init`, then `terraform apply`",
+        "`terraform apply`, then `terraform plan`, then `terraform init`",
+        "`terraform init`, then `terraform plan`, then `terraform apply`",
+        "`terraform destroy`, then `terraform init`, then `terraform apply`"
+      ],
+      "answer": "`terraform init`, then `terraform plan`, then `terraform apply`"
+    },
+    {
+      "question": "Assertion (A): Terraform is designed to manage the full lifecycle of infrastructure resources, including creation, updates, and deletion.\nReason (R): Terraform uses a declarative configuration to define the desired state of the infrastructure, which it then attempts to achieve.",
+      "options": [
+        "(A) is true, but (R) is false.",
+        "(A) is false, but (R) is true.",
+        "Both (A) and (R) are true, and (R) is the correct explanation for (A).",
+        "Both (A) and (R) are true, but (R) is not the correct explanation for (A)."
+      ],
+      "type": "assertion_reason_mcq",
+      "answer": "Both (A) and (R) are true, and (R) is the correct explanation for (A)."
+    },
+    {
+      "type": "mcq",
+      "question": "Which characteristic of Terraform is highlighted as allowing \"easy connectivity and handling with seamless integration of different modules and components\" in a project?",
+      "options": [
+        "Its reliance on manual server management.",
+        "Its rigid, isolated architecture.",
+        "Its capability for seamless integration and easy connectivity.",
+        "Its exclusive focus on backend database management."
+      ],
+      "answer": "Its capability for seamless integration and easy connectivity."
+    },
+    {
+      "answer": "Configuration files and State data",
+      "question": "What are the two primary input sources for the Terraform Core component when planning for infrastructure provisioning?",
+      "options": [
+        "Configuration files and State data",
+        "Providers and the Terraform Registry",
+        "HCL and JSON formats",
+        "Apply and Destroy commands"
+      ],
+      "type": "mcq"
+    },
+    {
+      "answer": ".tf & HCL",
+      "question": "What file extension is primarily used for Terraform configuration files, and what language is typically used within them?",
+      "type": "mcq",
+      "options": [
+        ".json & JSON",
+        ".yaml & YAML",
+        ".tf & HCL",
+        ".cfg & Python"
+      ]
+    },
+    {
+      "options": [
+        "To define the desired infrastructure configuration",
+        "To list all available Terraform providers in the Registry",
+        "To store the current setup and state of the infrastructure",
+        "To execute and log provisioning commands to cloud providers"
+      ],
+      "question": "What is the main purpose of the 'State' component in Terraform?",
+      "type": "mcq",
+      "answer": "To store the current setup and state of the infrastructure"
+    },
+    {
+      "answer": "Live site deployment without any pricing plan or monthly subscription",
+      "options": [
+        "Free domain registration for all projects",
+        "Built-in traffic analytics and reporting tools",
+        "Live site deployment without any pricing plan or monthly subscription",
+        "Advanced integration with social media platforms"
+      ],
+      "type": "mcq",
+      "question": "According to the article, what unique benefit does Terraform Cloud offer regarding website hosting?"
+    },
+    {
+      "answer": "Terraform provides the necessary tools and platform for application deployment, while Ansible does not.",
+      "options": [
+        "Terraform supports a wider range of cloud providers compared to Ansible.",
+        "Ansible is primarily designed for server provisioning, not configuration management.",
+        "Terraform provides the necessary tools and platform for application deployment, while Ansible does not.",
+        "Ansible is an Infrastructure as Code (IaC) tool, but Terraform is not."
+      ],
+      "question": "Beyond managing configurations on existing servers, what crucial difference does the article highlight between Terraform and Ansible regarding the provision of deployment environments?",
+      "type": "mcq"
+    },
+    {
+      "answer": "HCL",
+      "type": "mcq",
+      "question": "While Terraform supports configuration setups in both HCL and JSON formats, which format is explicitly mentioned as being more readable?",
+      "options": [
+        "XML",
+        "YAML",
+        "JSON",
+        "HCL"
+      ]
+    },
+    {
+      "answer": "Manual setup",
+      "question": "According to the article, a primary benefit of using Infrastructure as Code (IaC) is the ability to create and manage computer infrastructure without what?",
+      "options": [
+        "Internet connectivity",
+        "Specialized programming knowledge",
+        "Manual setup",
+        "High upfront costs"
+      ],
+      "type": "mcq"
+    },
+    {
+      "question": "A developer has successfully run `terraform init` to set up their working directory and `terraform plan` to review the proposed infrastructure changes. They are confident with the plan and wish to implement these changes to create the infrastructure. Which Terraform command should they execute next?",
+      "options": [
+        "`terraform destroy`",
+        "`terraform validate`",
+        "`terraform apply`",
+        "`terraform output`"
+      ],
+      "type": "mcq",
+      "answer": "`terraform apply`"
+    },
+    {
+      "options": [
+        "It compares the desired state from the config file with the current state data.",
+        "It checks the Terraform Registry for new provider updates.",
+        "It compares the current state with historical plan outputs.",
+        "It performs a syntax check on the HCL code."
+      ],
+      "question": "A system administrator modifies a Terraform configuration file to add a new storage component. After initializing the directory, what specific comparison logic does Terraform Core use to determine what changes (e.g., creating this new storage component) are needed for the infrastructure?",
+      "type": "mcq",
+      "answer": "It compares the desired state from the config file with the current state data."
+    },
+    {
+      "question": "Assertion (A): Terraform allows users to offload all server and backend management work to the providers. Reason (R): It simplifies connecting with different analytics and web tools, making it a low-cost service provisioning tool.",
+      "options": [
+        "A is true, R is true, and R is the correct explanation for A.",
+        "A is true, R is true, but R is NOT the correct explanation for A.",
+        "A is true, R is false.",
+        "A is false, R is true."
+      ],
+      "type": "assertion_reason",
+      "answer": "A is true, R is true, but R is NOT the correct explanation for A."
+    }
+  ]
+}

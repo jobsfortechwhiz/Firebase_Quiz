@@ -1,0 +1,225 @@
+{
+  "createdAt": 1781351195036,
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "What is the primary model used for serverless computing modules like Azure Functions, AWS Lambda, and Google Cloud Functions?",
+      "options": [
+        "Infrastructure as a Service (IaaS)",
+        "Platform as a Service (PaaS)",
+        "Function as a Service (FaaS)",
+        "Software as a Service (SaaS)"
+      ],
+      "answer": "Function as a Service (FaaS)"
+    },
+    {
+      "type": "mcq",
+      "question": "According to the article, what is the primary responsibility of developers when utilizing a serverless architecture?",
+      "options": [
+        "Managing server infrastructure and hardware maintenance.",
+        "Configuring RAM, hard disk, and processing units.",
+        "Writing and deploying the application code.",
+        "Provisioning all necessary computing resources."
+      ],
+      "answer": "Writing and deploying the application code."
+    },
+    {
+      "options": [
+        "Fixed monthly/quarterly charges for allocated resources.",
+        "Payment only when the code/function is actively running.",
+        "Charges based on the total server uptime, regardless of function calls.",
+        "A one-time fee for unlimited function invocations."
+      ],
+      "type": "mcq",
+      "question": "How is billing typically handled in a serverless architecture, as described in the article?",
+      "answer": "Payment only when the code/function is actively running."
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Provides highly detailed logging and monitoring data.",
+        "Offers full VPC support for network isolation.",
+        "Always keeps its functions active, avoiding cold starts.",
+        "Has a strict concurrency limit set by default for burst requests."
+      ],
+      "question": "Which characteristic is uniquely attributed to Google Cloud Functions (GCF) among serverless platforms, according to the article?",
+      "answer": "Always keeps its functions active, avoiding cold starts."
+    },
+    {
+      "question": "When comparing monolithic and serverless architectures, which one is stated to provide easier testing and debugging?",
+      "options": [
+        "Serverless architecture",
+        "Monolithic architecture",
+        "Both offer similar ease of testing and debugging.",
+        "Neither, as both are inherently complex to debug."
+      ],
+      "type": "mcq",
+      "answer": "Monolithic architecture"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "The initial deployment of a function to a new region.",
+        "A delay occurring when an idle serverless function is invoked.",
+        "A security measure to prevent unauthorized function access.",
+        "The process of scaling down resources during low traffic periods."
+      ],
+      "question": "What does a 'cold start' in serverless computing refer to?",
+      "answer": "A delay occurring when an idle serverless function is invoked."
+    },
+    {
+      "type": "scenario_mcq",
+      "question": "A company experiences a sudden surge in user requests for their application, leading to a massive traffic hike. They are currently using a serverless architecture. Based on the article, what is the most likely way the serverless platform will handle this increased demand?",
+      "options": [
+        "The platform will queue requests until existing function instances become available.",
+        "The company will need to manually provision new servers to handle the load.",
+        "The serverless platform will automatically provision new, independent instances of the function to handle parallel requests.",
+        "The requests will be throttled, and users will experience delays until traffic subsides."
+      ],
+      "answer": "The serverless platform will automatically provision new, independent instances of the function to handle parallel requests."
+    },
+    {
+      "answer": "Establishing and closing database connections for each stateless invocation can increase function complexity and boot-up time.",
+      "type": "scenario_mcq",
+      "question": "A development team is planning to build an application that requires maintaining a continuous database connection and storing extensive, long-term session data for each user across multiple function invocations. Based on the article's description of serverless limitations, what challenge might they face with a purely serverless approach for this specific requirement?",
+      "options": [
+        "Serverless functions are inherently designed for long-running, stateful operations.",
+        "Establishing and closing database connections for each stateless invocation can increase function complexity and boot-up time.",
+        "The serverless platform will automatically manage the database state, simplifying the process.",
+        "Serverless architecture thrives on complex, data-heavy applications that require robust backend processing."
+      ]
+    },
+    {
+      "type": "assertion_reason_mcq",
+      "options": [
+        "Both A and R are true, and R is the correct explanation of A.",
+        "Both A and R are true, but R is not the correct explanation of A.",
+        "A is true, but R is false.",
+        "A is false, but R is true."
+      ],
+      "question": "Assertion (A): Serverless functions are an ideal solution for tasks like complex machine learning workflows or audio/video encoding that require extensive, long-running processing. Reason (R): Serverless platforms typically enforce strict maximum execution times for individual functions, such as 15 minutes for AWS Lambda, making them unsuitable for such long tasks.",
+      "answer": "A is false, but R is true."
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Event-driven microservices.",
+        "Simple API endpoints.",
+        "Spiky, high-frequency workloads.",
+        "Background batch processing of small data sets."
+      ],
+      "question": "Which type of workload is explicitly mentioned as potentially problematic for serverless functions due to limitations like cold start and concurrency limits?",
+      "answer": "Spiky, high-frequency workloads."
+    },
+    {
+      "question": "In a serverless architecture, who is primarily responsible for managing infrastructure, scaling, and hardware maintenance?",
+      "options": [
+        "The application developers",
+        "A third-party vendor or the Cloud Service Provider (CSP)",
+        "The end-users accessing the application",
+        "The operating system of the server"
+      ],
+      "type": "mcq",
+      "answer": "A third-party vendor or the Cloud Service Provider (CSP)"
+    },
+    {
+      "answer": "Both writing code in the provided text editor and importing in zip format.",
+      "options": [
+        "Only by writing code directly in the provided text editor.",
+        "Only by importing code in a zip format from local.",
+        "Both writing code in the provided text editor and importing in zip format.",
+        "By manually configuring virtual machines on a cloud server."
+      ],
+      "question": "Which of the following methods are mentioned in the article for developers to deploy their code to serverless platforms?",
+      "type": "mcq"
+    },
+    {
+      "answer": "Non-serverless architecture incurs fixed charges for allocated resources, while serverless architecture incurs no cost.",
+      "options": [
+        "Both architectures charge a fixed rate regardless of usage.",
+        "Non-serverless architecture incurs fixed charges for allocated resources, while serverless architecture incurs no cost.",
+        "Serverless architecture incurs fixed charges, while non-serverless only charges when in use.",
+        "Both architectures offer pay-per-use billing models."
+      ],
+      "question": "What is a key financial difference between traditional non-serverless architecture and serverless architecture when an application is in an idle state with no user activity?",
+      "type": "mcq"
+    },
+    {
+      "answer": "Logging and monitoring data.",
+      "type": "mcq",
+      "options": [
+        "Function execution speed.",
+        "Support for different programming languages.",
+        "Logging and monitoring data.",
+        "Automatic scaling capabilities."
+      ],
+      "question": "According to the article, what is one aspect where Google Cloud Functions (GCF) provides less detail compared to AWS Lambda?"
+    },
+    {
+      "question": "For what type of applications is a monolithic architecture explicitly stated to be an ideal choice?",
+      "options": [
+        "Complex applications with large user bases and heavy code.",
+        "Applications requiring extensive backend processing.",
+        "Simple applications.",
+        "Applications with high-frequency, spiky workloads."
+      ],
+      "type": "mcq",
+      "answer": "Simple applications."
+    },
+    {
+      "answer": "A complex application with an ample amount of data related to every user record, and a large user base.",
+      "question": "According to the article, what kind of application might pose performance problems for *both* monolithic and serverless architectures?",
+      "type": "mcq",
+      "options": [
+        "An application that exclusively performs short, stateless operations.",
+        "A complex application with an ample amount of data related to every user record, and a large user base.",
+        "An application with simple functionalities and a small codebase.",
+        "An application designed to run continuously with a stable, predictable workload."
+      ]
+    },
+    {
+      "answer": "Horizontal scaling",
+      "options": [
+        "Vertical scaling",
+        "Throttling",
+        "Horizontal scaling",
+        "Containerization"
+      ],
+      "type": "mcq",
+      "question": "What is the process known as when a serverless platform automatically provisions a new, independent instance of a function to handle a new request while an existing instance is busy?"
+    },
+    {
+      "question": "Assertion (A): Cloud Service Providers shut down resources for idle serverless functions to save costs.\nReason (R): This resource deallocation is the primary cause of 'cold start' latency when the function is subsequently invoked.",
+      "type": "assertion_reason",
+      "options": [
+        "Both A and R are true, and R is the correct explanation of A.",
+        "Both A and R are true, but R is not the correct explanation of A.",
+        "A is true, but R is false.",
+        "A is false, but R is true."
+      ],
+      "answer": "Both A and R are true, and R is the correct explanation of A."
+    },
+    {
+      "options": [
+        "Monolithic, because it provides tighter integration and faster response times.",
+        "Serverless, because it offloads duties like hardware maintenance and security updates to the Cloud Service Provider.",
+        "Neither, as both require significant manual operational overhead.",
+        "Both are equally suitable, as operational responsibilities are similar across architectures."
+      ],
+      "question": "A small startup is deciding between a monolithic architecture and a serverless architecture for their new application. They have a limited IT operations team and prioritize minimizing time spent on server maintenance, security updates, and hardware management. Based on the article, which architecture would be more suitable for their operational goals?",
+      "type": "scenario_mcq",
+      "answer": "Serverless, because it offloads duties like hardware maintenance and security updates to the Cloud Service Provider."
+    },
+    {
+      "options": [
+        "All 1,500 requests will be processed simultaneously without any delay.",
+        "The serverless platform will automatically scale to handle all 1,500 requests, but with increased latency for all.",
+        "Approximately 1,000 requests will be handled, while the additional 500 requests will be rejected or 'throttled'.",
+        "The entire application will crash due to exceeding the maximum request capacity."
+      ],
+      "question": "A serverless application utilizing AWS Lambda experiences a sudden influx of 1,500 concurrent user requests. Based on the article's description of AWS Lambda's concurrency limits, what is the most likely outcome for some of these requests?",
+      "type": "scenario_mcq",
+      "answer": "Approximately 1,000 requests will be handled, while the additional 500 requests will be rejected or 'throttled'."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "questions": [
+    {
+      "type": "mcq",
+      "options": [
+        "To make the method accessible only within the class.",
+        "To allow the JVM to invoke the method without instantiating the class.",
+        "To indicate that the method returns a value.",
+        "To make the method globally available for all other classes."
+      ],
+      "question": "What is the purpose of the `static` keyword in the `public static void main(String[] args)` method signature?",
+      "answer": "To allow the JVM to invoke the method without instantiating the class."
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following Java primitive datatypes occupies 1 byte of memory and has a default value of `0`?",
+      "options": [
+        "boolean",
+        "char",
+        "byte",
+        "short"
+      ],
+      "answer": "byte"
+    },
+    {
+      "answer": "Exceptions are recoverable using `try-catch` blocks, while Errors generally represent serious, unrecoverable problems.",
+      "options": [
+        "Exceptions are recoverable using `try-catch` blocks, while Errors generally represent serious, unrecoverable problems.",
+        "Errors occur at compile-time, while Exceptions occur at run-time.",
+        "Exceptions are subclasses of `Throwable`, while Errors are not.",
+        "Errors are checked exceptions, while Exceptions are unchecked exceptions."
+      ],
+      "question": "Which statement accurately describes the main difference between Java `Exceptions` and `Errors`?",
+      "type": "mcq"
+    },
+    {
+      "options": [
+        "An Interface can have abstract and non-abstract methods and variables.",
+        "An Interface can extend another Java class and implement multiple Java interfaces.",
+        "An Interface can have only static and final variables, and since Java 8, can have default and static methods.",
+        "An Interface supports multiple inheritance for classes, but not for other interfaces."
+      ],
+      "question": "Which of the following is true regarding Java Interfaces?",
+      "type": "mcq",
+      "answer": "An Interface can have only static and final variables, and since Java 8, can have default and static methods."
+    },
+    {
+      "question": "What is the primary function of the Java Development Kit (JDK) that distinguishes it from the Java Runtime Environment (JRE)?",
+      "options": [
+        "The JDK is solely responsible for executing Java applications.",
+        "The JDK contains the Java Virtual Machine (JVM) but not the JRE.",
+        "The JDK includes development tools like the Java compiler (`javac`), which is essential for compiling Java source code, unlike the JRE.",
+        "The JDK is developed as a browser plugin for running applets, while JRE is for standalone applications."
+      ],
+      "type": "mcq",
+      "answer": "The JDK includes development tools like the Java compiler (`javac`), which is essential for compiling Java source code, unlike the JRE."
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Command-line parameters that are accepted by the `main(String[] args)` method.",
+        "Data that needs to be processed by the program logic itself, independent of the JVM.",
+        "Configurations for controlling heap size or garbage collection algorithms.",
+        "Variables that define the program's output format."
+      ],
+      "question": "Which of the following would you typically pass as a VM Argument in Java?",
+      "answer": "Configurations for controlling heap size or garbage collection algorithms."
+    },
+    {
+      "answer": "A `java.lang.IllegalThreadStateException` will be thrown.",
+      "type": "scenario-mcq",
+      "question": "A developer attempts to start a `Thread` object, `myThread`, using `myThread.start()`. Later in the program, they try to call `myThread.start()` again on the same `myThread` instance. What will be the outcome?",
+      "options": [
+        "The thread will run successfully a second time, as `start()` can be called multiple times.",
+        "The program will enter a deadlock state.",
+        "A `java.lang.IllegalThreadStateException` will be thrown.",
+        "The second call to `start()` will be silently ignored, and the thread will continue its previous execution."
+      ]
+    },
+    {
+      "type": "assertion-reason-mcq",
+      "options": [
+        "Both A and R are true, and R is the correct explanation of A.",
+        "Both A and R are true, but R is NOT the correct explanation of A.",
+        "A is true, but R is false.",
+        "A is false, but R is true."
+      ],
+      "question": "Assertion (A): Lambda expressions in Java can only be assigned to functional interfaces.\nReason (R): A functional interface is an interface that contains only one abstract method, which a lambda expression implicitly implements.",
+      "answer": "Both A and R are true, and R is the correct explanation of A."
+    },
+    {
+      "options": [
+        "Only within the class where it is declared.",
+        "Only within the package where it is declared.",
+        "Within the package and outside the package through a child class.",
+        "Everywhere (within the class, outside the class, within the package, and outside the package)."
+      ],
+      "type": "mcq",
+      "question": "What is the access level of a `protected` modifier in Java?",
+      "answer": "Within the package and outside the package through a child class."
+    },
+    {
+      "question": "A Java developer is working with an `Object obj` and needs to check if it's an instance of `String`, and if so, perform an operation using the `String` reference. Before Java 16, they would write:\njava\nif (obj instanceof String) {\n    String s = (String) obj;\n    // ... use s\n}\n\nHow can this code be concisely rewritten using a feature introduced in Java 16?",
+      "options": [
+        "java\nif (obj instanceof String s && s != null) {\n    // ... use s\n}\n",
+        "java\nif (obj.getClass() == String.class) {\n    String s = (String) obj;\n    // ... use s\n}\n",
+        "java\nif (obj instanceof String s) {\n    // ... use s\n}\n",
+        "java\nString s = (String) obj;\nif (s != null) {\n    // ... use s\n}\n"
+      ],
+      "type": "scenario-mcq",
+      "answer": "java\nif (obj instanceof String s) {\n    // ... use s\n}\n"
+    }
+  ],
+  "createdAt": 1781258028744
+}

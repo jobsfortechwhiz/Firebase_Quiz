@@ -1,0 +1,555 @@
+{
+  "questions": [
+    {
+      "answer": "It performs health monitoring of containers and automatically recreates unhealthy or failed pods.",
+      "type": "mcq",
+      "options": [
+        "It provides a built-in CI/CD pipeline for code deployment.",
+        "It performs health monitoring of containers and automatically recreates unhealthy or failed pods.",
+        "It directly manages source code repositories for applications.",
+        "It offers a proprietary operating system for worker nodes."
+      ],
+      "question": "Beyond deploying and managing containerized applications, what is a key mechanism Kubernetes employs to ensure application stability?"
+    },
+    {
+      "answer": "Observability and monitoring tools like Prometheus and Grafana",
+      "question": "Which of the following describes the primary type of tools Kubernetes can be integrated with to generate detailed health metric reports based on resource utilization, network traffic, and latency?",
+      "options": [
+        "Version control systems like Git",
+        "Database management systems like MySQL",
+        "Observability and monitoring tools like Prometheus and Grafana",
+        "Code compilers and build automation tools"
+      ],
+      "type": "mcq"
+    },
+    {
+      "options": [
+        "5 pods",
+        "8 pods",
+        "10 pods",
+        "16 pods"
+      ],
+      "type": "mcq",
+      "question": "According to the HPA scaling mechanism described, if the current pod count is 5, the current CPU utilization has reached 160%, and the expected CPU utilization limit is 80%, how many pods will be required?",
+      "answer": "10 pods"
+    },
+    {
+      "answer": "When the maximum replica count for existing pods has been reached, but capacity issues for CPU or memory persist.",
+      "question": "Under what specific condition does the Cluster Autoscaler (CA) primarily trigger the addition of a new worker node?",
+      "type": "mcq",
+      "options": [
+        "When the CPU utilization of a single pod exceeds 70%.",
+        "When the maximum replica count for existing pods has been reached, but capacity issues for CPU or memory persist.",
+        "When a user manually requests more worker nodes.",
+        "When the Kubelet on a worker node reports an error."
+      ]
+    },
+    {
+      "question": "What is the primary role of `etcd` within the Kubernetes Master Node components?",
+      "type": "mcq",
+      "options": [
+        "To manage all the clusters and watch for changes.",
+        "To perform operations on cluster nodes by handling API calls.",
+        "To store configuration data and the state of worker nodes.",
+        "To distribute workloads among pods and nodes."
+      ],
+      "answer": "To store configuration data and the state of worker nodes."
+    },
+    {
+      "answer": "Kubelet",
+      "type": "mcq",
+      "question": "Which component runs on every worker node, is responsible for deploying and managing pods in the Kubernetes cluster, and communicates with the Controller Manager?",
+      "options": [
+        "API Server",
+        "Scheduler",
+        "Kubelet",
+        "Kube Proxy"
+      ]
+    },
+    {
+      "answer": "Acting as a service proxy for pod-to-pod communication and load balancing traffic.",
+      "options": [
+        "Pulling container images from Docker Hub.",
+        "Acting as a service proxy for pod-to-pod communication and load balancing traffic.",
+        "Storing cluster configuration and state.",
+        "Assigning pods to specific nodes."
+      ],
+      "question": "What is the main function of Kube Proxy within a Kubernetes worker node?",
+      "type": "mcq"
+    },
+    {
+      "answer": "API Server",
+      "question": "A DevOps engineer needs to manually add or remove pods in a Kubernetes cluster. According to the article, which component is the central entry point for all such user requests and validations?",
+      "options": [
+        "etcd",
+        "Kubelet",
+        "API Server",
+        "Controller Manager"
+      ],
+      "type": "mcq"
+    },
+    {
+      "answer": "Node Controller",
+      "type": "mcq",
+      "question": "Suppose a Kubernetes worker node unexpectedly goes offline. Which specific controller, working under the Controller Manager, is responsible for detecting this failure and initiating the creation of a replacement?",
+      "options": [
+        "HPA Controller",
+        "ReplicaSet Controller",
+        "Node Controller",
+        "Deployment Controller"
+      ]
+    },
+    {
+      "answer": "A is false, R is true.",
+      "options": [
+        "A is true, R is true, and R is the correct explanation for A.",
+        "A is true, R is true, but R is NOT the correct explanation for A.",
+        "A is true, R is false.",
+        "A is false, R is true."
+      ],
+      "question": "Assertion (A): The Kubernetes Scheduler is directly responsible for creating new pod instances on worker nodes.<br>Reason (R): The Scheduler's primary role is to select an appropriate node for a newly created pod, and then Kubelet on that node executes the creation as instructed by the API server.",
+      "type": "assertion_reason"
+    },
+    {
+      "answer": "Containerized applications",
+      "options": [
+        "Monolithic applications",
+        "Serverless functions",
+        "Containerized applications",
+        "Virtual machines"
+      ],
+      "question": "What is the primary type of workload that Kubernetes is designed to orchestrate and manage?",
+      "type": "mcq"
+    },
+    {
+      "options": [
+        "To manually provision infrastructure",
+        "To maintain the desired state of applications automatically",
+        "To only provide a runtime environment for containers",
+        "To manage source code repositories"
+      ],
+      "question": "Which of the following best describes the overall goal of Kubernetes in managing containerized applications?",
+      "type": "mcq",
+      "answer": "To maintain the desired state of applications automatically"
+    },
+    {
+      "question": "In the context of Kubernetes scaling, what is the fundamental difference between Horizontal Pod Autoscaler (HPA) and Cluster Autoscaler (CA)?",
+      "options": [
+        "HPA adds/removes worker nodes, while CA adds/removes pods.",
+        "HPA scales pods based on resource utilization, while CA scales worker nodes based on cluster capacity.",
+        "HPA only supports CPU scaling, while CA supports memory scaling.",
+        "HPA is a manual scaling mechanism, while CA is automatic."
+      ],
+      "type": "mcq",
+      "answer": "HPA scales pods based on resource utilization, while CA scales worker nodes based on cluster capacity."
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "To store cluster configuration data",
+        "To manage pod-to-pod communication",
+        "To provide a runtime for containers and pull images",
+        "To schedule pods to nodes"
+      ],
+      "question": "What is the specific role of the Docker Runtime Environment component located on a Kubernetes worker node?",
+      "answer": "To provide a runtime for containers and pull images"
+    },
+    {
+      "options": [
+        "Node Controller",
+        "HPA Controller",
+        "ReplicaSet Controller",
+        "Deployment Controller"
+      ],
+      "question": "A developer wants to ensure that a critical application always has 3 running instances (pods) in the Kubernetes cluster. If one instance fails, a new one should be automatically created to maintain the count. Which specific controller within the Controller Manager is primarily responsible for this task?",
+      "type": "scenario_mcq",
+      "answer": "ReplicaSet Controller"
+    },
+    {
+      "answer": "API Server",
+      "options": [
+        "Scheduler",
+        "Kubelet",
+        "API Server",
+        "etcd"
+      ],
+      "question": "Which Kubernetes component is described as the 'front end controller for all the services' and acts as the central entry point for user requests and validations?",
+      "type": "mcq"
+    },
+    {
+      "answer": "A is false, R is true.",
+      "type": "assertion_reason",
+      "question": "Assertion (A): The Horizontal Pod Autoscaler (HPA) controller is responsible for directly adding new worker nodes to the Kubernetes cluster when CPU utilization is consistently high.<br>Reason (R): HPA's primary function is to scale the number of pods up or down based on observed CPU or memory utilization to maintain a desired state.",
+      "options": [
+        "A is true, R is true, and R is the correct explanation for A.",
+        "A is true, R is true, but R is NOT the correct explanation for A.",
+        "A is true, R is false.",
+        "A is false, R is true."
+      ]
+    },
+    {
+      "answer": "Scheduler",
+      "options": [
+        "API Server",
+        "Controller Manager",
+        "Scheduler",
+        "etcd"
+      ],
+      "question": "According to the article's analogy, which Kubernetes Master Node component is likened to the 'Head HR' responsible for workload distribution?",
+      "type": "mcq"
+    },
+    {
+      "options": [
+        "Network latency and disk I/O",
+        "CPU, memory, and other metrics",
+        "User login counts and application uptime",
+        "Database connection pools and log file sizes"
+      ],
+      "question": "When Kubernetes needs to decide whether to add more pods or nodes due to resource usage exceeding permissible limits, which metrics does it monitor primarily?",
+      "type": "mcq",
+      "answer": "CPU, memory, and other metrics"
+    },
+    {
+      "type": "scenario_mcq",
+      "options": [
+        "Kubelet",
+        "API Server",
+        "Controller Manager",
+        "Scheduler"
+      ],
+      "question": "A new pod is created and needs to be assigned to a worker node. Which Kubernetes component is responsible for checking every worker node to see which one has enough capacity to launch this new pod?",
+      "answer": "Scheduler"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Jira and Confluence",
+        "Prometheus and Grafana",
+        "Jenkins and Git",
+        "Slack and Zoom"
+      ],
+      "question": "What external tools can Kubernetes integrate with to prepare health metric reports based on resource utilization, network traffic, latency, and other observability data?",
+      "answer": "Prometheus and Grafana"
+    },
+    {
+      "question": "What is the primary function of the `etcd` database in a Kubernetes Master Node?",
+      "options": [
+        "To provide a runtime environment for containers.",
+        "To store configuration data and the state of worker nodes.",
+        "To manage all clusters and watch for changes.",
+        "To route network traffic between pods."
+      ],
+      "type": "mcq",
+      "answer": "To store configuration data and the state of worker nodes."
+    },
+    {
+      "answer": "Kube Proxy",
+      "options": [
+        "Kubelet",
+        "Docker Runtime Environment",
+        "Kube Proxy",
+        "API Server"
+      ],
+      "question": "Which Kubernetes worker node component is responsible for enabling pod-to-pod communication, load balancing by routing traffic, and acting as a service proxy to minimize latency?",
+      "type": "mcq"
+    },
+    {
+      "answer": "Node controller",
+      "question": "Which specific controller, part of the Controller Manager, is responsible for creating a replacement if a worker node dies?",
+      "options": [
+        "HPA controller",
+        "ReplicaSet controller",
+        "Node controller",
+        "Deployment controller"
+      ],
+      "type": "mcq"
+    },
+    {
+      "answer": "Kubelet",
+      "type": "mcq",
+      "question": "According to the article's analogy, which Kubernetes component is likened to the 'Local Branch Manager' who actually makes things happen on a node?",
+      "options": [
+        "API Server",
+        "Scheduler",
+        "Controller Manager",
+        "Kubelet"
+      ]
+    },
+    {
+      "type": "scenario",
+      "question": "A Kubernetes application has an HPA configured. Currently, there are 4 pods running, and the CPU utilization has reached 140%. If the expected CPU utilization limit for scaling is 70%, how many total pods will the HPA calculate are required to meet the desired state?",
+      "options": [
+        "4 pods",
+        "6 pods",
+        "8 pods",
+        "10 pods"
+      ],
+      "answer": "8 pods"
+    },
+    {
+      "type": "mcq",
+      "question": "Beyond just recreating failed pods, what is a key action Kubernetes takes if a pod becomes unhealthy or a node goes down, to maintain the application's desired state?",
+      "options": [
+        "It sends an alert to the developer and waits for manual intervention.",
+        "It stops the application entirely to prevent further issues.",
+        "It automatically recreates or reschedules replacement pods.",
+        "It manually adjusts the resource limits of the unhealthy pod."
+      ],
+      "answer": "It automatically recreates or reschedules replacement pods."
+    },
+    {
+      "answer": "Both A and R are true, and R is the correct explanation of A.",
+      "options": [
+        "Both A and R are true, and R is the correct explanation of A.",
+        "Both A and R are true, but R is NOT the correct explanation of A.",
+        "A is true, but R is false.",
+        "A is false, but R is true."
+      ],
+      "question": "Assertion (A): The Kubelet component on a worker node communicates with the Controller Manager and reads configuration from the `etcd` database.<br>Reason (R): Kubelet's primary role is to deploy and manage pods on its specific worker node according to the cluster's desired state.",
+      "type": "assertion_reason"
+    },
+    {
+      "answer": "The Cluster Autoscaler (CA) will add another worker node to meet the requirement.",
+      "options": [
+        "The HPA will add more pods beyond the maximum limit.",
+        "The Controller Manager will automatically reconfigure existing pods to use fewer resources.",
+        "The Cluster Autoscaler (CA) will add another worker node to meet the requirement.",
+        "The Scheduler will redistribute existing pods to balance the load more effectively without adding new resources."
+      ],
+      "question": "A Kubernetes cluster's Horizontal Pod Autoscaler (HPA) has scaled an application to its maximum configured number of pods. However, the cluster continues to experience high CPU and memory resource utilization, indicating that the overall cluster capacity is insufficient. Which Kubernetes scaling mechanism should now activate, and what action would it take?",
+      "type": "scenario"
+    },
+    {
+      "options": [
+        "etcd, API Server, Controller Manager",
+        "Docker Runtime Env, Kube proxy, Kubelet",
+        "Scheduler, API Server, Kubelet",
+        "Controller Manager, Kube Proxy, etcd"
+      ],
+      "question": "What are the three main components that constitute a Kubernetes Worker Node, as described in the article?",
+      "type": "mcq",
+      "answer": "Docker Runtime Env, Kube proxy, Kubelet"
+    },
+    {
+      "options": [
+        "Horizontal Pod Scaling & Cluster Scaling",
+        "Vertical Pod Scaling & Node Scaling",
+        "Manual Scaling & Automatic Scaling",
+        "Ingress Scaling & Egress Scaling"
+      ],
+      "question": "What are the two main types of scaling mechanisms supported by Kubernetes, as described in the article?",
+      "type": "mcq",
+      "answer": "Horizontal Pod Scaling & Cluster Scaling"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "etcd",
+        "API Server",
+        "Kubelet",
+        "Scheduler"
+      ],
+      "question": "Which of the following is NOT a core component of a Kubernetes Master Node, according to the article?",
+      "answer": "Kubelet"
+    },
+    {
+      "options": [
+        "etcd",
+        "Controller Manager",
+        "API Server",
+        "Scheduler"
+      ],
+      "question": "Which Kubernetes Master Node component acts as the central point for all communication, handling requests from users and other components, and serving as the front-end controller for all services?",
+      "type": "mcq",
+      "answer": "API Server"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Storing cluster configuration data",
+        "Managing the entire cluster's desired state",
+        "Distributing workload among pods/nodes",
+        "Providing a runtime environment for containers"
+      ],
+      "question": "What is the primary responsibility of the Kubernetes Scheduler component in a cluster?",
+      "answer": "Distributing workload among pods/nodes"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Kubelet",
+        "Kube Proxy",
+        "Docker Runtime Env",
+        "API Server"
+      ],
+      "question": "On a Kubernetes Worker Node, which component is responsible for pulling container images and providing the runtime environment for containers?",
+      "answer": "Docker Runtime Env"
+    },
+    {
+      "answer": "To watch for changes and take action to bring the cluster to the desired state",
+      "options": [
+        "To store configuration data",
+        "To provide a runtime environment for containers",
+        "To distribute workload among pods/nodes",
+        "To watch for changes and take action to bring the cluster to the desired state"
+      ],
+      "type": "mcq",
+      "question": "Beyond managing specific types of resources like nodes or replicas, what is the overarching function of the Controller Manager in Kubernetes?"
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Node Controller",
+        "HPA Controller",
+        "Replicaset Controller",
+        "Job Controller"
+      ],
+      "question": "If a Kubernetes application requires a specific number of replica pods to be maintained, which specific controller within the Controller Manager is responsible for meeting this requirement?",
+      "answer": "Replicaset Controller"
+    },
+    {
+      "options": [
+        "Kubelet",
+        "etcd",
+        "API Server",
+        "Controller Manager"
+      ],
+      "type": "scenario_mcq",
+      "question": "A DevOps engineer needs to manually add more pods to a Kubernetes application. According to the article, which component is the *first* one the engineer's request must interact with to be validated and processed?",
+      "answer": "API Server"
+    },
+    {
+      "answer": "Scheduler",
+      "options": [
+        "API Server",
+        "Controller Manager",
+        "Scheduler",
+        "Kubelet"
+      ],
+      "question": "A user request comes in to launch new pods. Which component is primarily responsible for inspecting worker nodes to determine which one has enough capacity to host these new pods before relaying this information?",
+      "type": "scenario_mcq"
+    },
+    {
+      "type": "assertion_reason_mcq",
+      "options": [
+        "A is true, R is true, and R is the correct explanation for A.",
+        "A is true, R is true, but R is NOT the correct explanation for A.",
+        "A is true, R is false.",
+        "A is false, R is true."
+      ],
+      "question": "Assertion (A): The Master Node is responsible for the overall deployment and management of pods across worker nodes, including checking their health and capacity for new pods or replacements.<br>Reason (R): Worker nodes independently decide where to place new pods and how to scale applications without Master Node intervention.",
+      "answer": "A is true, R is false."
+    },
+    {
+      "question": "What is the primary function of `etcd` in a Kubernetes cluster, as described in the article?",
+      "options": [
+        "Providing a runtime environment for containers.",
+        "Serving as the central communication point for all components.",
+        "Storing configuration data and the state of worker nodes.",
+        "Distributing workload among pods and nodes."
+      ],
+      "type": "mcq",
+      "answer": "c) Storing configuration data and the state of worker nodes."
+    },
+    {
+      "question": "Which component on a Kubernetes Worker Node is primarily responsible for facilitating pod-to-pod communication and routing traffic for load balancing?",
+      "options": [
+        "Kubelet",
+        "Docker Runtime Env",
+        "Kube Proxy",
+        "API Server"
+      ],
+      "type": "mcq",
+      "answer": "c) Kube Proxy"
+    },
+    {
+      "type": "mcq",
+      "question": "According to the article, how does the Horizontal Pod Autoscaler (HPA) calculate the number of pods required when CPU utilization has reached a value higher than the expected limit?",
+      "options": [
+        "pods required = (Expected CPU usage) / (Current CPU usage) * (Current pod Count)",
+        "pods required = (Current pod Count) * (Current CPU usage) / (Expected CPU usage)",
+        "pods required = (Current pod Count) + (Current CPU usage - Expected CPU usage)",
+        "pods required = (Expected CPU usage) * (Current pod Count) / (Current CPU usage)"
+      ],
+      "answer": "b) pods required = (Current pod Count) * (Current CPU usage) / (Expected CPU usage)"
+    },
+    {
+      "type": "mcq",
+      "question": "Beyond deploying and managing pods on a Worker Node, what additional communication and data access responsibilities does Kubelet have, according to the article?",
+      "options": [
+        "It communicates directly with the API Server to validate user requests.",
+        "It communicates with the Controller Manager and reads configuration from etcd db.",
+        "It distributes workload among pods/nodes based on capacity.",
+        "It pulls container images from Docker Hub and containerizes applications."
+      ],
+      "answer": "b) It communicates with the Controller Manager and reads configuration from etcd db."
+    },
+    {
+      "options": [
+        "It sends an alert to the administrator but requires manual intervention.",
+        "It automatically recreates or reschedules replacement pods based on the replica count.",
+        "It halts the application until the issue is manually resolved.",
+        "It reconfigures the network to bypass the failed component."
+      ],
+      "type": "mcq",
+      "question": "In the event of a pod failure, becoming unhealthy, or a node going down, what is Kubernetes' automatic response regarding the application's desired state?",
+      "answer": "b) It automatically recreates or reschedules replacement pods based on the replica count."
+    },
+    {
+      "options": [
+        "Horizontal Pod Autoscaler (HPA) controller",
+        "ReplicaSet controller",
+        "Node controller",
+        "Job controller"
+      ],
+      "type": "scenario",
+      "question": "A Kubernetes cluster experiences a situation where an existing worker node unexpectedly becomes unresponsive and is marked as 'dead'. Which specific controller within the Controller Manager is responsible for detecting this issue and initiating the creation of a replacement worker node?",
+      "answer": "c) Node controller"
+    },
+    {
+      "answer": "c) It will add another worker node to the cluster.",
+      "options": [
+        "It will reduce the CPU and memory limits for existing pods.",
+        "It will terminate less critical pods to free up resources.",
+        "It will add another worker node to the cluster.",
+        "It will request a manual capacity upgrade from the administrator."
+      ],
+      "type": "scenario",
+      "question": "Consider a Kubernetes cluster where the maximum number of replica pods have already been added to an application, but persistent CPU and memory capacity issues still exist. According to the article, what is the next step Kubernetes will likely take to meet the requirement?"
+    },
+    {
+      "answer": "d) A is false, but R is true.",
+      "question": "Assertion (A): The Kubelet component on a Worker Node is primarily responsible for deciding which worker node has enough capacity to launch a new pod and assigning that pod to it.<br>Reason (R): The Kubelet communicates with the Controller Manager and reads configuration from `etcd` to facilitate the deployment and management of pods on its specific worker node.",
+      "type": "assertion_reason",
+      "options": [
+        "Both A and R are true, and R is the correct explanation for A.",
+        "Both A and R are true, but R is NOT the correct explanation for A.",
+        "A is true, but R is false.",
+        "A is false, but R is true."
+      ]
+    },
+    {
+      "answer": "c) Prometheus and Grafana",
+      "question": "Which external tools are mentioned in the article as being integrable with Kubernetes to prepare health metric reports based on resource utilization, network traffic, and latency?",
+      "type": "mcq",
+      "options": [
+        "Jenkins and Git",
+        "Docker Hub and Terraform",
+        "Prometheus and Grafana",
+        "Ansible and Chef"
+      ]
+    },
+    {
+      "answer": "b) CPU and memory",
+      "options": [
+        "Network bandwidth and disk I/O",
+        "CPU and memory",
+        "Application latency and error rates",
+        "User login counts and database connections"
+      ],
+      "question": "When deciding whether to add or remove instances of replica pods/nodes for scaling, what are the primary resources Kubernetes monitors to determine if usage has exceeded permissible limits?",
+      "type": "mcq"
+    }
+  ],
+  "createdAt": 1781323805624
+}

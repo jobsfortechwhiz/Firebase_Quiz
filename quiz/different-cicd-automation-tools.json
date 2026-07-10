@@ -1,0 +1,227 @@
+{
+  "questions": [
+    {
+      "answer": "Java",
+      "type": "mcq",
+      "options": [
+        "Python",
+        "Java",
+        "C++",
+        "Go"
+      ],
+      "question": "What is the primary programming language Jenkins is written in, as stated in the article?"
+    },
+    {
+      "options": [
+        "Releasing code directly into the production environment.",
+        "Integrating code and performing automated unit testing.",
+        "Deployment to a pre-production or staging environment with automated tests, ensuring the build is deployable.",
+        "Automating the compilation and linking of source code."
+      ],
+      "type": "mcq",
+      "question": "According to the article, which of the following best describes 'Continuous Delivery'?",
+      "answer": "Deployment to a pre-production or staging environment with automated tests, ensuring the build is deployable."
+    },
+    {
+      "answer": "Continuous Integration",
+      "options": [
+        "Continuous Deployment",
+        "Using a cloud-based repository",
+        "Continuous Integration",
+        "Employing a build tool like Maven"
+      ],
+      "question": "A developer is facing issues identifying the specific commit that introduced a bug, requiring them to review the entire codebase. Implementing which process would directly address this problem, according to the article?",
+      "type": "mcq"
+    },
+    {
+      "type": "mcq",
+      "question": "Which statement accurately describes Spinnaker's primary function as detailed in the article?",
+      "options": [
+        "It is a build tool that compiles and packages source code into executables.",
+        "It is a continuous integration tool designed to manage source code repositories.",
+        "It is a continuous delivery software platform focused on automating software deployments.",
+        "It is a programming language used for developing automation scripts."
+      ],
+      "answer": "It is a continuous delivery software platform focused on automating software deployments."
+    },
+    {
+      "options": [
+        "It lacks integration with cloud platforms like AWS.",
+        "Developers need to write and maintain scripts for deployment workflows.",
+        "It is an open-source tool with limited features.",
+        "It does not support containerization technologies like Docker."
+      ],
+      "question": "The article states that Jenkins is 'not ideal for continuous delivery' due to what specific requirement?",
+      "type": "mcq",
+      "answer": "Developers need to write and maintain scripts for deployment workflows."
+    },
+    {
+      "type": "mcq",
+      "question": "What unique feature does Azure Pipelines offer for configuring CI/CD pipelines that Jenkins generally lacks?",
+      "options": [
+        "Extensive plugin marketplace.",
+        "Open-source availability.",
+        "YAML Interface for CI/CD as code.",
+        "Ability to integrate with Bitbucket."
+      ],
+      "answer": "YAML Interface for CI/CD as code."
+    },
+    {
+      "answer": "Most of its software functionality is pre-built and does not require many plugins.",
+      "type": "mcq",
+      "options": [
+        "It is a free and open-source tool.",
+        "It supports a wider range of programming languages.",
+        "Most of its software functionality is pre-built and does not require many plugins.",
+        "It integrates natively with Google Cloud Platform."
+      ],
+      "question": "One of the key advantages of Bamboo over Jenkins highlighted in the article regarding built-in functionality is:"
+    },
+    {
+      "answer": "Taking the Docker image from ACR to create Azure Container Instances.",
+      "question": "A development team is setting up a CI/CD pipeline. They have successfully pushed code to a Git repository and built a Docker image, which is then pushed to an Azure Container Registry. According to the article's description of Jenkins' CI/CD pipeline, what is the *next logical step* in the Continuous Deployment phase?",
+      "type": "mcq",
+      "options": [
+        "Creating a new Git repository for the release.",
+        "Taking the Docker image from ACR to create Azure Container Instances.",
+        "Performing manual smoke testing on the developer's local machine.",
+        "Writing additional unit tests for the Docker image."
+      ]
+    },
+    {
+      "options": [
+        "Kubernetes",
+        "Bamboo",
+        "Spinnaker",
+        "Azure DevOps"
+      ],
+      "type": "mcq",
+      "question": "An organization needs to implement a system that automates the deployment of software across Development, Staging, and Production environments, integrating with their existing Jenkins CI server. They find themselves doing many manual steps. Which tool, as described in the article, would best fulfill this specific requirement by adding an automation layer for deployments?",
+      "answer": "Spinnaker"
+    },
+    {
+      "answer": "A is true, R is false.",
+      "options": [
+        "A is true, R is true and R is the correct explanation of A.",
+        "A is true, R is true but R is NOT the correct explanation of A.",
+        "A is true, R is false.",
+        "A is false, R is true.",
+        "A is false, R is false."
+      ],
+      "question": "Assertion (A): Jenkins is currently the most popular Continuous Integration Tool, known for its extensive community and large catalog of plugins.\nReason (R): Jenkins was originally designed for cloud deployment and has all necessary features for continuous delivery out-of-the-box without needing additional scripting.",
+      "type": "mcq"
+    },
+    {
+      "answer": "Continuous Delivery deploys to a pre-production or staging environment, while Continuous Deployment releases code directly into the production environment.",
+      "question": "According to the article, what is the primary distinction between Continuous Delivery and Continuous Deployment regarding the final deployment environment?",
+      "options": [
+        "Continuous Delivery involves deployment to a production environment, while Continuous Deployment is limited to staging.",
+        "Continuous Delivery ensures the build is deployable to production but requires manual approval, whereas Continuous Deployment automates deployment to production.",
+        "Continuous Delivery focuses on unit testing, while Continuous Deployment focuses on integration testing.",
+        "Continuous Delivery deploys to a pre-production or staging environment, while Continuous Deployment releases code directly into the production environment."
+      ],
+      "type": "mcq"
+    },
+    {
+      "answer": "Compiling, linking, and packaging source code into an executable form.",
+      "question": "Which of the following activities is characteristic of a 'build tool' as described in the article?",
+      "type": "mcq",
+      "options": [
+        "Managing container orchestration across multiple clusters.",
+        "Compiling, linking, and packaging source code into an executable form.",
+        "Monitoring new images in a container registry to trigger pipelines.",
+        "Providing a cloud-based repository for source code management."
+      ]
+    },
+    {
+      "question": "A primary advantage of implementing Continuous Integration, as highlighted in the article, is that it allows developers to:",
+      "type": "mcq",
+      "options": [
+        "Avoid writing any unit tests for their code.",
+        "Receive test results for every commit made in the source code.",
+        "Manually deploy code to the production environment more efficiently.",
+        "Eliminate the need for any version control system."
+      ],
+      "answer": "Receive test results for every commit made in the source code."
+    },
+    {
+      "answer": "It acts as a hosting platform for Docker images.",
+      "options": [
+        "It serves as the primary Git repository for source code.",
+        "It is a cloud-based service for running automated unit tests.",
+        "It acts as a hosting platform for Docker images.",
+        "It's responsible for orchestrating Kubernetes clusters."
+      ],
+      "question": "What is the specific role of Azure Container Registry (ACR) within the CI/CD pipeline described in the article?",
+      "type": "mcq"
+    },
+    {
+      "answer": "Jenkins is open-source and free, whereas Bamboo is a commercial tool requiring a subscription fee.",
+      "type": "mcq",
+      "options": [
+        "Jenkins is exclusively for cloud environments, while Bamboo is for on-premise.",
+        "Jenkins is a programming language, while Bamboo is an automation tool.",
+        "Jenkins is open-source and free, whereas Bamboo is a commercial tool requiring a subscription fee.",
+        "Jenkins offers a YAML interface, while Bamboo relies on a GUI."
+      ],
+      "question": "What is the fundamental difference in the business model between Jenkins and Bamboo, according to the article?"
+    },
+    {
+      "question": "In a CI/CD pipeline using Jenkins, what is the *initial* action Jenkins takes after developers commit changes to the source code?",
+      "type": "mcq",
+      "options": [
+        "It automatically deploys the code to the production server.",
+        "It publishes the code to the Azure Container Registry.",
+        "It continuously checks the repository for any changes.",
+        "It creates Azure Container Instances from existing Docker images."
+      ],
+      "answer": "It continuously checks the repository for any changes."
+    },
+    {
+      "options": [
+        "The inability to use cloud-based repositories like Git.",
+        "The necessity to write and maintain extensive deployment scripts.",
+        "Prolonged waiting times to receive test results for deployed code.",
+        "Lack of integration with popular build tools like Maven."
+      ],
+      "type": "mcq",
+      "question": "One significant problem faced by developers *without* Continuous Integration, as described in the article, is:",
+      "answer": "Prolonged waiting times to receive test results for deployed code."
+    },
+    {
+      "answer": "Azure Pipelines within Azure DevOps.",
+      "question": "A software development team is migrating its CI/CD processes to a cloud-native approach. They prioritize a platform that provides a YAML interface for pipeline configuration, frequent updates with the latest features, and a high degree of customer satisfaction, particularly for deployments to Azure. Which solution, mentioned in the article, would best meet these specific requirements?",
+      "type": "mcq",
+      "options": [
+        "A self-hosted Jenkins instance with numerous plugins.",
+        "Atlassian Bamboo integrated with Jira.",
+        "Azure Pipelines within Azure DevOps.",
+        "Spinnaker combined with an existing build tool."
+      ]
+    },
+    {
+      "answer": "Atlassian Bamboo, for its built-in capabilities and integrations.",
+      "type": "mcq",
+      "question": "An organization developing several applications seeks a CI/CD automation server that is known for having most of its software functionality pre-built, reducing the reliance on a multitude of plugins. They also desire a tidier, more intuitive user interface that offers guidance during pipeline setup, and seamless built-in integration with their existing Bitbucket and Jira instances. Given these needs, which commercial tool would be the most suitable choice?",
+      "options": [
+        "Jenkins, due to its extensive open-source community.",
+        "Spinnaker, for its advanced deployment automation.",
+        "Azure Pipelines, for its cloud-native features.",
+        "Atlassian Bamboo, for its built-in capabilities and integrations."
+      ]
+    },
+    {
+      "type": "mcq",
+      "question": "Assertion (A): Spinnaker is considered a primary build tool, responsible for compiling, linking, and packaging source code into executables.\nReason (R): Spinnaker integrates with existing build tools like Jenkins to initiate jobs and monitor their outcomes.",
+      "options": [
+        "A is true, R is true and R is the correct explanation of A.",
+        "A is true, R is true but R is NOT the correct explanation of A.",
+        "A is true, R is false.",
+        "A is false, R is true.",
+        "A is false, R is false."
+      ],
+      "answer": "A is false, R is true."
+    }
+  ],
+  "createdAt": 1781316150358
+}

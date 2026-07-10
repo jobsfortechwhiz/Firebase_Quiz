@@ -1,0 +1,225 @@
+{
+  "createdAt": 1781266222464,
+  "questions": [
+    {
+      "answer": "git init, git add ., git commit -m \"msg\", git remote add origin \"url\", git push origin master",
+      "options": [
+        "git init, git add ., git commit -m \"msg\", git remote add origin \"url\", git push origin master",
+        "git clone \"url\", git add ., git commit -m \"msg\", git push origin master",
+        "git init, git add -A, git commit -m \"msg\", git push origin master",
+        "git remote add origin \"url\", git push origin master"
+      ],
+      "type": "mcq",
+      "question": "Which sequence of Git commands is typically used to initialize a new local repository and push its content to a *new* remote repository for the first time?"
+    },
+    {
+      "answer": "With Git, users have the full version history of the remote repository locally; with SVN, only the files being worked on are kept local.",
+      "options": [
+        "Git requires continuous internet connection, SVN does not.",
+        "SVN repositories handle large binary files better than Git.",
+        "With Git, users have the full version history of the remote repository locally; with SVN, only the files being worked on are kept local.",
+        "Installing Git locally takes less storage space than SVN."
+      ],
+      "type": "mcq",
+      "question": "According to the article, what is a key difference between Git (Distributed VCS) and SVN (Centralized VCS) regarding the local repository?"
+    },
+    {
+      "options": [
+        "To view the commit history of a remote branch.",
+        "To merge changes from one branch to another.",
+        "To recover changes that were seemingly lost permanently after a `git reset --hard`.",
+        "To list all local branches in the repository."
+      ],
+      "type": "mcq",
+      "question": "What is the primary purpose of `git reflog` as described in the article?",
+      "answer": "To recover changes that were seemingly lost permanently after a `git reset --hard`."
+    },
+    {
+      "type": "mcq",
+      "question": "Which Git command is used to delete a remote branch?",
+      "options": [
+        "git branch -d remoteBranchName",
+        "git push origin --delete remoteBranchName",
+        "git remove branch remoteBranchName",
+        "git delete remote remoteBranchName"
+      ],
+      "answer": "git push origin --delete remoteBranchName"
+    },
+    {
+      "options": [
+        "GitHub offers more integrations with third-party CI/CD tools.",
+        "GitLab has CI/CD and DevOps workflows built-in, while GitHub requires manual integration of chosen tools.",
+        "GitHub is exclusively for open-source projects, GitLab for private.",
+        "GitLab allows for private repositories for free, while GitHub charges."
+      ],
+      "question": "What is highlighted as the core difference between GitLab and GitHub concerning Continuous Integration/Continuous Delivery (CI/CD) workflows?",
+      "type": "mcq",
+      "answer": "GitLab has CI/CD and DevOps workflows built-in, while GitHub requires manual integration of chosen tools."
+    },
+    {
+      "question": "In newer versions of Git, which command allows a developer to make a commit with an empty message?",
+      "options": [
+        "git commit -m \"\"",
+        "git commit --allow-empty",
+        "git commit -a --allow-empty-message -m ' '",
+        "git commit -am."
+      ],
+      "type": "mcq",
+      "answer": "git commit -a --allow-empty-message -m ' '"
+    },
+    {
+      "answer": "It provides a visual history and branch view, along with a beautiful UI.",
+      "type": "mcq",
+      "question": "According to the article, which of the following is a primary reason why developers favor SourceTree over Git command-line tools?",
+      "options": [
+        "It is extremely fast at fetching data.",
+        "It provides a visual history and branch view, along with a beautiful UI.",
+        "It prevents the loss of uncommitted work.",
+        "It rarely crashes compared to Git CLI."
+      ]
+    },
+    {
+      "answer": "git pull, then git checkout -b newBranchName, followed by git pull origin remoteBranchName and git status.",
+      "type": "mcq",
+      "question": "A developer finds their local branch is 'ahead of remote branch by 1 commit.' Following the article's suggested steps to manage this situation, particularly by creating a new branch, what is the correct sequence of actions they should take?",
+      "options": [
+        "git push origin master",
+        "git pull, then git checkout -b newBranchName, followed by git pull origin remoteBranchName and git status.",
+        "git commit --amend -m \"new message\", then git push.",
+        "git reset --hard HEAD~1, then git pull."
+      ]
+    },
+    {
+      "type": "mcq",
+      "question": "A developer attempts to push code using `git push origin master` but receives the message \"remote end hung up unexpectedly.\" What is the *first* action suggested by the article to resolve this issue?",
+      "options": [
+        "Use `git commit --amend -m \"commit message\"` followed by `git push`.",
+        "Try `git push origin master --force`.",
+        "Check network connectivity.",
+        "Delete the remote branch and re-add it."
+      ],
+      "answer": "Try `git push origin master --force`."
+    },
+    {
+      "question": "Assertion (A): Git Rebase makes the branching history cleaner and creates a more linear commits repository structure.\nReason (R): Git Rebase is considered safe in nature because it does not re-write the history of your feature branch.",
+      "type": "assertion_reason",
+      "options": [
+        "A is true, R is true and R is the correct explanation of A.",
+        "A is true, R is true but R is not the correct explanation of A.",
+        "A is true, R is false.",
+        "A is false, R is true."
+      ],
+      "answer": "A is true, R is false."
+    },
+    {
+      "type": "mcq",
+      "options": [
+        "Git requires continuous internet connection for all changes, SVN does not.",
+        "SVN requires continuous internet connection to track changes, while Git allows local changes without constant connection.",
+        "Both Git and SVN require continuous internet connection for all development work.",
+        "Neither Git nor SVN requires internet connection once the repository is cloned locally."
+      ],
+      "question": "Regarding development workflow, what is a key difference between Git (Distributed VCS) and SVN (Centralized VCS) in terms of internet connectivity?",
+      "answer": "SVN requires continuous internet connection to track changes, while Git allows local changes without constant connection."
+    },
+    {
+      "answer": "Git Rebase",
+      "question": "Which Git operation is described as 'destructive in nature' because it can change commit hashes of a feature branch during its integration with another branch?",
+      "type": "mcq",
+      "options": [
+        "Git Merge",
+        "Git Fetch",
+        "Git Rebase",
+        "Git Stash"
+      ]
+    },
+    {
+      "options": [
+        "It always creates a new merge commit with multiple parents.",
+        "It requires a three-way merge to resolve differences.",
+        "It can never have a merge conflict because it only applies if the target branch hasn't diverged.",
+        "It is primarily used when the feature branch needs to rollback to previous commits easily."
+      ],
+      "question": "What is a characteristic of a fast-forward merge in Git?",
+      "type": "mcq",
+      "answer": "It can never have a merge conflict because it only applies if the target branch hasn't diverged."
+    },
+    {
+      "options": [
+        "It prevents merge conflicts from occurring.",
+        "It forces Git to create a linear history by squashing all commits into one.",
+        "It creates a new commit with multiple parents, providing better history tracking.",
+        "It allows for an empty commit message during the merge operation."
+      ],
+      "type": "mcq",
+      "question": "What is the primary benefit of using the `--no-ff` (no-fast-forward) option during a Git merge?",
+      "answer": "It creates a new commit with multiple parents, providing better history tracking."
+    },
+    {
+      "answer": "It is easy to lose uncommitted work.",
+      "question": "According to the article, what is a stated disadvantage or 'con' of using Git?",
+      "type": "mcq",
+      "options": [
+        "It is extremely slow at fetching data from remote repositories.",
+        "It often crashes, leading to unstable development environments.",
+        "It is easy to lose uncommitted work.",
+        "It cannot handle large binary files effectively in repositories."
+      ]
+    },
+    {
+      "answer": "Git Merge, because it is safer and does not re-write the history of the feature branch that others might be building upon.",
+      "options": [
+        "Git Rebase, because it keeps a clean, linear history and deletes old commits of the feature branch.",
+        "Git Merge, because it is safer and does not re-write the history of the feature branch that others might be building upon.",
+        "Git Rebase, because it makes the branching history cleaner and creates a more linear commits repository structure.",
+        "Git Merge, because it automatically resolves all potential merge conflicts without user intervention."
+      ],
+      "type": "scenario_mcq",
+      "question": "A team is collaborating on a feature branch that has already been pushed to a remote repository. Another developer has created a new branch on top of this feature branch. If the feature branch now needs to integrate the latest changes from the master branch, which Git operation should be used according to the article's recommendation, and why?"
+    },
+    {
+      "options": [
+        "A graphical user interface (GUI) for managing Git repositories.",
+        "A command-line argument for creating empty commit messages in Git.",
+        "An SSH client used to make a secure connection to a Linux server.",
+        "A platform for hosting Git repositories similar to GitHub."
+      ],
+      "type": "mcq",
+      "question": "What is the primary function of Putty as described in the article?",
+      "answer": "An SSH client used to make a secure connection to a Linux server."
+    },
+    {
+      "answer": "git init, git add -A, git commit -m \"commit message\", git push origin master",
+      "options": [
+        "git init, git add ., git commit -m \"commit message\", git remote add origin \"url\", git push origin master",
+        "git init, git add -A, git commit -m \"commit message\", git push origin master",
+        "git clone \"Link of the repository from remote\", git add ., git commit -m \"commit message\", git push origin master",
+        "git remote add origin \"url\", git add ., git commit -m \"commit message\", git push origin master"
+      ],
+      "question": "Which sequence of Git commands is typically used when pushing code to an *existing* remote repository for the first time after making initial local changes and setting up a new local repo?",
+      "type": "mcq"
+    },
+    {
+      "type": "assertion_reason",
+      "options": [
+        "A is true, R is true and R is the correct explanation of A.",
+        "A is true, R is true but R is not the correct explanation of A.",
+        "A is true, R is false.",
+        "A is false, R is true."
+      ],
+      "question": "Assertion (A): Installing Git locally generally takes less storage space compared to SVN.\nReason (R): SVN repositories are better at handling large binary files than Git repositories.",
+      "answer": "A is false, R is true."
+    },
+    {
+      "answer": "git checkout -b [branchname]; git push -u origin [branchname]",
+      "question": "A developer has made some changes on their local machine and wants to push them to a *new* remote branch that doesn't exist yet, also setting up the local branch to track its remote counterpart. Which Git commands should they use to achieve this?",
+      "type": "scenario_mcq",
+      "options": [
+        "git branch new_feature; git push origin new_feature",
+        "git checkout -b new_feature; git commit -m \"msg\"; git push origin new_feature",
+        "git checkout -b [branchname]; git push -u origin [branchname]",
+        "git add .; git commit -m \"msg\"; git push -u origin new_feature"
+      ]
+    }
+  ]
+}
