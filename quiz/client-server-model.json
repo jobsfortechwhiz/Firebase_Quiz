@@ -1,31 +1,30 @@
 {
-  "createdAt": 1781946954124,
   "questions": [
     {
-      "answer": "B. A request/response service model.",
-      "type": "mcq",
       "question": "Which of the following best describes the fundamental nature of the client-server model?",
+      "type": "mcq",
       "options": [
         "A. A broadcast communication system.",
         "B. A request/response service model.",
         "C. A peer-to-peer data exchange network.",
         "D. A one-way data streaming system."
-      ]
+      ],
+      "answer": "B. A request/response service model."
     },
     {
       "answer": "D. Print server",
-      "question": "According to the article, which of the following is NOT mentioned as a possible type of server in a client-server model?",
       "options": [
         "A. Mail server",
         "B. Database server",
         "C. Cloud based web provider",
         "D. Print server"
       ],
-      "type": "mcq"
+      "type": "mcq",
+      "question": "According to the article, which of the following is NOT mentioned as a possible type of server in a client-server model?"
     },
     {
-      "type": "mcq",
       "question": "What kind of response can a server send back to a client, as stated in the article?",
+      "type": "mcq",
       "options": [
         "A. Only HTML",
         "B. Only XML",
@@ -42,8 +41,8 @@
         "C. Through a browser.",
         "D. Via an email attachment."
       ],
-      "question": "How is a request typically initiated by a client in the client-server model described in the article?",
-      "type": "mcq"
+      "type": "mcq",
+      "question": "How is a request typically initiated by a client in the client-server model described in the article?"
     },
     {
       "answer": "C. On a single machine.",
@@ -57,15 +56,15 @@
       "question": "In a 1-tier architecture, as described in the article, where are all components of the system typically located?"
     },
     {
-      "answer": "C. A database server accessed directly by the client.",
-      "type": "mcq",
-      "question": "Which statement accurately describes a 2-tier architecture according to the article?",
       "options": [
         "A. Client ↔ App Server ↔ Database",
         "B. Everything on 1 machine",
         "C. A database server accessed directly by the client.",
         "D. Includes API Gateway and Load Balancer."
-      ]
+      ],
+      "answer": "C. A database server accessed directly by the client.",
+      "question": "Which statement accurately describes a 2-tier architecture according to the article?",
+      "type": "mcq"
     },
     {
       "answer": "C. 3-tier architecture",
@@ -79,37 +78,38 @@
       "question": "What is the typical pattern behind most modern web/mobile systems, as described by the article?"
     },
     {
+      "type": "mcq",
+      "question": "A user opens their web browser to check their Gmail account. The browser sends a request, and a few moments later, the inbox content is displayed. Which service model is being demonstrated in this interaction?",
       "answer": "B. Client-server model",
       "options": [
         "A. Peer-to-peer network",
         "B. Client-server model",
         "C. Offline processing model",
         "D. Batch processing model"
-      ],
-      "question": "A user opens their web browser to check their Gmail account. The browser sends a request, and a few moments later, the inbox content is displayed. Which service model is being demonstrated in this interaction?",
-      "type": "mcq"
+      ]
     },
     {
-      "answer": "B. 2-tier",
       "options": [
         "A. 1-tier",
         "B. 2-tier",
         "C. 3-tier",
         "D. N-tier"
       ],
+      "answer": "B. 2-tier",
       "question": "A software application is designed such that the user interface on a desktop client directly connects to and queries a MySQL database server for all data operations, without an intermediate application server. Based on the article, what architectural tier best describes this setup?",
       "type": "mcq"
     },
     {
-      "answer": "A. Both A and R are true, and R is the correct explanation of A.",
       "options": [
         "A. Both A and R are true, and R is the correct explanation of A.",
         "B. Both A and R are true, but R is not the correct explanation of A.",
         "C. A is true, but R is false.",
         "D. A is false, but R is true."
       ],
-      "type": "assertion_reason",
-      "question": "Assertion (A): The client-server model is described as a bi-directional request-response cycle.\nReason (R): In this model, the client sends a request and then waits for the server to send a response back."
+      "answer": "A. Both A and R are true, and R is the correct explanation of A.",
+      "question": "Assertion (A): The client-server model is described as a bi-directional request-response cycle.\nReason (R): In this model, the client sends a request and then waits for the server to send a response back.",
+      "type": "assertion_reason"
     }
-  ]
+  ],
+  "createdAt": 1781946954124
 }

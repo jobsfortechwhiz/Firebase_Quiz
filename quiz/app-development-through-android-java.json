@@ -1,73 +1,73 @@
 {
-  "createdAt": 1781320022331,
   "questions": [
     {
-      "answer": "Content Provider",
-      "question": "Which Android application component runs synchronously on the main thread and receives high priority from the Looper, potentially blocking other requests if busy?",
       "options": [
         "Activity",
         "Service",
         "Broadcast Receiver",
         "Content Provider"
       ],
+      "answer": "Content Provider",
+      "question": "Which Android application component runs synchronously on the main thread and receives high priority from the Looper, potentially blocking other requests if busy?",
       "type": "mcq"
     },
     {
-      "answer": "It will likely result in an 'Application Not Responding' (ANR) error.",
       "type": "mcq",
+      "question": "Why is it recommended not to run an Android Service in the main GUI thread?",
+      "answer": "It will likely result in an 'Application Not Responding' (ANR) error.",
       "options": [
         "It will consume too much battery.",
         "It can only perform short-running tasks.",
         "It will likely result in an 'Application Not Responding' (ANR) error.",
         "Services are not designed to interact with the UI."
-      ],
-      "question": "Why is it recommended not to run an Android Service in the main GUI thread?"
+      ]
     },
     {
-      "type": "mcq",
+      "answer": "It clearly specifies the target component, such as a specific Activity or Service.",
       "options": [
         "It specifies the action to perform without knowing the target component.",
         "It clearly specifies the target component, such as a specific Activity or Service.",
         "It is used only for background tasks.",
         "It is always handled by the Package Manager to resolve the target."
       ],
-      "question": "What is the primary characteristic of an Explicit Intent in Android?",
-      "answer": "It clearly specifies the target component, such as a specific Activity or Service."
+      "type": "mcq",
+      "question": "What is the primary characteristic of an Explicit Intent in Android?"
     },
     {
+      "type": "mcq",
       "question": "What is a significant drawback of using Shared Preferences for data storage in Android applications?",
+      "answer": "They are not encrypted, making them unsuitable for sensitive data.",
       "options": [
         "They are difficult to use with primitive data types.",
         "They are not encrypted, making them unsuitable for sensitive data.",
         "They store data in a binary format, which is hard to inspect.",
         "They cannot store String or String array objects."
-      ],
-      "type": "mcq",
-      "answer": "They are not encrypted, making them unsuitable for sensitive data."
+      ]
     },
     {
-      "type": "mcq",
-      "question": "Which of the following is a key advantage of using Retrofit over Volley for networking in Android, according to the article?",
       "options": [
         "Retrofit directly supports image loading using ImageRequest.",
         "Retrofit offers built-in support for JSON parsing using GSON.",
         "Retrofit has a meager community for handling errors.",
         "Retrofit provides caching operations, unlike Volley."
       ],
-      "answer": "Retrofit offers built-in support for JSON parsing using GSON."
+      "answer": "Retrofit offers built-in support for JSON parsing using GSON.",
+      "question": "Which of the following is a key advantage of using Retrofit over Volley for networking in Android, according to the article?",
+      "type": "mcq"
     },
     {
+      "question": "When an Android Activity undergoes a screen rotation (e.g., portrait to landscape), what is the typical sequence of lifecycle methods invoked?",
+      "type": "mcq",
       "options": [
         "onPause() -> onStop() -> onCreate() -> onStart() -> onResume()",
         "onPause() -> onSaveInstanceState() -> onStop() -> onDestroy() -> onCreate() -> onStart() -> onRestoreInstanceState() -> onResume()",
         "onPause() -> onStop() -> onSaveInstanceState() -> onRestart() -> onResume()",
         "onConfigurationChanged() -> onResume()"
       ],
-      "question": "When an Android Activity undergoes a screen rotation (e.g., portrait to landscape), what is the typical sequence of lifecycle methods invoked?",
-      "type": "mcq",
       "answer": "onPause() -> onSaveInstanceState() -> onStop() -> onDestroy() -> onCreate() -> onStart() -> onRestoreInstanceState() -> onResume()"
     },
     {
+      "answer": "To preserve the physical size of UI elements across different screen densities.",
       "options": [
         "To define exact pixel dimensions for all devices.",
         "To scale text size based on user preferences.",
@@ -75,32 +75,33 @@
         "To improve animation performance."
       ],
       "type": "mcq",
-      "question": "What is the primary purpose of using Device Independent Pixels (dp) in Android UI development?",
-      "answer": "To preserve the physical size of UI elements across different screen densities."
+      "question": "What is the primary purpose of using Device Independent Pixels (dp) in Android UI development?"
     },
     {
-      "answer": "Pending Intent",
-      "type": "scenario_mcq",
-      "question": "An Android developer needs to implement a feature where tapping a notification banner in their app opens a specific activity. This activity should run as if it originated from the app process itself, even if the notification was triggered by the system. Which Android component is best suited for wrapping the intent associated with the notification to achieve this behavior?",
       "options": [
         "Broadcast Receiver",
         "Content Provider",
         "Pending Intent",
         "Service"
-      ]
+      ],
+      "answer": "Pending Intent",
+      "question": "An Android developer needs to implement a feature where tapping a notification banner in their app opens a specific activity. This activity should run as if it originated from the app process itself, even if the notification was triggered by the system. Which Android component is best suited for wrapping the intent associated with the notification to achieve this behavior?",
+      "type": "scenario_mcq"
     },
     {
-      "answer": "The typed text will disappear because the activity is destroyed and recreated without saving the `EditText`'s state.",
+      "type": "scenario_mcq",
       "question": "A user is typing text into an `EditText` field in an Android application. The `EditText` view has not been assigned an `android:id` attribute in the layout XML. If the user rotates the device, causing a configuration change, what will happen to the text in the `EditText` after the screen rotation?",
+      "answer": "The typed text will disappear because the activity is destroyed and recreated without saving the `EditText`'s state.",
       "options": [
         "The text will be automatically saved and restored because Android handles basic view state.",
         "The activity will crash due to a missing ID for state saving.",
         "The typed text will disappear because the activity is destroyed and recreated without saving the `EditText`'s state.",
         "The `EditText` will retain its text only if `onSaveInstanceState()` is manually overridden without calling `super.onSaveInstanceState()`."
-      ],
-      "type": "scenario_mcq"
+      ]
     },
     {
+      "question": "Assertion (A): Content Providers run synchronously on the main thread and are given high priority by the Looper.\nReason (R): This design allows Content Providers to directly communicate with the main thread without waiting in a queue, enabling quick access to data.",
+      "type": "assertion_reason_mcq",
       "options": [
         "Both A and R are true, and R is the correct explanation of A.",
         "Both A and R are true, but R is not the correct explanation of A.",
@@ -108,42 +109,40 @@
         "A is false, but R is true.",
         "Both A and R are false."
       ],
-      "question": "Assertion (A): Content Providers run synchronously on the main thread and are given high priority by the Looper.\nReason (R): This design allows Content Providers to directly communicate with the main thread without waiting in a queue, enabling quick access to data.",
-      "type": "assertion_reason_mcq",
       "answer": "Both A and R are true, and R is the correct explanation of A."
     },
     {
       "type": "mcq",
+      "question": "What is the primary characteristic of an Android Intent Service?",
+      "answer": "It can perform long-running tasks in its own background thread.",
       "options": [
         "It runs on the main thread to ensure quick UI updates.",
         "It binds automatically to an Activity and stops immediately when the Activity is shut down.",
         "It can perform long-running tasks in its own background thread.",
         "It is primarily designed for direct user interaction in the foreground."
-      ],
-      "question": "What is the primary characteristic of an Android Intent Service?",
-      "answer": "It can perform long-running tasks in its own background thread."
+      ]
     },
     {
-      "question": "What is the role of `resolveActivity()` when dealing with Implicit Intents?",
-      "type": "mcq",
+      "answer": "To ensure that an activity exists to handle the implicit intent, preventing app crashes.",
       "options": [
         "To clearly specify the target component of the Intent.",
         "To encrypt the data being passed in the Intent for security.",
         "To ensure that an activity exists to handle the implicit intent, preventing app crashes.",
         "To force the system to always open a specific application for the Intent."
       ],
-      "answer": "To ensure that an activity exists to handle the implicit intent, preventing app crashes."
+      "type": "mcq",
+      "question": "What is the role of `resolveActivity()` when dealing with Implicit Intents?"
     },
     {
       "answer": "Room Library",
-      "question": "Which Android data persistence library is described as an 'abstraction over SQLite' that allows compile-time verification and returns results as objects rather than cursors?",
-      "type": "mcq",
       "options": [
         "Shared Preferences",
         "Realm",
         "Room Library",
         "Cupboard"
-      ]
+      ],
+      "type": "mcq",
+      "question": "Which Android data persistence library is described as an 'abstraction over SQLite' that allows compile-time verification and returns results as objects rather than cursors?"
     },
     {
       "answer": "http: or https:",
@@ -157,18 +156,18 @@
       "question": "To open a web page using an Implicit Intent, which data scheme is typically used in the Uri?"
     },
     {
-      "answer": "Short-duration operations where the response is needed quickly.",
+      "type": "mcq",
       "question": "According to the article, for which type of operations is `AsyncTask` primarily recommended?",
+      "answer": "Short-duration operations where the response is needed quickly.",
       "options": [
         "Long-running, indefinite tasks that require continuous background processing.",
         "Short-duration operations where the response is needed quickly.",
         "Complex database transactions requiring ACID properties.",
         "Real-time network streaming and large data downloads."
-      ],
-      "type": "mcq"
+      ]
     },
     {
-      "answer": "`addToBackStack(null)`",
+      "question": "A developer is creating an Android application that uses multiple Fragments. Users are reporting that when they navigate through several fragments and then press the back button, the app exits immediately instead of returning to the previous fragment. What method should the developer use when adding fragments to ensure proper back navigation behavior?",
       "type": "scenario_mcq",
       "options": [
         "`commitAllowingStateLoss()`",
@@ -176,10 +175,10 @@
         "`addToBackStack(null)`",
         "`setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)`"
       ],
-      "question": "A developer is creating an Android application that uses multiple Fragments. Users are reporting that when they navigate through several fragments and then press the back button, the app exits immediately instead of returning to the previous fragment. What method should the developer use when adding fragments to ensure proper back navigation behavior?"
+      "answer": "`addToBackStack(null)`"
     },
     {
-      "answer": "Both A and R are true, and R is the correct explanation of A.",
+      "question": "Assertion (A): An Android `Handler` performs two tasks simultaneously: processing code within a message and transmitting messages/runnables back to the main thread.\nReason (R): The `Handler` achieves these two tasks by utilizing two different threads for each operation.",
       "type": "assertion_reason_mcq",
       "options": [
         "Both A and R are true, and R is the correct explanation of A.",
@@ -188,12 +187,12 @@
         "A is false, but R is true.",
         "Both A and R are false."
       ],
-      "question": "Assertion (A): An Android `Handler` performs two tasks simultaneously: processing code within a message and transmitting messages/runnables back to the main thread.\nReason (R): The `Handler` achieves these two tasks by utilizing two different threads for each operation."
+      "answer": "Both A and R are true, and R is the correct explanation of A."
     },
     {
-      "answer": "`SnackBar` allows for user interaction with an optional action, unlike `Toast`.",
-      "question": "What is a key difference between `Toast` and `SnackBar` in Android for user communication, as described in the article?",
       "type": "mcq",
+      "question": "What is a key difference between `Toast` and `SnackBar` in Android for user communication, as described in the article?",
+      "answer": "`SnackBar` allows for user interaction with an optional action, unlike `Toast`.",
       "options": [
         "`Toast` can display longer messages than `SnackBar`.",
         "`SnackBar` allows for user interaction with an optional action, unlike `Toast`.",
@@ -203,17 +202,16 @@
     },
     {
       "question": "An Android developer encounters a `Resource not found exception` error during runtime when attempting to display an integer value, `x`, in a `TextView` using `textView.setText(x)`. How should the developer modify the code to resolve this common issue?",
+      "type": "scenario_mcq",
       "options": [
         "Convert `x` to a String using `String.valueOf(x)` before setting.",
         "Set `x` as a resource ID using `textView.setText(R.string.x)`.",
         "Change the `TextView`'s input type to number in the layout XML.",
         "Concatenate an empty string to `x` like `textView.setText(\" \" + x)`."
       ],
-      "type": "scenario_mcq",
       "answer": "Concatenate an empty string to `x` like `textView.setText(\" \" + x)`"
     },
     {
-      "answer": "It reduces the number of Android devices that the application can target.",
       "question": "What is the consequence of increasing the `min-SDK` value in an Android project's `build.gradle` file?",
       "type": "mcq",
       "options": [
@@ -221,9 +219,11 @@
         "It reduces the number of Android devices that the application can target.",
         "It improves the application's runtime performance on older devices.",
         "It forces all project dependencies to update to their latest compatible versions."
-      ]
+      ],
+      "answer": "It reduces the number of Android devices that the application can target."
     },
     {
+      "question": "What is the primary function of a Broadcast Receiver in Android?",
       "type": "mcq",
       "options": [
         "To perform long-running tasks in the background without user interaction.",
@@ -231,44 +231,42 @@
         "To listen to system-wide events and deliver them as events to the app when an action is needed.",
         "To provide a secure way to share data between different applications."
       ],
-      "question": "What is the primary function of a Broadcast Receiver in Android?",
       "answer": "To listen to system-wide events and deliver them as events to the app when an action is needed."
     },
     {
-      "type": "mcq",
       "options": [
         "Bound services run on the main thread, while started services run in their own background thread.",
         "Bound services stop automatically when their bound Activity or Fragment is shut down, while started services can continue running.",
         "Started services always require user interaction, while bound services do not.",
         "A started service can be a bound service, but a bound service cannot be a started service."
       ],
+      "answer": "Bound services stop automatically when their bound Activity or Fragment is shut down, while started services can continue running.",
       "question": "What is the primary difference between a Bound Service and a Started Service in Android, as described in the article?",
-      "answer": "Bound services stop automatically when their bound Activity or Fragment is shut down, while started services can continue running."
+      "type": "mcq"
     },
     {
+      "type": "mcq",
+      "question": "What is the purpose of `CATEGORY_LAUNCHER` when defined in an Android `Intent-filter`?",
+      "answer": "To make the activity appear as an icon in the system's app launcher (app drawer).",
       "options": [
         "To ensure the activity starts automatically when the device boots up.",
         "To designate an activity as the default home screen of the device.",
         "To make the activity appear as an icon in the system's app launcher (app drawer).",
         "To allow the activity to receive data from other applications."
-      ],
-      "question": "What is the purpose of `CATEGORY_LAUNCHER` when defined in an Android `Intent-filter`?",
-      "type": "mcq",
-      "answer": "To make the activity appear as an icon in the system's app launcher (app drawer)."
+      ]
     },
     {
-      "answer": "`doInBackground()`",
+      "question": "Which `AsyncTask` method is specifically designed to perform long-running operations in a background thread?",
+      "type": "mcq",
       "options": [
         "`onPreExecute()`",
         "`onPostExecute()`",
         "`doInBackground()`",
         "`onProgressUpdate()`"
       ],
-      "type": "mcq",
-      "question": "Which `AsyncTask` method is specifically designed to perform long-running operations in a background thread?"
+      "answer": "`doInBackground()`"
     },
     {
-      "answer": "`mipmap`",
       "question": "According to the article, which directory is recommended for storing graphical assets like app icons to potentially consume less memory compared to the `drawable` folder?",
       "type": "mcq",
       "options": [
@@ -276,10 +274,10 @@
         "`values`",
         "`assets`",
         "`mipmap`"
-      ]
+      ],
+      "answer": "`mipmap`"
     },
     {
-      "answer": "To describe the app's components, permissions, and configuration to the Android operating system.",
       "question": "What is the primary role of the `AndroidManifest.xml` file in an Android application?",
       "type": "mcq",
       "options": [
@@ -287,23 +285,24 @@
         "To store all user-specific data in key-value pairs.",
         "To describe the app's components, permissions, and configuration to the Android operating system.",
         "To manage network requests and responses from web services."
-      ]
+      ],
+      "answer": "To describe the app's components, permissions, and configuration to the Android operating system."
     },
     {
       "type": "mcq",
       "question": "Which Android data persistence library is described as a NoSQL mobile database that does not rely on SQLite and exposes data as objects?",
+      "answer": "Realm",
       "options": [
         "Shared Preferences",
         "Room Library",
         "Realm",
         "Cupboard"
-      ],
-      "answer": "Realm"
+      ]
     },
     {
-      "answer": "`ViewPager`",
       "type": "scenario_mcq",
       "question": "A developer wants to create an Android application that allows users to swipe horizontally through a collection of full-screen informational fragments, displaying one item at a time. Which UI component is best suited for this requirement?",
+      "answer": "`ViewPager`",
       "options": [
         "`RecyclerView`",
         "`ListView`",
@@ -312,8 +311,6 @@
       ]
     },
     {
-      "question": "Assertion (A): `onSaveInstanceState()` is typically called by the system to temporarily store an Activity's UI state when it is paused or stopped.\nReason (R): The system always explicitly destroys an Activity's object from memory immediately after it is paused or stopped, making state saving crucial for its recreation.",
-      "type": "assertion_reason_mcq",
       "options": [
         "Both A and R are true, and R is the correct explanation of A.",
         "Both A and R are true, but R is not the correct explanation of A.",
@@ -321,10 +318,12 @@
         "A is false, but R is true.",
         "Both A and R are false."
       ],
-      "answer": "A is true, but R is false."
+      "answer": "A is true, but R is false.",
+      "question": "Assertion (A): `onSaveInstanceState()` is typically called by the system to temporarily store an Activity's UI state when it is paused or stopped.\nReason (R): The system always explicitly destroys an Activity's object from memory immediately after it is paused or stopped, making state saving crucial for its recreation.",
+      "type": "assertion_reason_mcq"
     },
     {
-      "question": "A user reports that their Android application crashes with a 'Cannot fit requested classes in a single dex file' error when building for older API levels. What modification should the developer apply within the `defaultConfig` block of the app-level `build.gradle` file to resolve this issue?",
+      "answer": "Set `multiDexEnabled true`.",
       "options": [
         "Increase the `min-SDK` version to a higher API level.",
         "Add `force = true` to all `runtimeOnly` dependencies.",
@@ -332,86 +331,87 @@
         "Remove all unnecessary permissions from `AndroidManifest.xml`."
       ],
       "type": "scenario_mcq",
-      "answer": "Set `multiDexEnabled true`."
+      "question": "A user reports that their Android application crashes with a 'Cannot fit requested classes in a single dex file' error when building for older API levels. What modification should the developer apply within the `defaultConfig` block of the app-level `build.gradle` file to resolve this issue?"
     },
     {
       "answer": "Content Providers run synchronously on the main thread, while others run asynchronously on a queue and drop messages to the main thread.",
-      "question": "What is a key difference in how Content Providers handle requests compared to Activities, Services, and Broadcast Receivers, as described in the article?",
       "options": [
         "Content Providers run in their own dedicated thread, while others always run on the main thread.",
         "Content Providers run synchronously on the main thread, while others run asynchronously on a queue and drop messages to the main thread.",
         "Content Providers have lower priority on the main thread, allowing other components to process first.",
         "Content Providers can only handle network requests, whereas others handle local data operations."
       ],
-      "type": "mcq"
+      "type": "mcq",
+      "question": "What is a key difference in how Content Providers handle requests compared to Activities, Services, and Broadcast Receivers, as described in the article?"
     },
     {
-      "answer": "The SDK is a collection of development tools and libraries that allows APIs to be used in an app.",
       "options": [
         "The SDK acts as a middleman between the frontend and the backend, similar to an API.",
         "The SDK is a debugging tool that displays system logs during app execution.",
         "The SDK is a collection of development tools and libraries that allows APIs to be used in an app.",
         "The SDK is an installable package file format for Android applications."
       ],
-      "type": "mcq",
-      "question": "According to the article, what is the primary purpose of an Android SDK in relation to APIs?"
+      "answer": "The SDK is a collection of development tools and libraries that allows APIs to be used in an app.",
+      "question": "According to the article, what is the primary purpose of an Android SDK in relation to APIs?",
+      "type": "mcq"
     },
     {
-      "answer": "Shared Preferences",
-      "question": "Which of the following data persistence technologies described in the article stores data in unencrypted XML files within internal storage, using key-value pairs for primitive or object types?",
       "options": [
         "SQLite DB",
         "Room Library",
         "Shared Preferences",
         "Cupboard"
       ],
+      "answer": "Shared Preferences",
+      "question": "Which of the following data persistence technologies described in the article stores data in unencrypted XML files within internal storage, using key-value pairs for primitive or object types?",
       "type": "mcq"
     },
     {
       "answer": "Use `resolveActivity()` with `getPackageManager()` to check if an app can handle the intent before calling `startActivity()`.",
-      "question": "What is the recommended approach to prevent an Android application from crashing when attempting to start an implicit intent for which no suitable app might be installed on the device?",
-      "type": "mcq",
       "options": [
         "Always use explicit intents instead of implicit intents.",
         "Declare all possible implicit intent filters in the `AndroidManifest.xml`.",
         "Use `resolveActivity()` with `getPackageManager()` to check if an app can handle the intent before calling `startActivity()`.",
         "Wrap `startActivity()` calls in a `try-catch` block to handle `ActivityNotFoundException`."
-      ]
+      ],
+      "type": "mcq",
+      "question": "What is the recommended approach to prevent an Android application from crashing when attempting to start an implicit intent for which no suitable app might be installed on the device?"
     },
     {
+      "type": "scenario",
+      "question": "A developer is designing an Android application where they need to perform a network operation that might take a significant amount of time (e.g., fetching a large dataset). To ensure the UI remains responsive and avoid ANR errors, which threading mechanism is explicitly stated as *not* suitable for such long-running tasks, according to the article, suggesting an alternative for large durations?",
+      "answer": "An `AsyncTask` because it is specifically meant only for short-duration operations.",
       "options": [
         "An `IntentService` because it runs in its own background thread.",
         "A regular `Service` with a separate thread to prevent blocking the main GUI thread.",
         "An `AsyncTask` because it is specifically meant only for short-duration operations.",
         "A `Handler` and `Looper` mechanism within the main thread."
-      ],
-      "question": "A developer is designing an Android application where they need to perform a network operation that might take a significant amount of time (e.g., fetching a large dataset). To ensure the UI remains responsive and avoid ANR errors, which threading mechanism is explicitly stated as *not* suitable for such long-running tasks, according to the article, suggesting an alternative for large durations?",
-      "type": "scenario",
-      "answer": "An `AsyncTask` because it is specifically meant only for short-duration operations."
+      ]
     },
     {
+      "question": "When defining an `Intent-filter` with multiple categories, what condition must an incoming `Intent` satisfy to pass the category test, as stated in the article?",
+      "type": "mcq",
       "options": [
         "Only one category in the intent object must match a category in the intent-filter.",
         "The intent object must contain at least one category, and it must match any category in the intent-filter.",
         "Every category in the intent object must match a category in the intent-filter.",
         "The category test is optional and does not affect intent resolution."
       ],
-      "question": "When defining an `Intent-filter` with multiple categories, what condition must an incoming `Intent` satisfy to pass the category test, as stated in the article?",
-      "type": "mcq",
       "answer": "Every category in the intent object must match a category in the intent-filter."
     },
     {
-      "answer": "Both A and R are true but R is NOT the correct explanation of A.",
+      "question": "Assertion (A): In Android, the `onRestoreInstanceState()` method is always called immediately after `onCreate()` when an Activity is recreated after being destroyed due to a configuration change (e.g., screen rotation).\nReason (R): Both `onRestoreInstanceState()` and `onCreate()` receive the same `Bundle` object containing the saved state, making `onCreate()` a viable alternative for state restoration.",
+      "type": "assertion_reason",
       "options": [
         "Both A and R are true and R is the correct explanation of A.",
         "Both A and R are true but R is NOT the correct explanation of A.",
         "A is true but R is false.",
         "A is false but R is true."
       ],
-      "question": "Assertion (A): In Android, the `onRestoreInstanceState()` method is always called immediately after `onCreate()` when an Activity is recreated after being destroyed due to a configuration change (e.g., screen rotation).\nReason (R): Both `onRestoreInstanceState()` and `onCreate()` receive the same `Bundle` object containing the saved state, making `onCreate()` a viable alternative for state restoration.",
-      "type": "assertion_reason"
+      "answer": "Both A and R are true but R is NOT the correct explanation of A."
     },
     {
+      "question": "What is the core characteristic that distinguishes a `Snackbar` from a `Toast` in Android, as described in the article?",
       "type": "mcq",
       "options": [
         "A `Toast` can be dismissed by swiping, while a `Snackbar` cannot.",
@@ -419,30 +419,30 @@
         "A `Toast` is a more persistent message, while a `Snackbar` is temporary.",
         "A `Snackbar` is always displayed at the bottom of the screen, unlike a `Toast`."
       ],
-      "question": "What is the core characteristic that distinguishes a `Snackbar` from a `Toast` in Android, as described in the article?",
       "answer": "A `Snackbar` provides optional actions for user interaction, which a `Toast` does not."
     },
     {
-      "question": "A developer wants to send an email from their Android application and needs to pre-fill the recipient addresses, subject, and body. Which specific `Intent` action and data scheme combination should be used to achieve this, according to the article's examples?",
-      "type": "scenario",
+      "answer": "Action: `Intent.ACTION_SENDTO`, Data Scheme: `mailto:`",
       "options": [
         "Action: `Intent.ACTION_VIEW`, Data Scheme: `http://`",
         "Action: `Intent.ACTION_DIAL`, Data Scheme: `tel:`",
         "Action: `Intent.ACTION_SENDTO`, Data Scheme: `mailto:`",
         "Action: `Intent.ACTION_WEB_SEARCH`, Data Scheme: `https://`"
       ],
-      "answer": "Action: `Intent.ACTION_SENDTO`, Data Scheme: `mailto:`"
+      "type": "scenario",
+      "question": "A developer wants to send an email from their Android application and needs to pre-fill the recipient addresses, subject, and body. Which specific `Intent` action and data scheme combination should be used to achieve this, according to the article's examples?"
     },
     {
-      "answer": "Convert the integer to a string using `String.valueOf(x)` or concatenate with an empty string: `\" \" + x`.",
-      "type": "mcq",
-      "question": "When an Android application encounters a `Resource not found exception` specifically due to setting an integer value directly into a `TextView` using `setText(x)`, what is the recommended fix according to the troubleshooting section?",
       "options": [
         "Convert the integer to a string using `String.valueOf(x)` or concatenate with an empty string: `\" \" + x`.",
         "Change the `TextView` to an `EditText`.",
         "Increase the `minSdkVersion` in the `build.gradle` file.",
         "Add `multiDexEnabled true` in the `defaultConfig` block."
-      ]
+      ],
+      "answer": "Convert the integer to a string using `String.valueOf(x)` or concatenate with an empty string: `\" \" + x`.",
+      "question": "When an Android application encounters a `Resource not found exception` specifically due to setting an integer value directly into a `TextView` using `setText(x)`, what is the recommended fix according to the troubleshooting section?",
+      "type": "mcq"
     }
-  ]
+  ],
+  "createdAt": 1781320022331
 }

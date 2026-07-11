@@ -1,27 +1,26 @@
 {
-  "createdAt": 1781682016204,
   "questions": [
     {
-      "type": "mcq",
-      "question": "What is PHP primarily known for in web development?",
+      "answer": "Server-side scripting",
       "options": [
         "Client-side scripting",
         "Database management",
         "Server-side scripting",
         "Desktop application development"
       ],
-      "answer": "Server-side scripting"
+      "type": "mcq",
+      "question": "What is PHP primarily known for in web development?"
     },
     {
-      "question": "Which of the following is NOT listed as a benefit of using PHP?",
-      "type": "mcq",
       "options": [
         "It's open source",
         "It's platform dependent",
         "It's fast and secure",
         "It connects well with databases"
       ],
-      "answer": "It's platform dependent"
+      "answer": "It's platform dependent",
+      "question": "Which of the following is NOT listed as a benefit of using PHP?",
+      "type": "mcq"
     },
     {
       "options": [
@@ -30,19 +29,19 @@
         "Boolean",
         "String"
       ],
-      "type": "mcq",
+      "answer": "Boolean",
       "question": "Which PHP data type represents two possible states: TRUE or FALSE?",
-      "answer": "Boolean"
+      "type": "mcq"
     },
     {
+      "question": "In PHP, which function is used to create an array that can hold indexed, associative, or multidimensional data?",
+      "type": "mcq",
       "options": [
         "make_array()",
         "new_array()",
         "array()",
         "createArray()"
       ],
-      "type": "mcq",
-      "question": "In PHP, which function is used to create an array that can hold indexed, associative, or multidimensional data?",
       "answer": "array()"
     },
     {
@@ -52,22 +51,23 @@
         "$firstName",
         "$123variable"
       ],
-      "type": "mcq",
+      "answer": "$123variable",
       "question": "According to PHP variable conventions, which of the following is an INVALID variable name?",
-      "answer": "$123variable"
+      "type": "mcq"
     },
     {
+      "type": "scenario_mcq",
+      "question": "A developer needs to display detailed information about a variable, including its data type, value, and internal structure (e.g., number of elements for an array). Which PHP function is best suited for this task?",
       "answer": "var_dump()",
       "options": [
         "echo()",
         "print()",
         "printf()",
         "var_dump()"
-      ],
-      "type": "scenario_mcq",
-      "question": "A developer needs to display detailed information about a variable, including its data type, value, and internal structure (e.g., number of elements for an array). Which PHP function is best suited for this task?"
+      ]
     },
     {
+      "question": "When comparing two values in PHP, which operator performs a strict comparison, checking both the value and the data type?",
       "type": "mcq",
       "options": [
         "=",
@@ -75,41 +75,41 @@
         "!=",
         "==="
       ],
-      "question": "When comparing two values in PHP, which operator performs a strict comparison, checking both the value and the data type?",
       "answer": "==="
     },
     {
-      "type": "assertion_reason_mcq",
-      "question": "Assertion (A): The `require()` function is generally recommended over `include()` for file inclusion in PHP.\nReason (R): If a file included with `require()` is missing or has an error, the script will halt execution, preventing further issues, whereas `include()` only generates a warning and continues.",
       "options": [
         "Both A and R are true and R is the correct explanation of A.",
         "Both A and R are true but R is NOT the correct explanation of A.",
         "A is true but R is false.",
         "A is false but R is true."
       ],
-      "answer": "Both A and R are true and R is the correct explanation of A."
+      "answer": "Both A and R are true and R is the correct explanation of A.",
+      "question": "Assertion (A): The `require()` function is generally recommended over `include()` for file inclusion in PHP.\nReason (R): If a file included with `require()` is missing or has an error, the script will halt execution, preventing further issues, whereas `include()` only generates a warning and continues.",
+      "type": "assertion_reason_mcq"
     },
     {
-      "answer": "PDO can work with multiple different database systems",
-      "question": "What is the primary advantage of PDO over MySQLi when connecting to databases in PHP?",
-      "type": "mcq",
       "options": [
         "PDO is faster",
         "PDO supports only MySQL databases",
         "PDO offers a procedural API",
         "PDO can work with multiple different database systems"
-      ]
+      ],
+      "answer": "PDO can work with multiple different database systems",
+      "question": "What is the primary advantage of PDO over MySQLi when connecting to databases in PHP?",
+      "type": "mcq"
     },
     {
-      "answer": "Prepared Statements",
+      "question": "A web application needs to prevent SQL injection attacks. Which feature, supported by both MySQLi and PDO, is specifically mentioned in the article as crucial for web application security against such attacks?",
+      "type": "scenario_mcq",
       "options": [
         "Object-oriented programming",
         "Stored procedures",
         "Prepared Statements",
         "Database indexing"
       ],
-      "type": "scenario_mcq",
-      "question": "A web application needs to prevent SQL injection attacks. Which feature, supported by both MySQLi and PDO, is specifically mentioned in the article as crucial for web application security against such attacks?"
+      "answer": "Prepared Statements"
     }
-  ]
+  ],
+  "createdAt": 1781682016204
 }

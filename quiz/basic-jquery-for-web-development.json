@@ -1,43 +1,42 @@
 {
-  "createdAt": 1782040514904,
   "questions": [
     {
+      "type": "mcq",
+      "question": "What is the primary characteristic of the Document Object Model (DOM) as described in the article?",
       "answer": "It is a platform and language-neutral interface for dynamic content access and update.",
       "options": [
         "It is a language-specific interface for server-side applications.",
         "It is a platform and language-neutral interface for dynamic content access and update.",
         "It is a framework for managing database interactions.",
         "It is a tool exclusively for styling web page layouts."
-      ],
-      "question": "What is the primary characteristic of the Document Object Model (DOM) as described in the article?",
-      "type": "mcq"
+      ]
     },
     {
-      "answer": "remove()",
-      "question": "Which of the following jQuery methods is NOT explicitly listed in the article as a method for DOM manipulation?",
-      "type": "mcq",
       "options": [
         "html()",
         "val()",
         "remove()",
         "attr()"
-      ]
+      ],
+      "answer": "remove()",
+      "question": "Which of the following jQuery methods is NOT explicitly listed in the article as a method for DOM manipulation?",
+      "type": "mcq"
     },
     {
-      "answer": "It enables exchanging data with a server and updating parts of a web page without reloading the whole page.",
+      "type": "mcq",
       "question": "According to the article, what is the main benefit of using AJAX?",
+      "answer": "It enables exchanging data with a server and updating parts of a web page without reloading the whole page.",
       "options": [
         "It allows for complete page reloads to ensure data consistency.",
         "It simplifies the process of writing server-side code.",
         "It enables exchanging data with a server and updating parts of a web page without reloading the whole page.",
         "It is primarily used for defining CSS styles dynamically."
-      ],
-      "type": "mcq"
+      ]
     },
     {
-      "answer": "AJAX calls",
-      "question": "Besides HTML DOM manipulation, event handling, and CSS templates, what other key area does jQuery simplify?",
       "type": "mcq",
+      "question": "Besides HTML DOM manipulation, event handling, and CSS templates, what other key area does jQuery simplify?",
+      "answer": "AJAX calls",
       "options": [
         "Database management",
         "Operating system configurations",
@@ -46,185 +45,185 @@
       ]
     },
     {
-      "answer": "88%",
       "options": [
         "12%",
         "50%",
         "88%",
         "95%"
       ],
+      "answer": "88%",
       "question": "What percentage of websites are mentioned in the article as using jQuery?",
       "type": "mcq"
     },
     {
-      "answer": "Embedding malicious JavaScript code into a vulnerable website.",
-      "type": "mcq",
       "options": [
         "Denying service to legitimate users through traffic overload.",
         "Injecting malicious SQL queries into a database.",
         "Embedding malicious JavaScript code into a vulnerable website.",
         "Attempting to guess user passwords through repeated login attempts."
       ],
-      "question": "Which type of malicious action is typically performed by an attacker during a Cross-Site Scripting (XSS) attack?"
+      "answer": "Embedding malicious JavaScript code into a vulnerable website.",
+      "question": "Which type of malicious action is typically performed by an attacker during a Cross-Site Scripting (XSS) attack?",
+      "type": "mcq"
     },
     {
-      "type": "mcq",
-      "question": "Which of the following jQuery methods is used to retrieve data from the server in the background and display it without reloading the page?",
       "options": [
         "val()",
         "load()",
         "text()",
         "attr()"
       ],
-      "answer": "load()"
+      "answer": "load()",
+      "question": "Which of the following jQuery methods is used to retrieve data from the server in the background and display it without reloading the page?",
+      "type": "mcq"
     },
     {
-      "answer": "Cross-Site Scripting (XSS)",
-      "type": "mcq",
       "question": "Scenario: A web administrator notices that after users submit comments on a blog, other users viewing those comments might have their session cookies stolen if the original comment contained specific script tags. The article suggests that jQuery applications are particularly vulnerable to this type of attack.",
+      "type": "mcq",
       "options": [
         "SQL Injection",
         "Denial of Service (DoS)",
         "Cross-Site Scripting (XSS)",
         "Phishing"
-      ]
+      ],
+      "answer": "Cross-Site Scripting (XSS)"
     },
     {
+      "type": "mcq",
       "question": "Scenario: A developer wants to create an interface where clicking a button fetches a list of user notifications from the server and displays them in a specific `div` element on the page, without the page visibly refreshing. The article mentions jQuery's capabilities in this area.",
+      "answer": "Implementing an AJAX call with jQuery's `$.get()` method.",
       "options": [
         "Using `val()` to update the `div` content.",
         "Implementing an AJAX call with jQuery's `$.get()` method.",
         "Applying CSS templates to style the notifications.",
         "Manipulating the DOM using `attr()` to change the `div`'s properties."
-      ],
-      "type": "mcq",
-      "answer": "Implementing an AJAX call with jQuery's `$.get()` method."
+      ]
     },
     {
-      "question": "Assertion (A): jQuery applications can pose significant security threats to users.\nReason (R): Attackers can manipulate JavaScript code, steal user data, or hijack sessions through Cross-Site Scripting (XSS) attacks, to which jQuery is vulnerable.",
       "type": "assertion_reason",
+      "question": "Assertion (A): jQuery applications can pose significant security threats to users.\nReason (R): Attackers can manipulate JavaScript code, steal user data, or hijack sessions through Cross-Site Scripting (XSS) attacks, to which jQuery is vulnerable.",
+      "answer": "Both A and R are true, and R is the correct explanation of A.",
       "options": [
         "Both A and R are true, and R is the correct explanation of A.",
         "Both A and R are true, but R is NOT the correct explanation of A.",
         "A is true, but R is false.",
         "A is false, but R is true."
-      ],
-      "answer": "Both A and R are true, and R is the correct explanation of A."
+      ]
     },
     {
-      "type": "mcq",
-      "question": "What dynamic capabilities does the Document Object Model (DOM) provide to programs and scripts?",
+      "answer": "It enables dynamic access and update of a document's content, structure, and style.",
       "options": [
         "It allows for the creation of new programming languages.",
         "It enables dynamic access and update of a document's content, structure, and style.",
         "It primarily facilitates server-side database management.",
         "It is used exclusively for managing network protocols."
       ],
-      "answer": "It enables dynamic access and update of a document's content, structure, and style."
+      "type": "mcq",
+      "question": "What dynamic capabilities does the Document Object Model (DOM) provide to programs and scripts?"
     },
     {
-      "type": "mcq",
-      "question": "According to the article, what specific type of user data are attackers commonly able to steal through Cross-Site Scripting (XSS) attacks?",
       "options": [
         "User session cookies",
         "Encrypted hard drive contents",
         "Physical mailing addresses",
         "Server administrative passwords"
       ],
-      "answer": "User session cookies"
+      "answer": "User session cookies",
+      "question": "According to the article, what specific type of user data are attackers commonly able to steal through Cross-Site Scripting (XSS) attacks?",
+      "type": "mcq"
     },
     {
-      "type": "mcq",
-      "question": "Which of the following areas is NOT mentioned in the article as one that jQuery simplifies?",
       "options": [
         "HTML DOM manipulation",
         "Event handling",
         "Database queries",
         "CSS templates"
       ],
-      "answer": "Database queries"
+      "answer": "Database queries",
+      "question": "Which of the following areas is NOT mentioned in the article as one that jQuery simplifies?",
+      "type": "mcq"
     },
     {
-      "answer": "A is false, R is true",
+      "type": "assertion_reason",
       "question": "Assertion (A): jQuery's widespread usage on 88% of websites implies a high level of inherent security and robustness against cyber threats. Reason (R): The article explicitly states that jQuery is vulnerable to Cross-Site Scripting (XSS) attacks, allowing attackers to steal user data or hijack sessions.",
+      "answer": "A is false, R is true",
       "options": [
         "A is true, R is true and R is the correct explanation for A",
         "A is true, R is true but R is NOT the correct explanation for A",
         "A is false, R is true",
         "A is true, R is false"
-      ],
-      "type": "assertion_reason"
+      ]
     },
     {
       "answer": "`.text()` and `.val()`",
-      "question": "Scenario: A web developer needs to create a dynamic web page where clicking a button should update a paragraph's visible text and simultaneously change the placeholder text (value) of an input field, without reloading the entire page. Based on the article, which pair of jQuery methods would be most directly suited for these tasks?",
       "options": [
         "`.load()` and `$.get()`",
         "`.append()` and `.prepend()`",
         "`.text()` and `.val()`",
         "`.html()` and `.attr()`"
       ],
-      "type": "scenario_mcq"
+      "type": "scenario_mcq",
+      "question": "Scenario: A web developer needs to create a dynamic web page where clicking a button should update a paragraph's visible text and simultaneously change the placeholder text (value) of an input field, without reloading the entire page. Based on the article, which pair of jQuery methods would be most directly suited for these tasks?"
     },
     {
+      "type": "scenario_mcq",
+      "question": "Scenario: A popular forum website, built with jQuery, allows users to post comments. A user reports that after viewing a comment containing unusual script tags, their browser session was abruptly logged out and they suspect unauthorized activity. The article highlights such vulnerabilities. What type of attack is most likely described, and what is its general impact as per the article?",
+      "answer": "Cross-Site Scripting (XSS), potentially leading to data theft or session hijacking.",
       "options": [
         "SQL Injection, leading to server database corruption.",
         "Denial of Service (DoS), causing the server to crash.",
         "Cross-Site Scripting (XSS), potentially leading to data theft or session hijacking.",
         "Brute-force attack, aiming to guess login credentials."
-      ],
-      "question": "Scenario: A popular forum website, built with jQuery, allows users to post comments. A user reports that after viewing a comment containing unusual script tags, their browser session was abruptly logged out and they suspect unauthorized activity. The article highlights such vulnerabilities. What type of attack is most likely described, and what is its general impact as per the article?",
-      "type": "scenario_mcq",
-      "answer": "Cross-Site Scripting (XSS), potentially leading to data theft or session hijacking."
+      ]
     },
     {
-      "question": "Which characteristic of the Document Object Model (DOM) is stated to make it broadly usable across diverse programming environments?",
-      "type": "mcq",
+      "answer": "It is a platform and language-neutral interface.",
       "options": [
         "It is specific to JavaScript frameworks.",
         "It is optimized for single-page applications only.",
         "It is a platform and language-neutral interface.",
         "It requires proprietary software licenses."
       ],
-      "answer": "It is a platform and language-neutral interface."
+      "type": "mcq",
+      "question": "Which characteristic of the Document Object Model (DOM) is stated to make it broadly usable across diverse programming environments?"
     },
     {
-      "question": "When AJAX is used, as described in the article, what is the typical process for obtaining and displaying server data?",
-      "type": "mcq",
+      "answer": "Data is retrieved from the server in the background and displayed on the web page.",
       "options": [
         "Data is always sent to the server in the foreground, causing a full page reload.",
         "Data is retrieved from the server in the background and displayed on the web page.",
         "All data processing and display occur entirely on the client-side without server interaction.",
         "Data is encrypted on the server and then stored locally on the client without being displayed."
       ],
-      "answer": "Data is retrieved from the server in the background and displayed on the web page."
+      "type": "mcq",
+      "question": "When AJAX is used, as described in the article, what is the typical process for obtaining and displaying server data?"
     },
     {
-      "answer": "The malicious scripts appear to originate from a trusted site.",
       "options": [
         "Users intentionally disable their browser's security settings.",
         "The malicious scripts appear to originate from a trusted site.",
         "Users share their personal information directly with attackers.",
         "The scripts encrypt all user data before execution."
       ],
-      "type": "mcq",
-      "question": "According to the article, what makes users vulnerable when malicious scripts are embedded during a Cross-Site Scripting (XSS) attack?"
+      "answer": "The malicious scripts appear to originate from a trusted site.",
+      "question": "According to the article, what makes users vulnerable when malicious scripts are embedded during a Cross-Site Scripting (XSS) attack?",
+      "type": "mcq"
     },
     {
-      "question": "What is the Document Object Model (DOM) primarily defined as in the article?",
       "type": "mcq",
+      "question": "What is the Document Object Model (DOM) primarily defined as in the article?",
+      "answer": "A platform and language-neutral interface.",
       "options": [
         "A programming language for web development.",
         "A platform and language-neutral interface.",
         "A specific jQuery library for animations.",
         "A database for storing web page content."
-      ],
-      "answer": "A platform and language-neutral interface."
+      ]
     },
     {
-      "answer": "It enables exchanging data with a server and updating parts of a web page without reloading the whole page.",
       "type": "mcq",
       "question": "According to the article, what is the main advantage of using AJAX in web development?",
+      "answer": "It enables exchanging data with a server and updating parts of a web page without reloading the whole page.",
       "options": [
         "It allows for faster page reloads for the entire website.",
         "It enables exchanging data with a server and updating parts of a web page without reloading the whole page.",
@@ -239,12 +238,12 @@
         "val()",
         "append()"
       ],
-      "type": "mcq",
+      "answer": "val()",
       "question": "Which of the following jQuery methods is used to manipulate the *value* of form elements, according to the article?",
-      "answer": "val()"
+      "type": "mcq"
     },
     {
-      "answer": "JavaScript",
+      "question": "What type of malicious code is most commonly embedded by an attacker during a Cross-Site Scripting (XSS) attack, as mentioned in the article?",
       "type": "mcq",
       "options": [
         "SQL commands",
@@ -252,9 +251,10 @@
         "JavaScript",
         "HTML CSS"
       ],
-      "question": "What type of malicious code is most commonly embedded by an attacker during a Cross-Site Scripting (XSS) attack, as mentioned in the article?"
+      "answer": "JavaScript"
     },
     {
+      "question": "What percentage of websites are stated to use jQuery, despite its known vulnerabilities to XSS attacks?",
       "type": "mcq",
       "options": [
         "50%",
@@ -262,30 +262,29 @@
         "88%",
         "95%"
       ],
-      "question": "What percentage of websites are stated to use jQuery, despite its known vulnerabilities to XSS attacks?",
       "answer": "88%"
     },
     {
+      "type": "scenario-mcq",
       "question": "Scenario: A web application needs to display real-time stock prices on a dashboard without refreshing the entire page. The developer wants to fetch this data from a server endpoint using an asynchronous HTTP GET request and then update a specific `div` element. Based on the article, which jQuery method is specifically listed for making such a GET request?",
+      "answer": "$.get()",
       "options": [
         "load()",
         "$.post()",
         "$.get()",
         "attr()"
-      ],
-      "type": "scenario-mcq",
-      "answer": "$.get()"
+      ]
     },
     {
-      "answer": "Both A and R are true and R is the correct explanation of A.",
-      "type": "assertion-reason-mcq",
       "options": [
         "Both A and R are true and R is the correct explanation of A.",
         "Both A and R are true but R is NOT the correct explanation of A.",
         "A is true but R is false.",
         "A is false but R is true."
       ],
-      "question": "Assertion (A): jQuery simplifies Event Handling and AJAX calls in web development.\nReason (R): The article lists \"Event handling\" and \"Ajax call\" as areas that jQuery simplifies."
+      "answer": "Both A and R are true and R is the correct explanation of A.",
+      "question": "Assertion (A): jQuery simplifies Event Handling and AJAX calls in web development.\nReason (R): The article lists \"Event handling\" and \"Ajax call\" as areas that jQuery simplifies.",
+      "type": "assertion-reason-mcq"
     },
     {
       "options": [
@@ -294,19 +293,19 @@
         "html()",
         "attr()"
       ],
-      "type": "mcq",
+      "answer": "html()",
       "question": "Which of the following jQuery methods is listed in the article for changing the *HTML content* of an element?",
-      "answer": "html()"
+      "type": "mcq"
     },
     {
       "question": "Besides HTML DOM manipulation, Event Handling, and AJAX calls, which other area does the article state jQuery simplifies?",
+      "type": "mcq",
       "options": [
         "Server-side scripting",
         "Database management",
         "CSS templates",
         "Network security"
       ],
-      "type": "mcq",
       "answer": "CSS templates"
     },
     {
@@ -322,28 +321,28 @@
     },
     {
       "type": "mcq",
+      "question": "Beyond stealing user data like session cookies, what other malicious actions are explicitly mentioned in the article that attackers can perform via Cross-Site Scripting (XSS)?",
+      "answer": "Hijacking user sessions",
       "options": [
         "Encrypting server databases",
         "Hijacking user sessions",
         "Overloading network bandwidth",
         "Deleting user accounts"
-      ],
-      "question": "Beyond stealing user data like session cookies, what other malicious actions are explicitly mentioned in the article that attackers can perform via Cross-Site Scripting (XSS)?",
-      "answer": "Hijacking user sessions"
+      ]
     },
     {
+      "type": "mcq",
+      "question": "The Document Object Model (DOM) allows programs and scripts to dynamically access and update which aspects of a document?",
+      "answer": "Its content, structure, and style",
       "options": [
         "Only its content and structure",
         "Only its style and scripts",
         "Its content, structure, and style",
         "Its server-side logic"
-      ],
-      "question": "The Document Object Model (DOM) allows programs and scripts to dynamically access and update which aspects of a document?",
-      "type": "mcq",
-      "answer": "Its content, structure, and style"
+      ]
     },
     {
-      "answer": "append()",
+      "question": "Scenario: A developer wants to dynamically add new HTML content at the *end* of an existing `div` element without overwriting its current content. Based on the article, which jQuery method should they use for this purpose?",
       "type": "scenario",
       "options": [
         "html()",
@@ -351,64 +350,65 @@
         "append()",
         "prepend()"
       ],
-      "question": "Scenario: A developer wants to dynamically add new HTML content at the *end* of an existing `div` element without overwriting its current content. Based on the article, which jQuery method should they use for this purpose?"
+      "answer": "append()"
     },
     {
       "type": "assertion_reason",
       "question": "Assertion (A): jQuery, despite its wide usage, is susceptible to Cross-Site Scripting (XSS) attacks. Reason (R): Attackers can exploit jQuery's capabilities to manipulate JS code and add malicious content into web pages during an XSS attack.",
+      "answer": "Both A and R are true, and R is the correct explanation of A.",
       "options": [
         "Both A and R are true, and R is the correct explanation of A.",
         "Both A and R are true, but R is NOT the correct explanation of A.",
         "A is true, but R is false.",
         "A is false, but R is true."
-      ],
-      "answer": "Both A and R are true, and R is the correct explanation of A."
+      ]
     },
     {
-      "answer": "A dynamic front-end JS library",
       "type": "mcq",
+      "question": "What is jQuery primarily identified as in the article?",
+      "answer": "A dynamic front-end JS library",
       "options": [
         "A server-side framework",
         "A dynamic front-end JS library",
         "A database management system",
         "An operating system"
-      ],
-      "question": "What is jQuery primarily identified as in the article?"
+      ]
     },
     {
-      "answer": "load()",
+      "question": "Scenario: A developer wants to update a specific section of their webpage with content fetched from a separate HTML file on the server, without a full page refresh. Based on the article, which jQuery AJAX method is best suited for this purpose, directly loading data into an element?",
+      "type": "scenario",
       "options": [
         "$.get()",
         "$.post()",
         "load()",
         "val()"
       ],
-      "question": "Scenario: A developer wants to update a specific section of their webpage with content fetched from a separate HTML file on the server, without a full page refresh. Based on the article, which jQuery AJAX method is best suited for this purpose, directly loading data into an element?",
-      "type": "scenario"
+      "answer": "load()"
     },
     {
+      "options": [
+        "html()",
+        "text()",
+        "val()",
+        "attr()"
+      ],
+      "answer": "text()",
       "question": "According to the article, which jQuery method is used to retrieve or set the plain text content of an element?",
-      "options": [
-        "html()",
-        "text()",
-        "val()",
-        "attr()"
-      ],
-      "type": "mcq",
-      "answer": "text()"
+      "type": "mcq"
     },
     {
-      "question": "According to the article, which jQuery method is used to retrieve or set the *value* of form fields?",
-      "type": "mcq",
+      "answer": "val()",
       "options": [
         "text()",
         "html()",
         "val()",
         "attr()"
       ],
-      "answer": "val()"
+      "type": "mcq",
+      "question": "According to the article, which jQuery method is used to retrieve or set the *value* of form fields?"
     },
     {
+      "answer": "prepend()",
       "options": [
         "append()",
         "html()",
@@ -416,8 +416,7 @@
         "text()"
       ],
       "type": "mcq",
-      "question": "Which jQuery method is listed in the article for adding new HTML content at the *beginning* of an existing element?",
-      "answer": "prepend()"
+      "question": "Which jQuery method is listed in the article for adding new HTML content at the *beginning* of an existing element?"
     },
     {
       "answer": "attr()",
@@ -442,26 +441,26 @@
       "question": "What is the primary purpose of AJAX, as described in the article, regarding web page updates?"
     },
     {
-      "answer": "$.get()",
-      "question": "Which jQuery AJAX method is mentioned in the article for making an asynchronous HTTP GET request?",
-      "type": "mcq",
       "options": [
         "$.post()",
         "load()",
         "$.get()",
         "val()"
-      ]
+      ],
+      "answer": "$.get()",
+      "question": "Which jQuery AJAX method is mentioned in the article for making an asynchronous HTTP GET request?",
+      "type": "mcq"
     },
     {
+      "answer": "An attacker embeds malicious code (often JavaScript) into a vulnerable website that users then run",
       "options": [
         "An attacker floods a server with requests to cause a denial of service",
         "An attacker embeds malicious code (often JavaScript) into a vulnerable website that users then run",
         "An attacker creates fake login pages to trick users into revealing credentials",
         "An attacker gains unauthorized access to a server's database"
       ],
-      "question": "How does the article describe the mechanism of a Cross-Site Scripting (XSS) attack?",
       "type": "mcq",
-      "answer": "An attacker embeds malicious code (often JavaScript) into a vulnerable website that users then run"
+      "question": "How does the article describe the mechanism of a Cross-Site Scripting (XSS) attack?"
     },
     {
       "answer": "attr()",
@@ -476,36 +475,37 @@
     },
     {
       "answer": "Malicious JavaScript embedded in comments could be executed in other users' browsers",
-      "question": "Scenario: A security audit of a web application using jQuery identifies a potential Cross-Site Scripting (XSS) vulnerability in a comment section. The article mentions that jQuery is vulnerable to XSS. What is the fundamental risk highlighted by the article's description of XSS in this context?",
-      "type": "scenario",
       "options": [
         "Attackers could overload the server by submitting too many comments",
         "Attackers could steal the website's database containing user comments",
         "Malicious JavaScript embedded in comments could be executed in other users' browsers",
         "Attackers could gain root access to the web server operating system"
-      ]
+      ],
+      "type": "scenario",
+      "question": "Scenario: A security audit of a web application using jQuery identifies a potential Cross-Site Scripting (XSS) vulnerability in a comment section. The article mentions that jQuery is vulnerable to XSS. What is the fundamental risk highlighted by the article's description of XSS in this context?"
     },
     {
-      "answer": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
       "options": [
         "(A) is true, but (R) is false.",
         "(A) is false, but (R) is true.",
         "Both (A) and (R) are true and (R) is the correct explanation of (A).",
         "Both (A) and (R) are true but (R) is not the correct explanation of (A)."
       ],
+      "answer": "Both (A) and (R) are true and (R) is the correct explanation of (A).",
       "question": "Assertion (A): AJAX facilitates the updating of specific parts of a web page without requiring a full page reload. Reason (R): AJAX achieves this by exchanging data with a server in the background.",
       "type": "assertion_reason"
     },
     {
-      "answer": "A platform and language-neutral interface",
       "question": "The Document Object Model (DOM) is characterized in the article as what type of interface?",
+      "type": "mcq",
       "options": [
         "A server-side API",
         "A platform and language-specific interface",
         "A client-side rendering engine",
         "A platform and language-neutral interface"
       ],
-      "type": "mcq"
+      "answer": "A platform and language-neutral interface"
     }
-  ]
+  ],
+  "createdAt": 1782040514904
 }

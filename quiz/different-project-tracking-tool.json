@@ -1,16 +1,15 @@
 {
-  "createdAt": 1783173701035,
   "questions": [
     {
-      "answer": "Issue and bug tracking.",
-      "question": "What was Jira's primary function when it was initially created in 2002?",
-      "type": "mcq",
       "options": [
         "Agile project management for large teams.",
         "Issue and bug tracking.",
         "Code hosting and version control.",
         "Project portfolio management."
-      ]
+      ],
+      "answer": "Issue and bug tracking.",
+      "question": "What was Jira's primary function when it was initially created in 2002?",
+      "type": "mcq"
     },
     {
       "answer": "To ensure the software produced is high quality and potentially shippable.",
@@ -24,29 +23,29 @@
       "question": "According to the article, what is the primary objective of the 'Definition of Done' (DoD) in a sprint?"
     },
     {
+      "type": "mcq",
+      "question": "Which of the following is a common criticism developers have about Jira, as mentioned in the article?",
+      "answer": "Its slow speed.",
       "options": [
         "Its lack of support for Scrum frameworks.",
         "Its slow speed.",
         "Its inability to add story points to issues.",
         "Its excessive built-in agile reports."
-      ],
-      "question": "Which of the following is a common criticism developers have about Jira, as mentioned in the article?",
-      "type": "mcq",
-      "answer": "Its slow speed."
+      ]
     },
     {
+      "question": "Which project management tool, according to the article, allows teams to view a project from start to finish, including connections between various stages and work items, but Jira does not?",
+      "type": "mcq",
       "options": [
         "GitHub",
         "Zepel",
         "Azure DevOps",
         "Kanban"
       ],
-      "type": "mcq",
-      "question": "Which project management tool, according to the article, allows teams to view a project from start to finish, including connections between various stages and work items, but Jira does not?",
       "answer": "Azure DevOps"
     },
     {
-      "question": "GitHub, initially known for source code management, has expanded its horizons to include what other major functionality?",
+      "answer": "Project management.",
       "options": [
         "Enterprise resource planning (ERP).",
         "Customer relationship management (CRM).",
@@ -54,23 +53,23 @@
         "Financial accounting."
       ],
       "type": "mcq",
-      "answer": "Project management."
+      "question": "GitHub, initially known for source code management, has expanded its horizons to include what other major functionality?"
     },
     {
+      "answer": "Story points to quantify work.",
       "options": [
         "Basic Kanban boards.",
         "Milestones for scrum.",
         "Story points to quantify work.",
         "Automated Kanban with triggers."
       ],
-      "question": "What significant agile capability does GitHub lack compared to Jira software, as stated in the article?",
       "type": "mcq",
-      "answer": "Story points to quantify work."
+      "question": "What significant agile capability does GitHub lack compared to Jira software, as stated in the article?"
     },
     {
-      "answer": "To check how much work remains in a sprint backlog and understand team completion speed.",
       "type": "mcq",
       "question": "What is the primary purpose of a Sprint Burn Down chart, as described in the article?",
+      "answer": "To check how much work remains in a sprint backlog and understand team completion speed.",
       "options": [
         "To show how much work has been completed in a sprint.",
         "To track overall project budget expenditure.",
@@ -79,37 +78,38 @@
       ]
     },
     {
-      "question": "A project manager needs a tool that supports Agile methodologies like Scrum and Kanban, allows flexibility in workflow iterations, and can be used for both software development and other types of projects. Based on the article, which tool would be the best fit?",
-      "type": "mcq",
+      "answer": "Jira",
       "options": [
         "Azure DevOps",
         "GitHub",
         "Jira",
         "Zepel"
       ],
-      "answer": "Jira"
+      "type": "mcq",
+      "question": "A project manager needs a tool that supports Agile methodologies like Scrum and Kanban, allows flexibility in workflow iterations, and can be used for both software development and other types of projects. Based on the article, which tool would be the best fit?"
     },
     {
+      "type": "mcq",
+      "question": "Sarah, a developer, wants to contribute to an open-source project on GitHub. She wants to make significant changes and test them thoroughly without directly impacting the original project's main codebase. Which GitHub feature should she use to create her own editable copy of the repository?",
       "answer": "Fork the repository",
       "options": [
         "Create a new branch.",
         "Fork the repository.",
         "Submit an issue.",
         "Initiate a pull request."
-      ],
-      "type": "mcq",
-      "question": "Sarah, a developer, wants to contribute to an open-source project on GitHub. She wants to make significant changes and test them thoroughly without directly impacting the original project's main codebase. Which GitHub feature should she use to create her own editable copy of the repository?"
+      ]
     },
     {
-      "answer": "A is true, but R is false.",
       "question": "Assertion (A): Azure DevOps is generally a better option if a team needs to manage the entire lifecycle of a software application development, from ideation to deployment.\nReason (R): Jira allows teams to view a project from start to finish, along with the connections between various stages and work items, which Azure DevOps does not.",
+      "type": "mcq",
       "options": [
         "Both A and R are true, and R is the correct explanation of A.",
         "Both A and R are true, but R is not the correct explanation of A.",
         "A is true, but R is false.",
         "A is false, but R is true."
       ],
-      "type": "mcq"
+      "answer": "A is true, but R is false."
     }
-  ]
+  ],
+  "createdAt": 1783173701035
 }

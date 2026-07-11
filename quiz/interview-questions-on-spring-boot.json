@@ -1,109 +1,108 @@
 {
-  "createdAt": 1783375163780,
   "questions": [
     {
-      "answer": "Explicitly managing multiple threads in Java web applications.",
       "options": [
         "Decreased boilerplate code.",
         "No XML configuration required.",
         "WAR files are not required.",
         "Explicitly managing multiple threads in Java web applications."
       ],
-      "type": "mcq",
-      "question": "Which of the following is NOT an advantage of Spring Boot according to the article?"
+      "answer": "Explicitly managing multiple threads in Java web applications.",
+      "question": "Which of the following is NOT an advantage of Spring Boot according to the article?",
+      "type": "mcq"
     },
     {
-      "answer": "To contain project information and configuration details for Maven to build the project, including dependencies.",
       "question": "What is the primary purpose of the `pom.xml` file in a Maven-based Spring Boot project?",
+      "type": "mcq",
       "options": [
         "To define application-specific key-value properties.",
         "To declare Spring Boot's auto-configuration settings.",
         "To contain project information and configuration details for Maven to build the project, including dependencies.",
         "To define the view components for the web application."
       ],
-      "type": "mcq"
+      "answer": "To contain project information and configuration details for Maven to build the project, including dependencies."
     },
     {
       "answer": "@EnableAutoConfiguration",
-      "type": "mcq",
       "options": [
         "@ComponentScan",
         "@Configuration",
         "@EnableAutoConfiguration",
         "@SpringBootConfiguration"
       ],
+      "type": "mcq",
       "question": "Which annotation is used to enable Spring Boot's auto-configuration mechanism by scanning the classpath for included jar files and automatically creating and registering beans?"
     },
     {
+      "type": "mcq",
+      "question": "A developer wants to expose operational information about a running Spring Boot application, such as health and monitoring metrics. Which starter dependency should they add to their `pom.xml`?",
       "answer": "spring-boot-starter-actuator",
       "options": [
         "spring-boot-starter-web",
         "spring-boot-starter-test",
         "spring-boot-starter-actuator",
         "spring-boot-starter-data-jpa"
-      ],
-      "question": "A developer wants to expose operational information about a running Spring Boot application, such as health and monitoring metrics. Which starter dependency should they add to their `pom.xml`?",
-      "type": "mcq"
+      ]
     },
     {
-      "type": "mcq",
+      "answer": "application.properties is specifically used by Java, while application.yml can be used by other languages.",
       "options": [
         "application.properties stores data in hierarchical format, while application.yml stores data in sequential format.",
         "application.properties supports key-value pairs, as well as map, list & scalar type values, while application.yml supports only key-value pairs.",
         "application.properties is specifically used by Java, while application.yml can be used by other languages.",
         "application.properties allows creating sections for specific profiles inside a single file, while application.yml requires creating a separate file per profile."
       ],
-      "question": "Which of the following statements accurately describes the difference between `application.properties` and `application.yml` files?",
-      "answer": "application.properties is specifically used by Java, while application.yml can be used by other languages."
+      "type": "mcq",
+      "question": "Which of the following statements accurately describes the difference between `application.properties` and `application.yml` files?"
     },
     {
-      "answer": "To manage the persistence of data, acting as the DAO layer that accesses the database directly.",
+      "question": "What is the primary role of the `Repository` layer in a Spring application's architecture?",
+      "type": "mcq",
       "options": [
         "To handle incoming web requests and return appropriate responses.",
         "To perform business logic and other logic-related tasks.",
         "To manage the persistence of data, acting as the DAO layer that accesses the database directly.",
         "To define beans and their configurations for the Spring container."
       ],
-      "question": "What is the primary role of the `Repository` layer in a Spring application's architecture?",
-      "type": "mcq"
+      "answer": "To manage the persistence of data, acting as the DAO layer that accesses the database directly."
     },
     {
-      "answer": "JpaRepository",
       "type": "mcq",
+      "question": "Which Spring Data interface provides methods for CRUD operations, pagination, and sorting, and extends both `CrudRepository` and `PagingAndSortingRepository`?",
+      "answer": "JpaRepository",
       "options": [
         "JpaRepository",
         "JdbcRepository",
         "MongoRepository",
         "HibernateRepository"
-      ],
-      "question": "Which Spring Data interface provides methods for CRUD operations, pagination, and sorting, and extends both `CrudRepository` and `PagingAndSortingRepository`?"
+      ]
     },
     {
+      "type": "scenario_mcq",
+      "question": "A Spring Boot developer is working on an application and needs to retrieve a user ID from the URL path, for example, `/users/123`. Additionally, they need to filter results based on a `status` parameter provided as a query string, like `/users/123?status=active`. Which two annotations should be used in the controller method to extract these values correctly?",
+      "answer": "@PathVariable for user ID and @RequestParam for status",
       "options": [
         "@RequestParam for user ID and @PathVariable for status",
         "@PathVariable for user ID and @RequestParam for status",
         "@Value for user ID and @PropertySource for status",
         "@ResponseBody for user ID and @RequestBody for status"
-      ],
-      "type": "scenario_mcq",
-      "question": "A Spring Boot developer is working on an application and needs to retrieve a user ID from the URL path, for example, `/users/123`. Additionally, they need to filter results based on a `status` parameter provided as a query string, like `/users/123?status=active`. Which two annotations should be used in the controller method to extract these values correctly?",
-      "answer": "@PathVariable for user ID and @RequestParam for status"
+      ]
     },
     {
-      "type": "scenario_mcq",
+      "answer": "Spring DevTools, setting `spring.thymeleaf.cache=false`",
       "options": [
         "Spring Actuator, setting `spring.thymeleaf.cache=true`",
         "Spring DevTools, setting `spring.thymeleaf.cache=false`",
         "Spring MVC, setting `spring.mvc.cache=false`",
         "Spring IOC Container, setting `spring.ioc.cache=true`"
       ],
-      "question": "During the development of a Spring Boot application, a developer frequently makes changes to template files (e.g., Thymeleaf). To avoid manually restarting the application every time for these changes to reflect, which Spring Boot feature should be utilized, and what property does it automatically set for Thymeleaf caching?",
-      "answer": "Spring DevTools, setting `spring.thymeleaf.cache=false`"
+      "type": "scenario_mcq",
+      "question": "During the development of a Spring Boot application, a developer frequently makes changes to template files (e.g., Thymeleaf). To avoid manually restarting the application every time for these changes to reflect, which Spring Boot feature should be utilized, and what property does it automatically set for Thymeleaf caching?"
     },
     {
-      "answer": "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
-      "question": "Assertion: `@Bean` is a method-level annotation, while `@Component` is a class-level annotation.\nReason: `@Bean` is typically used within a `@Configuration` class to explicitly declare a single bean, whereas `@Component` marks a class for auto-detection during classpath scanning.",
       "type": "assertion_reason_mcq",
+      "question": "Assertion: `@Bean` is a method-level annotation, while `@Component` is a class-level annotation.\nReason: `@Bean` is typically used within a `@Configuration` class to explicitly declare a single bean, whereas `@Component` marks a class for auto-detection during classpath scanning.",
+      "answer": "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
       "options": [
         "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
         "Both Assertion and Reason are true, but Reason is not the correct explanation for Assertion.",
@@ -112,8 +111,8 @@
       ]
     },
     {
-      "type": "mcq",
       "question": "Which of the following annotations are *combined* within the `@SpringBootApplication` annotation?",
+      "type": "mcq",
       "options": [
         "@Configuration, @EnableAutoConfiguration, @Service",
         "@Configuration, @EnableAutoConfiguration, @ComponentScan",
@@ -124,14 +123,14 @@
     },
     {
       "type": "scenario",
+      "question": "A Spring Boot application fails to start due to a `NoUniqueBeanDefinitionException` during autowiring. The developer has two different implementations of an interface, both marked as Spring components. Which two annotations can be used to resolve this ambiguity, according to the article?",
+      "answer": "C) @Qualifier and @Primary",
       "options": [
         "@Override and @Primary",
         "@Service and @Repository",
         "@Qualifier and @Primary",
         "@Configuration and @Bean"
-      ],
-      "question": "A Spring Boot application fails to start due to a `NoUniqueBeanDefinitionException` during autowiring. The developer has two different implementations of an interface, both marked as Spring components. Which two annotations can be used to resolve this ambiguity, according to the article?",
-      "answer": "C) @Qualifier and @Primary"
+      ]
     },
     {
       "answer": "C) @Value(\"${service.port:80}\") private String servicePort;",
@@ -141,11 +140,11 @@
         "@Value(\"${service.port:80}\") private String servicePort;",
         "@Value(\"#{service.port ?: '80'}\") private String servicePort;"
       ],
-      "question": "A Spring Boot application has a property `service.port` defined in `application.properties`. If this property is *not* present, the application should default to port 80. Which `@Value` annotation syntax correctly achieves this?",
-      "type": "mcq"
+      "type": "mcq",
+      "question": "A Spring Boot application has a property `service.port` defined in `application.properties`. If this property is *not* present, the application should default to port 80. Which `@Value` annotation syntax correctly achieves this?"
     },
     {
-      "question": "A developer is building a Spring Boot application to serve a RESTful API. The API endpoints are expected to return JSON representations of data directly in the HTTP response body. Which annotation should the developer primarily use for their controller classes to achieve this efficiently without needing to add `@ResponseBody` to every method?",
+      "answer": "D) @RestController",
       "options": [
         "@Controller",
         "@Service",
@@ -153,67 +152,67 @@
         "@RestController"
       ],
       "type": "scenario",
-      "answer": "D) @RestController"
+      "question": "A developer is building a Spring Boot application to serve a RESTful API. The API endpoints are expected to return JSON representations of data directly in the HTTP response body. Which annotation should the developer primarily use for their controller classes to achieve this efficiently without needing to add `@ResponseBody` to every method?"
     },
     {
-      "question": "According to the article, which of the following is a primary advantage of using lazy loading?",
       "options": [
         "It ensures all related data is pre-loaded instantly, improving initial user experience.",
         "It significantly reduces initial page load time and memory footprint by deferring object initialization.",
         "It simplifies debugging by ensuring all dependencies are available from the start.",
         "It always guarantees faster access to all resources regardless of user interaction speed."
       ],
-      "type": "mcq",
-      "answer": "B) It significantly reduces initial page load time and memory footprint by deferring object initialization."
+      "answer": "B) It significantly reduces initial page load time and memory footprint by deferring object initialization.",
+      "question": "According to the article, which of the following is a primary advantage of using lazy loading?",
+      "type": "mcq"
     },
     {
+      "question": "What are the main responsibilities of the Spring IoC (Inversion of Control) container?",
+      "type": "mcq",
       "options": [
         "To manage database transactions and connection pooling.",
         "To instantiate, configure, and assemble objects (beans).",
         "To handle HTTP requests and responses from clients.",
         "To compile Java source code into bytecode at runtime."
       ],
-      "type": "mcq",
-      "question": "What are the main responsibilities of the Spring IoC (Inversion of Control) container?",
       "answer": "B) To instantiate, configure, and assemble objects (beans)."
     },
     {
+      "question": "What mechanism does Spring Boot primarily use to create standalone applications that run without relying on an external web server?",
+      "type": "mcq",
       "options": [
         "It compiles applications directly into native executables.",
         "It uses a specialized proxy server to redirect requests.",
         "It embeds a web server (like Tomcat or Netty) directly into the application during initialization.",
         "It requires a pre-installed application server like JBoss or WebLogic."
       ],
-      "question": "What mechanism does Spring Boot primarily use to create standalone applications that run without relying on an external web server?",
-      "type": "mcq",
       "answer": "C) It embeds a web server (like Tomcat or Netty) directly into the application during initialization."
     },
     {
+      "type": "assertion_reason",
+      "question": "Assertion: For large-scale Spring applications, annotation-based configuration metadata often leads to lower performance and readability compared to XML-based or Java-based configurations.\nReason: Annotation-based configuration requires the container to scan multiple packages to identify components, which is a time-consuming process for big applications.",
+      "answer": "A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion.",
       "options": [
         "Both Assertion and Reason are true, and Reason is the correct explanation of Assertion.",
         "Both Assertion and Reason are true, but Reason is NOT the correct explanation of Assertion.",
         "Assertion is true, but Reason is false.",
         "Assertion is false, but Reason is true."
-      ],
-      "type": "assertion_reason",
-      "question": "Assertion: For large-scale Spring applications, annotation-based configuration metadata often leads to lower performance and readability compared to XML-based or Java-based configurations.\nReason: Annotation-based configuration requires the container to scan multiple packages to identify components, which is a time-consuming process for big applications.",
-      "answer": "A) Both Assertion and Reason are true, and Reason is the correct explanation of Assertion."
+      ]
     },
     {
+      "type": "mcq",
       "question": "Besides acting as a cache, what are two other primary use cases for Redis as described in the article?",
+      "answer": "B) An in-memory database and a message broker.",
       "options": [
         "A relational database and an ORM tool.",
         "An in-memory database and a message broker.",
         "A web server and a load balancer.",
         "A file system and a code repository."
-      ],
-      "type": "mcq",
-      "answer": "B) An in-memory database and a message broker."
+      ]
     },
     {
-      "answer": "A) `RestTemplate` is blocking and synchronous, while `WebClient` is reactive and non-blocking.",
-      "question": "As of Spring Framework 5, what is the primary architectural difference between `RestTemplate` and its alternative, `WebClient`?",
       "type": "mcq",
+      "question": "As of Spring Framework 5, what is the primary architectural difference between `RestTemplate` and its alternative, `WebClient`?",
+      "answer": "A) `RestTemplate` is blocking and synchronous, while `WebClient` is reactive and non-blocking.",
       "options": [
         "`RestTemplate` is blocking and synchronous, while `WebClient` is reactive and non-blocking.",
         "`RestTemplate` supports HTTPS, whereas `WebClient` only supports HTTP.",
@@ -222,37 +221,37 @@
       ]
     },
     {
-      "type": "mcq",
+      "answer": "It provides a ready-to-use project with commonly required dependencies for a specific feature (e.g., web, JDBC).",
       "options": [
         "It automatically configures all database connections.",
         "It provides a ready-to-use project with commonly required dependencies for a specific feature (e.g., web, JDBC).",
         "It replaces the need for Maven or Gradle for dependency management.",
         "It allows the application to run without an embedded web server."
       ],
-      "question": "What is the primary benefit of Spring Boot's 'Starter Project' feature?",
-      "answer": "It provides a ready-to-use project with commonly required dependencies for a specific feature (e.g., web, JDBC)."
+      "type": "mcq",
+      "question": "What is the primary benefit of Spring Boot's 'Starter Project' feature?"
     },
     {
-      "type": "mcq",
-      "question": "What is a key architectural difference between `application.properties` and `application.yml` regarding data structure?",
       "options": [
         "application.properties stores data in hierarchical format, while application.yml stores it in sequential format.",
         "application.properties supports only string values, while application.yml supports key-value pairs, maps, lists, and scalar types.",
         "application.properties can be used by other languages, while application.yml is specifically used by Java.",
         "application.properties can define multiple configuration profiles within a single file, while application.yml requires separate files."
       ],
-      "answer": "application.properties supports only string values, while application.yml supports key-value pairs, maps, lists, and scalar types."
+      "answer": "application.properties supports only string values, while application.yml supports key-value pairs, maps, lists, and scalar types.",
+      "question": "What is a key architectural difference between `application.properties` and `application.yml` regarding data structure?",
+      "type": "mcq"
     },
     {
-      "answer": "@Component",
       "options": [
         "@Service",
         "@Repository",
         "@Component",
         "@Controller"
       ],
-      "type": "mcq",
-      "question": "Which of the following stereotype annotations is considered the generic parent stereotype for any Spring-managed component?"
+      "answer": "@Component",
+      "question": "Which of the following stereotype annotations is considered the generic parent stereotype for any Spring-managed component?",
+      "type": "mcq"
     },
     {
       "answer": "When you need to explicitly declare a single bean from a class whose source code you cannot modify.",
@@ -266,39 +265,40 @@
       "question": "When is it generally preferable to use the `@Bean` annotation over the `@Component` annotation, particularly regarding third-party libraries?"
     },
     {
+      "type": "mcq",
+      "question": "Which Spring Boot Actuator endpoint would you use to view the application's memory usage, threads, and system uptime?",
+      "answer": "/metrics",
       "options": [
         "/env",
         "/health",
         "/metrics",
         "/info"
-      ],
-      "question": "Which Spring Boot Actuator endpoint would you use to view the application's memory usage, threads, and system uptime?",
-      "type": "mcq",
-      "answer": "/metrics"
+      ]
     },
     {
+      "type": "mcq",
       "question": "What is a main disadvantage of using setter injection for dependencies compared to constructor injection?",
+      "answer": "Setter injection is less reliable as it doesn't guarantee a dependency is injected, potentially leading to incomplete objects.",
       "options": [
         "Setter injection is less reliable as it doesn't guarantee a dependency is injected, potentially leading to incomplete objects.",
         "Setter injection allows for partial dependency injection, which is always undesirable.",
         "Setter injection cannot override constructor injection, making it less flexible.",
         "Setter injection makes the class more tightly coupled to its dependencies."
-      ],
-      "type": "mcq",
-      "answer": "Setter injection is less reliable as it doesn't guarantee a dependency is injected, potentially leading to incomplete objects."
+      ]
     },
     {
-      "answer": "To trigger a browser refresh when a resource in the application is changed.",
-      "question": "According to the article, what is the purpose of Spring DevTools' embedded LiveReload server?",
-      "type": "mcq",
       "options": [
         "To automatically reconfigure database connections during development.",
         "To trigger a browser refresh when a resource in the application is changed.",
         "To disable all caching mechanisms by default in development mode.",
         "To provide real-time monitoring of application performance in production."
-      ]
+      ],
+      "answer": "To trigger a browser refresh when a resource in the application is changed.",
+      "question": "According to the article, what is the purpose of Spring DevTools' embedded LiveReload server?",
+      "type": "mcq"
     },
     {
+      "answer": "`@PathVariable`",
       "options": [
         "`@RequestParam`",
         "`@RequestBody`",
@@ -306,30 +306,30 @@
         "`@GetMapping`"
       ],
       "type": "mcq",
-      "question": "A developer wants to retrieve a specific order ID (e.g., \"1001\") from a URL path like `/shop/order/1001/receipts`. Which annotation should be used in the Spring MVC controller method to extract \"1001\"?",
-      "answer": "`@PathVariable`"
+      "question": "A developer wants to retrieve a specific order ID (e.g., \"1001\") from a URL path like `/shop/order/1001/receipts`. Which annotation should be used in the Spring MVC controller method to extract \"1001\"?"
     },
     {
       "answer": "B. Exclude `spring-boot-starter-tomcat`, add `spring-boot-starter-jetty`.",
-      "question": "Your Spring Boot application needs to switch its embedded web server from the default Tomcat to Jetty. Which two steps are necessary in your `pom.xml` to achieve this, according to the article?",
-      "type": "mcq",
       "options": [
         "A. Exclude `spring-boot-starter-web`, add `spring-boot-starter-jetty`.",
         "B. Exclude `spring-boot-starter-tomcat`, add `spring-boot-starter-jetty`.",
         "C. Add `spring-boot-starter-jetty`, no exclusion needed.",
         "D. Exclude `spring-boot-starter-webflux`, add `spring-boot-starter-jetty`."
-      ]
+      ],
+      "type": "mcq",
+      "question": "Your Spring Boot application needs to switch its embedded web server from the default Tomcat to Jetty. Which two steps are necessary in your `pom.xml` to achieve this, according to the article?"
     },
     {
+      "answer": "Assertion is true, Reason is true and Reason is the correct explanation of Assertion.",
       "options": [
         "Assertion is true, Reason is true and Reason is the correct explanation of Assertion.",
         "Assertion is true, Reason is true but Reason is not the correct explanation of Assertion.",
         "Assertion is true, Reason is false.",
         "Assertion is false, Reason is true."
       ],
-      "question": "Assertion: The `ApplicationContext` container is considered more advanced than the `BeanFactory` container in Spring.\nReason: `ApplicationContext` supports features like resolving textual messages from properties files and publishing application events, which `BeanFactory` does not.",
       "type": "assertion_reason",
-      "answer": "Assertion is true, Reason is true and Reason is the correct explanation of Assertion."
+      "question": "Assertion: The `ApplicationContext` container is considered more advanced than the `BeanFactory` container in Spring.\nReason: `ApplicationContext` supports features like resolving textual messages from properties files and publishing application events, which `BeanFactory` does not."
     }
-  ]
+  ],
+  "createdAt": 1783375163780
 }

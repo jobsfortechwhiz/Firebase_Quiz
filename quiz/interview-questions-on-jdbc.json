@@ -1,52 +1,50 @@
 {
-  "createdAt": 1781245993556,
   "questions": [
     {
+      "type": "mcq",
       "question": "What was the primary limitation of the ODBC API that JDBC was developed to overcome?",
+      "answer": "ODBC was written in C language, making it incompatible with Java applications.",
       "options": [
         "ODBC lacked support for relational databases.",
         "ODBC was not an open-source API.",
         "ODBC was written in C language, making it incompatible with Java applications.",
         "ODBC required a separate server for database connections."
-      ],
-      "type": "mcq",
-      "answer": "ODBC was written in C language, making it incompatible with Java applications."
+      ]
     },
     {
+      "type": "mcq",
+      "question": "Which characteristic primarily contributes to the better performance of Prepared Statements compared to regular Statements?",
       "answer": "They are pre-compiled and reuse the same execution plan for different arguments.",
       "options": [
         "They execute queries in batches automatically.",
         "They require manual compilation before each execution.",
         "They are pre-compiled and reuse the same execution plan for different arguments.",
         "They support only non-parameterized SQL queries."
-      ],
-      "question": "Which characteristic primarily contributes to the better performance of Prepared Statements compared to regular Statements?",
-      "type": "mcq"
+      ]
     },
     {
-      "type": "mcq",
-      "question": "What types of results can a `CallableStatement` return when executing stored procedures in a database?",
+      "answer": "A single `ResultSet` object or multiple `ResultSet` objects.",
       "options": [
         "Only an integer status code.",
         "A single `ResultSet` object or multiple `ResultSet` objects.",
         "Only a boolean indicating success or failure.",
         "A `Statement` object."
       ],
-      "answer": "A single `ResultSet` object or multiple `ResultSet` objects."
+      "type": "mcq",
+      "question": "What types of results can a `CallableStatement` return when executing stored procedures in a database?"
     },
     {
-      "answer": "It converts JDBC calls into a network protocol directly used by the DBMS, is 100% Java compatible, and is highly efficient.",
       "type": "mcq",
+      "question": "Which of the following best describes the key advantages and characteristics of a Type 4 JDBC Driver?",
+      "answer": "It converts JDBC calls into a network protocol directly used by the DBMS, is 100% Java compatible, and is highly efficient.",
       "options": [
         "It acts as a bridge to ODBC drivers.",
         "It converts JDBC calls into a network protocol directly used by the DBMS, is 100% Java compatible, and is highly efficient.",
         "It uses a native API client library, requiring platform-specific binaries.",
         "It translates JDBC calls into a generic network protocol, requiring a middleware server."
-      ],
-      "question": "Which of the following best describes the key advantages and characteristics of a Type 4 JDBC Driver?"
+      ]
     },
     {
-      "answer": "It allows for configurable and portable driver registration by dynamically loading the class.",
       "question": "Why is `Class.forName()` generally the preferable method for loading a database driver in JDBC applications?",
       "type": "mcq",
       "options": [
@@ -54,62 +52,64 @@
         "It explicitly registers the driver with the `DriverManager` using a static method.",
         "It allows for configurable and portable driver registration by dynamically loading the class.",
         "It is the only method compatible with all JVMs."
-      ]
+      ],
+      "answer": "It allows for configurable and portable driver registration by dynamically loading the class."
     },
     {
+      "type": "mcq",
+      "question": "Besides relational and non-relational databases, what other types of data sources can the JDBC API provide access to for Java applications?",
+      "answer": "Flat files and spreadsheets.",
       "options": [
         "Only XML files.",
         "Web service APIs.",
         "Flat files and spreadsheets.",
         "Operating system configuration files."
-      ],
-      "question": "Besides relational and non-relational databases, what other types of data sources can the JDBC API provide access to for Java applications?",
-      "type": "mcq",
-      "answer": "Flat files and spreadsheets."
+      ]
     },
     {
-      "answer": "An SQL statement which the database must then parse, compile, plan, and execute.",
+      "type": "mcq",
       "question": "What specific action does a standard `Statement` object encapsulate when it is passed to the database?",
+      "answer": "An SQL statement which the database must then parse, compile, plan, and execute.",
       "options": [
         "Only the connection parameters.",
         "An SQL statement which the database must then parse, compile, plan, and execute.",
         "The results of a previous query.",
         "A pre-compiled execution plan that is immediately run."
-      ],
-      "type": "mcq"
+      ]
     },
     {
       "type": "scenario-mcq",
+      "question": "A Java application needs to frequently execute SQL queries with varying input parameters, such as updating a user's email based on their ID, and security against SQL injection is a top priority. Which type of JDBC statement should be used for this scenario?",
+      "answer": "PreparedStatement",
       "options": [
         "Statement",
         "CallableStatement",
         "PreparedStatement",
         "BatchStatement"
-      ],
-      "question": "A Java application needs to frequently execute SQL queries with varying input parameters, such as updating a user's email based on their ID, and security against SQL injection is a top priority. Which type of JDBC statement should be used for this scenario?",
-      "answer": "PreparedStatement"
+      ]
     },
     {
-      "question": "A Java application is attempting to establish a connection to an underlying database using JDBC. Which of the following options correctly illustrates the hierarchical interaction flow within the JDBC architecture?",
-      "type": "scenario-mcq",
       "options": [
         "Java Application → JDBC Driver Manager → JDBC API → JDBC Driver → Connection databases",
         "Java Application → JDBC Driver → JDBC API → JDBC Driver Manager → Connection databases",
         "Java Application → JDBC API → JDBC Driver Manager → JDBC Driver → Connection databases",
         "Java Application → Connection databases → JDBC API → JDBC Driver Manager → JDBC Driver"
       ],
-      "answer": "Java Application → JDBC API → JDBC Driver Manager → JDBC Driver → Connection databases"
+      "answer": "Java Application → JDBC API → JDBC Driver Manager → JDBC Driver → Connection databases",
+      "question": "A Java application is attempting to establish a connection to an underlying database using JDBC. Which of the following options correctly illustrates the hierarchical interaction flow within the JDBC architecture?",
+      "type": "scenario-mcq"
     },
     {
-      "answer": "Both A and R are true, and R is the correct explanation of A.",
       "question": "Assertion (A): Type 1 JDBC Drivers are typically considered less efficient and not 100% Java compatible.\nReason (R): Type 1 JDBC Drivers rely on the JDBC-ODBC bridge, which internally uses native C libraries to connect to ODBC data sources, thereby introducing a performance overhead and dependency on native code.",
+      "type": "assertion-reason-mcq",
       "options": [
         "Both A and R are true, and R is the correct explanation of A.",
         "Both A and R are true, but R is not the correct explanation of A.",
         "A is true, but R is false.",
         "A is false, but R is true."
       ],
-      "type": "assertion-reason-mcq"
+      "answer": "Both A and R are true, and R is the correct explanation of A."
     }
-  ]
+  ],
+  "createdAt": 1781245993556
 }

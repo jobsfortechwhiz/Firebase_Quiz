@@ -1,85 +1,84 @@
 {
-  "createdAt": 1781264980905,
   "questions": [
     {
+      "question": "Who originally created Apache Kafka?",
+      "type": "mcq",
       "options": [
         "Google",
         "Facebook",
         "LinkedIn",
         "Microsoft"
       ],
-      "question": "Who originally created Apache Kafka?",
-      "type": "mcq",
       "answer": "LinkedIn"
     },
     {
-      "type": "mcq",
+      "answer": "Topic",
       "options": [
         "Producer",
         "Consumer",
         "Topic",
         "Broker"
       ],
-      "question": "Which of the following is NOT considered a core building block of Kafka according to the article?",
-      "answer": "Topic"
+      "type": "mcq",
+      "question": "Which of the following is NOT considered a core building block of Kafka according to the article?"
     },
     {
       "question": "What is the primary role of ZooKeeper in a traditional Kafka cluster?",
+      "type": "mcq",
       "options": [
         "Storing messages in partitions",
         "Producing messages to topics",
         "Coordinating broker information and configuration",
         "Consuming messages from topics"
       ],
-      "type": "mcq",
       "answer": "Coordinating broker information and configuration"
     },
     {
       "answer": "To move data into and out of Kafka with external systems",
-      "type": "mcq",
-      "question": "What is the main function of Kafka Connect?",
       "options": [
         "To transform data within Kafka topics",
         "To provide stream processing capabilities for client applications",
         "To move data into and out of Kafka with external systems",
         "To manage Kafka brokers and topics"
-      ]
+      ],
+      "type": "mcq",
+      "question": "What is the main function of Kafka Connect?"
     },
     {
+      "question": "A key advantage of Kafka over RabbitMQ, as mentioned in the article, relates to its handling of messages after consumption. What is this advantage?",
+      "type": "mcq",
       "options": [
         "Kafka deletes messages immediately after consumption",
         "Kafka retains messages for a configurable period",
         "Kafka encrypts messages after consumption",
         "Kafka prioritizes messages after consumption"
       ],
-      "type": "mcq",
-      "question": "A key advantage of Kafka over RabbitMQ, as mentioned in the article, relates to its handling of messages after consumption. What is this advantage?",
       "answer": "Kafka retains messages for a configurable period"
     },
     {
+      "type": "mcq",
+      "question": "How is the 'message lag' calculated in Kafka consumer groups?",
+      "answer": "By subtracting the current offset from the end offset",
       "options": [
         "By dividing the total messages by the consumption rate",
         "By subtracting the current offset from the end offset",
         "By summing the producer and consumer timestamps",
         "By multiplying the number of brokers by the number of partitions"
-      ],
-      "question": "How is the 'message lag' calculated in Kafka consumer groups?",
-      "type": "mcq",
-      "answer": "By subtracting the current offset from the end offset"
+      ]
     },
     {
       "answer": "Apache Kafka",
-      "question": "A company is designing a new microservices architecture where services need to communicate asynchronously. A critical requirement is high throughput for event streaming, guaranteed message ordering within a stream, and the ability for consumers to re-process messages if needed. Based on the article, which message broker would be more suitable for this company's requirements?",
-      "type": "scenario_mcq",
       "options": [
         "RabbitMQ",
         "Apache Kafka",
         "Both are equally suitable",
         "Neither can meet these requirements"
-      ]
+      ],
+      "type": "scenario_mcq",
+      "question": "A company is designing a new microservices architecture where services need to communicate asynchronously. A critical requirement is high throughput for event streaming, guaranteed message ordering within a stream, and the ability for consumers to re-process messages if needed. Based on the article, which message broker would be more suitable for this company's requirements?"
     },
     {
-      "answer": "Kafka Streams API",
+      "question": "A developer needs to build an application that continuously reads data from one Kafka topic, applies a real-time transformation (e.g., filtering and aggregation), and then publishes the processed data to another Kafka topic. The transformation logic should run within the client application. Which Kafka API or component would be most appropriate for this specific task?",
       "type": "scenario_mcq",
       "options": [
         "Producer API",
@@ -87,10 +86,10 @@
         "Kafka Connect",
         "Kafka Streams API"
       ],
-      "question": "A developer needs to build an application that continuously reads data from one Kafka topic, applies a real-time transformation (e.g., filtering and aggregation), and then publishes the processed data to another Kafka topic. The transformation logic should run within the client application. Which Kafka API or component would be most appropriate for this specific task?"
+      "answer": "Kafka Streams API"
     },
     {
-      "answer": "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
+      "question": "Assertion: Kafka APIs are generally preferred over REST APIs for scenarios where bidirectional communication is essential and an immediate response is not always expected.\nReason: Kafka provides bidirectional communication and a pull-based mechanism for consumers, while REST APIs are unidirectional and typically involve immediate request-response cycles.",
       "type": "assertion_reason_mcq",
       "options": [
         "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
@@ -98,40 +97,40 @@
         "Assertion is true, but Reason is false.",
         "Assertion is false, but Reason is true."
       ],
-      "question": "Assertion: Kafka APIs are generally preferred over REST APIs for scenarios where bidirectional communication is essential and an immediate response is not always expected.\nReason: Kafka provides bidirectional communication and a pull-based mechanism for consumers, while REST APIs are unidirectional and typically involve immediate request-response cycles."
+      "answer": "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion."
     },
     {
+      "question": "One of the primary benefits of Kafka mentioned in the article is its ability to:",
+      "type": "mcq",
       "options": [
         "Couple data pipelines tightly",
         "Store data only temporarily",
         "De-couple data pipelines and solve complexity problems",
         "Manage database connections directly"
       ],
-      "type": "mcq",
-      "question": "One of the primary benefits of Kafka mentioned in the article is its ability to:",
       "answer": "De-couple data pipelines and solve complexity problems"
     },
     {
+      "type": "mcq",
+      "question": "What programming languages is Apache Kafka primarily written in?",
       "answer": "Java and Scala",
       "options": [
         "Java and Python",
         "Java and Scala",
         "C++ and Java",
         "Python and Go"
-      ],
-      "type": "mcq",
-      "question": "What programming languages is Apache Kafka primarily written in?"
+      ]
     },
     {
+      "answer": "Event Prioritization",
       "options": [
         "High Throughput",
         "Scalable",
         "Permanent Storage",
         "Event Prioritization"
       ],
-      "question": "According to the article, which of the following is NOT explicitly listed as a feature of Kafka?",
       "type": "mcq",
-      "answer": "Event Prioritization"
+      "question": "According to the article, which of the following is NOT explicitly listed as a feature of Kafka?"
     },
     {
       "answer": "To represent a common name or heading for similar types of data",
@@ -141,22 +140,22 @@
         "To divide data into small subparts for processing",
         "To manage consumer group offsets"
       ],
-      "question": "In Kafka, what is the purpose of a 'Topic'?",
-      "type": "mcq"
+      "type": "mcq",
+      "question": "In Kafka, what is the purpose of a 'Topic'?"
     },
     {
       "answer": "Netflix",
-      "question": "Which company uses Kafka to apply real-time recommendations to users watching TV shows?",
-      "type": "mcq",
       "options": [
         "Uber",
         "LinkedIn",
         "Netflix",
         "Google"
-      ]
+      ],
+      "type": "mcq",
+      "question": "Which company uses Kafka to apply real-time recommendations to users watching TV shows?"
     },
     {
-      "question": "What is the primary function of the Kafka Admin API?",
+      "answer": "Inspecting and managing Kafka objects like topics and brokers",
       "options": [
         "Writing (publishing) messages to topics",
         "Reading (subscribing to) topics",
@@ -164,10 +163,10 @@
         "Providing higher-level stream processing functions for applications"
       ],
       "type": "mcq",
-      "answer": "Inspecting and managing Kafka objects like topics and brokers"
+      "question": "What is the primary function of the Kafka Admin API?"
     },
     {
-      "answer": "Kafka's pull-based mechanism and dumb broker/smart consumer model",
+      "question": "A software team wants to migrate their application from a traditional message queue to a system that can handle very high volumes of events, guarantee message ordering within a stream, and support consumers pulling messages at their own pace. They also prefer a 'dumb broker/smart consumer' model. Based on the article, which characteristic mentioned best aligns with their requirement for consumers pulling messages and a 'dumb broker' model?",
       "type": "scenario_mcq",
       "options": [
         "Kafka's ability to prioritize messages for high-priority consumers",
@@ -175,40 +174,40 @@
         "Kafka's pull-based mechanism and dumb broker/smart consumer model",
         "Kafka's immediate deletion of messages after consumption to free up resources"
       ],
-      "question": "A software team wants to migrate their application from a traditional message queue to a system that can handle very high volumes of events, guarantee message ordering within a stream, and support consumers pulling messages at their own pace. They also prefer a 'dumb broker/smart consumer' model. Based on the article, which characteristic mentioned best aligns with their requirement for consumers pulling messages and a 'dumb broker' model?"
+      "answer": "Kafka's pull-based mechanism and dumb broker/smart consumer model"
     },
     {
-      "answer": "KRaft",
       "options": [
         "Kafka Connect",
         "Kafka Streams",
         "KRaft",
         "Kafka Admin API"
       ],
-      "type": "mcq",
-      "question": "What is the newer architecture in Kafka that aims to remove the dependency on ZooKeeper for metadata management?"
+      "answer": "KRaft",
+      "question": "What is the newer architecture in Kafka that aims to remove the dependency on ZooKeeper for metadata management?",
+      "type": "mcq"
     },
     {
       "answer": "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
-      "question": "Assertion: Kafka provides durability and fault tolerance through replication.\nReason: Replication creates copies of partitions across multiple brokers to provide fault tolerance and high availability.",
-      "type": "assertion_reason_mcq",
       "options": [
         "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
         "Both Assertion and Reason are true, but Reason is not the correct explanation for Assertion.",
         "Assertion is true, but Reason is false.",
         "Assertion is false, but Reason is true."
-      ]
+      ],
+      "type": "assertion_reason_mcq",
+      "question": "Assertion: Kafka provides durability and fault tolerance through replication.\nReason: Replication creates copies of partitions across multiple brokers to provide fault tolerance and high availability."
     },
     {
-      "answer": "By dividing topics into multiple partitions",
-      "type": "mcq",
       "options": [
         "By using a single, highly powerful broker",
         "By dividing topics into multiple partitions",
         "By deleting messages immediately after consumption",
         "By encrypting messages before storing them"
       ],
-      "question": "How does Kafka achieve parallel processing and scalability for topics?"
+      "answer": "By dividing topics into multiple partitions",
+      "question": "How does Kafka achieve parallel processing and scalability for topics?",
+      "type": "mcq"
     },
     {
       "options": [
@@ -217,130 +216,130 @@
         "To track and monitor cars, trucks in realtime",
         "Collecting user interactions for communication recommendations"
       ],
-      "type": "scenario_mcq",
+      "answer": "To track and monitor cars, trucks in realtime",
       "question": "A government agency needs to track and monitor thousands of vehicles (cars, trucks) across a large geographical area in real-time, requiring continuous data capture and analysis for operational efficiency and safety. Which Kafka use case directly supports this requirement?",
-      "answer": "To track and monitor cars, trucks in realtime"
+      "type": "scenario_mcq"
     },
     {
-      "answer": "Apache Kafka",
       "options": [
         "Apache Flink",
         "Apache Storm",
         "Apache Kafka",
         "Apache Spark"
       ],
+      "answer": "Apache Kafka",
       "question": "What is the \"de facto standard\" for continuously correlating and preventing fraud in real-time, according to the article?",
       "type": "mcq"
     },
     {
+      "type": "mcq",
+      "question": "In a Kafka cluster, what is the specific role of a \"Leader\" for a partition?",
       "answer": "Handles all read and write requests for a partition",
       "options": [
         "Replicates data from Followers",
         "Only handles write requests",
         "Only handles read requests",
         "Handles all read and write requests for a partition"
-      ],
-      "type": "mcq",
-      "question": "In a Kafka cluster, what is the specific role of a \"Leader\" for a partition?"
+      ]
     },
     {
       "answer": "RabbitMQ uses a smart broker while Kafka relies on the consumer for routing intelligence",
-      "type": "mcq",
       "options": [
         "RabbitMQ uses a dumb broker, Kafka uses a smart broker",
         "Kafka uses a smart broker while RabbitMQ relies on the consumer for routing intelligence",
         "RabbitMQ uses a smart broker while Kafka relies on the consumer for routing intelligence",
         "Both use smart brokers that intelligently route messages"
       ],
+      "type": "mcq",
       "question": "Which statement accurately describes the difference in message routing intelligence between RabbitMQ and Kafka?"
     },
     {
-      "answer": "A unique identifier assigned to each message within a partition",
+      "question": "According to the article, what is an 'Offset' in Kafka?",
+      "type": "mcq",
       "options": [
         "A timestamp of message production",
         "The size of a message in bytes",
         "A unique identifier assigned to each message within a partition",
         "The name of a topic"
       ],
-      "type": "mcq",
-      "question": "According to the article, what is an 'Offset' in Kafka?"
+      "answer": "A unique identifier assigned to each message within a partition"
     },
     {
       "answer": "Its data persistency and message retention period",
-      "type": "scenario_mcq",
       "options": [
         "Its ability to prioritize messages for consumers",
         "Its smart broker for intelligent routing",
         "Its immediate deletion of messages after consumption",
         "Its data persistency and message retention period"
       ],
+      "type": "scenario_mcq",
       "question": "A software company is looking for a messaging system that provides durable data storage for in-flight messages, allowing consumers to re-process historical data if needed, and is described as a 'very good storage system.' Which aspect of Kafka, as mentioned in the article, makes it particularly suitable for this requirement compared to traditional message queues like RabbitMQ?"
     },
     {
       "answer": "Assertion is false, but Reason is true.",
-      "question": "Assertion: Kafka ensures exactly-once processing for all messages automatically for any consumer.\nReason: Exactly-once processing ensures messages are neither lost nor processed multiple times.",
-      "type": "assertion_reason_mcq",
       "options": [
         "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
         "Both Assertion and Reason are true, but Reason is not the correct explanation for Assertion.",
         "Assertion is true, but Reason is false.",
         "Assertion is false, but Reason is true."
-      ]
+      ],
+      "type": "assertion_reason_mcq",
+      "question": "Assertion: Kafka ensures exactly-once processing for all messages automatically for any consumer.\nReason: Exactly-once processing ensures messages are neither lost nor processed multiple times."
     },
     {
-      "type": "mcq",
-      "question": "What is explicitly mentioned as a disadvantage of Kafka in the article?",
+      "answer": "Setup and monitoring complexity",
       "options": [
         "Low throughput",
         "Lack of scalability",
         "Inability to store messages",
         "Setup and monitoring complexity"
       ],
-      "answer": "Setup and monitoring complexity"
+      "type": "mcq",
+      "question": "What is explicitly mentioned as a disadvantage of Kafka in the article?"
     },
     {
-      "answer": "Using replication, distributed brokers, and a leader-follower architecture",
-      "type": "mcq",
       "question": "According to the article, how does Kafka ensure fault tolerance?",
+      "type": "mcq",
       "options": [
         "By deleting old messages promptly",
         "By using a single, highly powerful broker",
         "By encrypting all data before storage",
         "Using replication, distributed brokers, and a leader-follower architecture"
-      ]
+      ],
+      "answer": "Using replication, distributed brokers, and a leader-follower architecture"
     },
     {
-      "type": "scenario_mcq",
+      "answer": "Consumer Group",
       "options": [
         "Individual Consumer API instance",
         "Producer API",
         "Consumer Group",
         "Kafka Connect"
       ],
-      "question": "A company wants to implement a system where multiple consumer instances collaboratively process messages from a single Kafka topic. The goal is to distribute the workload and ensure that each message is processed by only one consumer within that group, while also allowing the system to scale by adding more consumers. Which Kafka concept best facilitates this setup?",
-      "answer": "Consumer Group"
+      "type": "scenario_mcq",
+      "question": "A company wants to implement a system where multiple consumer instances collaboratively process messages from a single Kafka topic. The goal is to distribute the workload and ensure that each message is processed by only one consumer within that group, while also allowing the system to scale by adding more consumers. Which Kafka concept best facilitates this setup?"
     },
     {
-      "question": "According to the article, what is the primary function of a Kafka Broker?",
-      "type": "mcq",
+      "answer": "To store messages in topics in the form of partitions and act as a bridge between producer and consumer",
       "options": [
         "To generate new topics and partitions",
         "To manage consumer group offsets and commit logs",
         "To store messages in topics in the form of partitions and act as a bridge between producer and consumer",
         "To transform data in real-time within the client application"
       ],
-      "answer": "To store messages in topics in the form of partitions and act as a bridge between producer and consumer"
+      "type": "mcq",
+      "question": "According to the article, what is the primary function of a Kafka Broker?"
     },
     {
       "type": "mcq",
+      "question": "What is a specific latency benchmark mentioned for Kafka's high throughput capability?",
+      "answer": "As low as 2 milliseconds",
       "options": [
         "As low as 2 milliseconds",
         "Around 10 milliseconds",
         "Up to 100 milliseconds",
         "Less than 1 microsecond"
-      ],
-      "question": "What is a specific latency benchmark mentioned for Kafka's high throughput capability?",
-      "answer": "As low as 2 milliseconds"
+      ]
     },
     {
       "answer": "Ability to specify message priorities for consumption",
@@ -354,59 +353,59 @@
       "question": "Which of the following is a specific message handling feature attributed to RabbitMQ in the article's comparison with Kafka?"
     },
     {
-      "answer": "Monitoring patients in hospital care and predicting changes in condition",
+      "question": "A healthcare provider wants to implement a system that continuously processes sensor data from patients in real-time to identify critical changes and alert medical staff promptly for timely intervention. Based on the article, which Kafka use case aligns with this requirement?",
+      "type": "scenario_mcq",
       "options": [
         "Processing financial transactions in real-time",
         "Applying real-time recommendations for users watching TV shows",
         "Tracking and monitoring vehicles in real-time",
         "Monitoring patients in hospital care and predicting changes in condition"
       ],
-      "type": "scenario_mcq",
-      "question": "A healthcare provider wants to implement a system that continuously processes sensor data from patients in real-time to identify critical changes and alert medical staff promptly for timely intervention. Based on the article, which Kafka use case aligns with this requirement?"
+      "answer": "Monitoring patients in hospital care and predicting changes in condition"
     },
     {
       "answer": "AMQP",
-      "type": "mcq",
       "options": [
         "HTTP",
         "AMQP",
         "MQTT",
         "STOMP"
       ],
+      "type": "mcq",
       "question": "According to the article, what messaging protocol does RabbitMQ typically implement for its message handling?"
     },
     {
       "answer": "Uber",
-      "question": "Which company, according to the article, uses Kafka to gather taxi, user, and trip data in real-time to compute and forecast demand and surge pricing?",
       "options": [
         "Netflix",
         "LinkedIn",
         "Uber",
         "Google"
       ],
-      "type": "mcq"
+      "type": "mcq",
+      "question": "Which company, according to the article, uses Kafka to gather taxi, user, and trip data in real-time to compute and forecast demand and surge pricing?"
     },
     {
-      "answer": "Assertion is false, but Reason is true.",
-      "type": "assertion_reason_mcq",
       "question": "Assertion: Kafka ensures strict message ordering for all messages published to a single topic, regardless of the number of partitions. Reason: Message ordering in Kafka is guaranteed only within a single partition.",
+      "type": "assertion_reason_mcq",
       "options": [
         "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
         "Both Assertion and Reason are true, but Reason is not the correct explanation for Assertion.",
         "Assertion is true, but Reason is false.",
         "Assertion is false, but Reason is true."
-      ]
+      ],
+      "answer": "Assertion is false, but Reason is true."
     },
     {
-      "answer": "To connect Kafka brokers to external entities like databases or external servers",
-      "type": "mcq",
       "question": "What is the primary role of the Connector APIs within Kafka Connect?",
+      "type": "mcq",
       "options": [
         "To write stream processing applications within Kafka brokers",
         "To inspect and manage Kafka topics and brokers",
         "To connect Kafka brokers to external entities like databases or external servers",
         "To produce messages to Kafka topics from client applications"
-      ]
+      ],
+      "answer": "To connect Kafka brokers to external entities like databases or external servers"
     },
     {
       "question": "A software architect is evaluating message brokers for a system that requires flexible message persistence (both transient and durable), supports both one-to-one and one-to-many communication patterns, and specifically relies on the Advanced Message Queuing Protocols (AMQP). Based on the comparisons in the article, which message broker best fits these criteria?",
@@ -426,64 +425,64 @@
         "That the Kafka broker is overloaded with metadata",
         "That the consumer group has successfully processed all available messages"
       ],
+      "answer": "That messages are not being consumed at the expected rate, possibly due to a bug or error",
       "question": "In the context of Kafka consumer groups, what does a 'too high lag' value primarily indicate, as mentioned in the article?",
-      "type": "mcq",
-      "answer": "That messages are not being consumed at the expected rate, possibly due to a bug or error"
+      "type": "mcq"
     },
     {
-      "type": "mcq",
       "options": [
         "Kafka requires more resources (around 30 nodes) for high throughput compared to RabbitMQ.",
         "RabbitMQ requires more resources (around 30 nodes) for high throughput compared to Kafka.",
         "Both systems require similar resources for high throughput, making them equally efficient.",
         "Kafka achieves high throughput by eliminating the need for any storage, unlike RabbitMQ."
       ],
+      "answer": "RabbitMQ requires more resources (around 30 nodes) for high throughput compared to Kafka.",
       "question": "When comparing the throughput capabilities of Kafka and RabbitMQ for similar high volumes, what key difference is highlighted regarding resource usage?",
-      "answer": "RabbitMQ requires more resources (around 30 nodes) for high throughput compared to Kafka."
+      "type": "mcq"
     },
     {
+      "type": "mcq",
+      "question": "What is the primary characteristic of Kafka's data processing, distinguishing it from how data processing happens in traditional message brokers, as described in the article?",
+      "answer": "Data processing primarily happens within client applications.",
       "options": [
         "Data is processed directly on Kafka brokers.",
         "Data processing primarily happens within client applications.",
         "Data is processed after being deleted from the topic.",
         "Data processing is handled entirely by ZooKeeper."
-      ],
-      "question": "What is the primary characteristic of Kafka's data processing, distinguishing it from how data processing happens in traditional message brokers, as described in the article?",
-      "type": "mcq",
-      "answer": "Data processing primarily happens within client applications."
+      ]
     },
     {
+      "type": "mcq",
+      "question": "According to the article, what percentage of Fortune 500 companies leverage Apache Kafka?",
       "answer": "Over 70%",
       "options": [
         "Less than 50%",
         "Approximately 60%",
         "Over 70%",
         "Exactly 50%"
-      ],
-      "type": "mcq",
-      "question": "According to the article, what percentage of Fortune 500 companies leverage Apache Kafka?"
+      ]
     },
     {
+      "type": "mcq",
+      "question": "What is a specific use case of Kafka mentioned for monitoring industrial operations?",
+      "answer": "Continuously capturing and analyzing sensor data from IoT devices",
       "options": [
         "Applying real-time recommendations for users",
         "Processing online payment transactions",
         "Continuously capturing and analyzing sensor data from IoT devices",
         "Predicting stock market changes"
-      ],
-      "question": "What is a specific use case of Kafka mentioned for monitoring industrial operations?",
-      "type": "mcq",
-      "answer": "Continuously capturing and analyzing sensor data from IoT devices"
+      ]
     },
     {
+      "type": "mcq",
+      "question": "In the context of Kafka, what does \"Permanent Storage\" as a feature primarily refer to?",
       "answer": "Storing streams of data safely in a distributed, durable, fault-tolerant cluster",
       "options": [
         "Storing messages indefinitely without any retention policy",
         "Storing streams of data safely in a distributed, durable, fault-tolerant cluster",
         "Storing configurations for Kafka brokers",
         "Storing processed data in an external database"
-      ],
-      "type": "mcq",
-      "question": "In the context of Kafka, what does \"Permanent Storage\" as a feature primarily refer to?"
+      ]
     },
     {
       "options": [
@@ -492,31 +491,31 @@
         "To provide higher-level stream processing",
         "To write (publish) messages to topics"
       ],
+      "answer": "To write (publish) messages to topics",
       "question": "What is the specific role of the Kafka Producer API?",
-      "type": "mcq",
-      "answer": "To write (publish) messages to topics"
+      "type": "mcq"
     },
     {
+      "type": "scenario_mcq",
+      "question": "A company wants to prevent spam and collect user interactions to improve communication and connection recommendations in real-time. Which Kafka use case, specifically attributed to a well-known company in the article, aligns with this requirement?",
+      "answer": "Collecting user interactions for communication and connection recommendations (LinkedIn)",
       "options": [
         "Processing payments and financial transactions (Stock exchanges)",
         "Applying real-time recommendations for TV show users (Netflix)",
         "Gathering taxi, user, and trip data for surge pricing (Uber)",
         "Collecting user interactions for communication and connection recommendations (LinkedIn)"
-      ],
-      "type": "scenario_mcq",
-      "question": "A company wants to prevent spam and collect user interactions to improve communication and connection recommendations in real-time. Which Kafka use case, specifically attributed to a well-known company in the article, aligns with this requirement?",
-      "answer": "Collecting user interactions for communication and connection recommendations (LinkedIn)"
+      ]
     },
     {
-      "answer": "Assertion is false, but Reason is true.",
       "question": "Assertion: Kafka Connect's primary purpose is to transform data streams in real-time within the Kafka broker.\nReason: Kafka Connect is a framework designed for moving data into and out of Kafka, often copying streamed data, and its processing logic runs as an independent service.",
+      "type": "assertion_reason_mcq",
       "options": [
         "Both Assertion and Reason are true, and Reason is the correct explanation for Assertion.",
         "Both Assertion and Reason are true, but Reason is not the correct explanation for Assertion.",
         "Assertion is true, but Reason is false.",
         "Assertion is false, but Reason is true."
       ],
-      "type": "assertion_reason_mcq"
+      "answer": "Assertion is false, but Reason is true."
     },
     {
       "answer": "Kafka APIs often do not expect an immediate response, while REST APIs typically do.",
@@ -531,25 +530,26 @@
     },
     {
       "answer": "To enable services and applications to communicate using messages reliably and stably.",
-      "question": "What is the stated primary function of a message broker in a microservices architecture?",
-      "type": "mcq",
       "options": [
         "To directly manage database connections between services.",
         "To tightly couple services for synchronous communication.",
         "To enable services and applications to communicate using messages reliably and stably.",
         "To transform data streams within individual microservices."
-      ]
+      ],
+      "type": "mcq",
+      "question": "What is the stated primary function of a message broker in a microservices architecture?"
     },
     {
-      "answer": "A message broker.",
       "type": "scenario_mcq",
+      "question": "A development team needs a system that functions as a 'third party/middleMan' to facilitate inter-communication between various microservices, ensuring messages are managed, monitored, and not lost. The goal is to ensure reliable and stable communication. Which concept described in the article directly addresses this requirement?",
+      "answer": "A message broker.",
       "options": [
         "A direct database connection.",
         "A load balancer.",
         "A message broker.",
         "A distributed cache."
-      ],
-      "question": "A development team needs a system that functions as a 'third party/middleMan' to facilitate inter-communication between various microservices, ensuring messages are managed, monitored, and not lost. The goal is to ensure reliable and stable communication. Which concept described in the article directly addresses this requirement?"
+      ]
     }
-  ]
+  ],
+  "createdAt": 1781264980905
 }

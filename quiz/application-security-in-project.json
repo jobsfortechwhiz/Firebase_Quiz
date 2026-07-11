@@ -1,47 +1,47 @@
 {
   "questions": [
     {
-      "answer": "It validates a user's device and credentials with OTP verification.",
-      "question": "What is a primary benefit of using Multi-Factor Authentication (MFA) at the user/application level?",
-      "type": "mcq",
       "options": [
         "It encrypts data during transmission.",
         "It prevents SQL injection attacks.",
         "It validates a user's device and credentials with OTP verification.",
         "It automatically escapes malicious script injections."
-      ]
+      ],
+      "answer": "It validates a user's device and credentials with OTP verification.",
+      "question": "What is a primary benefit of using Multi-Factor Authentication (MFA) at the user/application level?",
+      "type": "mcq"
     },
     {
-      "type": "mcq",
-      "question": "Which security measure is primarily implemented at the transport/network layer to prevent eavesdropping and data snooping during data transmission?",
       "options": [
         "Using prepared statements for database queries.",
         "Implementing CSRF tokens.",
         "Adding TLS/SSL to HTTP endpoints.",
         "Employing secure access tokens with OAuth."
       ],
-      "answer": "Adding TLS/SSL to HTTP endpoints."
+      "answer": "Adding TLS/SSL to HTTP endpoints.",
+      "question": "Which security measure is primarily implemented at the transport/network layer to prevent eavesdropping and data snooping during data transmission?",
+      "type": "mcq"
     },
     {
+      "type": "mcq",
+      "question": "To mitigate SQL Injection vulnerabilities at the data level, which of the following is explicitly recommended in the article?",
+      "answer": "Implementing parameterized queries with prepared statements.",
       "options": [
         "Encoding secret data with hash.",
         "Using environment variables for credentials.",
         "Implementing parameterized queries with prepared statements.",
         "Enabling audit logging for login attempts."
-      ],
-      "type": "mcq",
-      "question": "To mitigate SQL Injection vulnerabilities at the data level, which of the following is explicitly recommended in the article?",
-      "answer": "Implementing parameterized queries with prepared statements."
+      ]
     },
     {
+      "question": "Where should sensitive information like user credentials, application keys, or tokens ideally be stored instead of directly in YAML or common configuration files?",
+      "type": "mcq",
       "options": [
         "In database tables.",
         "Within the application's source code.",
         "In environment variables.",
         "Encrypted within static resource files."
       ],
-      "type": "mcq",
-      "question": "Where should sensitive information like user credentials, application keys, or tokens ideally be stored instead of directly in YAML or common configuration files?",
       "answer": "In environment variables."
     },
     {
@@ -52,22 +52,22 @@
         "Generating a new session ID on each new login.",
         "Disabling secure cookies."
       ],
-      "question": "What practice is recommended for session management to protect against an attacker maliciously using an old session ID?",
-      "type": "mcq"
+      "type": "mcq",
+      "question": "What practice is recommended for session management to protect against an attacker maliciously using an old session ID?"
     },
     {
-      "question": "SonarQube is primarily described as what type of tool?",
-      "type": "mcq",
+      "answer": "A static testing tool for code quality and security.",
       "options": [
         "A runtime performance monitoring tool.",
         "A dynamic testing tool for penetration testing.",
         "A static testing tool for code quality and security.",
         "A deployment automation tool for continuous integration."
       ],
-      "answer": "A static testing tool for code quality and security."
+      "type": "mcq",
+      "question": "SonarQube is primarily described as what type of tool?"
     },
     {
-      "question": "Which component provides production-ready monitoring and management endpoints, giving developers visibility into authentication events, request patterns, and application health?",
+      "answer": "Actuator",
       "options": [
         "OAuth",
         "SonarLint",
@@ -75,9 +75,10 @@
         "SAML"
       ],
       "type": "mcq",
-      "answer": "Actuator"
+      "question": "Which component provides production-ready monitoring and management endpoints, giving developers visibility into authentication events, request patterns, and application health?"
     },
     {
+      "question": "A web application displays user-generated content. A developer is concerned about attackers injecting malicious scripts into this content that could execute in other users' browsers. Which vulnerability is this, and what common mitigation technique is mentioned in the article?",
       "type": "scenario_mcq",
       "options": [
         "SQL Injection; use prepared statements.",
@@ -85,17 +86,16 @@
         "Cross-site Scripting (XSS); use escape sequences or encode data.",
         "Data Snooping; implement TLS/SSL."
       ],
-      "question": "A web application displays user-generated content. A developer is concerned about attackers injecting malicious scripts into this content that could execute in other users' browsers. Which vulnerability is this, and what common mitigation technique is mentioned in the article?",
       "answer": "Cross-site Scripting (XSS); use escape sequences or encode data."
     },
     {
-      "answer": "Single Sign-On (SSO) using SAML.",
       "options": [
         "Multi-Factor Authentication (MFA).",
         "Cross-Site Request Forgery (CSRF) tokens.",
         "Single Sign-On (SSO) using SAML.",
         "Using JWT tokens for REST API calls."
       ],
+      "answer": "Single Sign-On (SSO) using SAML.",
       "question": "An organization wants to allow its employees to log into their internal company portal once and then access various interconnected services like SharePoint, Outlook, and Teams without needing to re-enter their credentials for each service. Which feature mentioned in the article directly supports this requirement?",
       "type": "scenario_mcq"
     },
@@ -106,9 +106,9 @@
         "A is true, but R is false.",
         "A is false, but R is true."
       ],
+      "answer": "Both A and R are true, and R is the correct explanation of A.",
       "question": "Assertion (A): For effective session management, it is crucial to use secure cookies with flags like 'Secure' and 'HttpOnly'.\nReason (R): These flags help prevent attackers from stealing session IDs via client-side scripts and ensure cookies are only transmitted over HTTPS.",
-      "type": "assertion_reason_mcq",
-      "answer": "Both A and R are true, and R is the correct explanation of A."
+      "type": "assertion_reason_mcq"
     }
   ],
   "createdAt": 1781944854385
